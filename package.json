@@ -9,11 +9,14 @@
   },
   "dependencies": {
     "@cosmicjs/sdk": "^1.0.5",
+    "@types/leaflet": "^1.9.16",
     "isomorphic-dompurify": "^1.8.0",
+    "leaflet": "^1.9.4",
     "lucide-react": "^0.427.0",
     "next": "canary",
     "react": "19.0.0-rc-68dbd84b-20240812",
     "react-dom": "19.0.0-rc-68dbd84b-20240812",
+    "react-leaflet": "^5.0.0",
     "typescript": "^5.0.4"
   },
   "engines": {
