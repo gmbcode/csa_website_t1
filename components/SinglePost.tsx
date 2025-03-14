@@ -33,9 +33,16 @@ export async function SinglePost({ slug }: { slug: string }) {
             </Link>
           </div>
           <div className="mr-20 flex w-full max-w-3xl flex-col justify-start md:w-3/4">
-            <h2>
+            <h2 className="text-4xl font-extrabold text-zinc-900 dark:text-zinc-100">
               {!post && <div className="text-center">Post Not found</div>}
-              {post && <Link href={`/posts/${post.slug}`}>{post.title}</Link>}
+              {post && (
+                <Link
+                  href={`/posts/${post.slug}`}
+                  className="hover:underline transition-colors duration-200"
+                >
+                  {post.title}
+                </Link>
+              )}
             </h2>
             {post && (
               <>
