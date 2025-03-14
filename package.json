@@ -14,6 +14,7 @@
     "leaflet": "^1.9.4",
     "lucide-react": "^0.427.0",
     "next": "canary",
+    "next-auth": "5.0.0-beta.25",
     "react": "19.0.0-rc-68dbd84b-20240812",
     "react-dom": "19.0.0-rc-68dbd84b-20240812",
     "react-leaflet": "^5.0.0",

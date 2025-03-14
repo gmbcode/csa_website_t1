@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "name": "Bhavya",
+    "lat": 37.7749,
+    "lng": -122.4194,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 2,
+    "name": "Tobit",
+    "lat": 51.5074,
+    "lng": -0.1278,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 3,
+    "name": "Vihaan",
+    "lat": 35.6895,
+    "lng": 139.6917,
+    "picture": "/images/male.png"
+  }
+]
