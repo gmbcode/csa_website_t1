@@ -32,7 +32,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
               </li>
               <li>
                 <a href="/team" className="text-white hover:underline">
-                  Team
+                  PORs
                 </a>
               </li>
               <li>
