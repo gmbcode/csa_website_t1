@@ -9,49 +9,50 @@ import { sanitize } from 'isomorphic-dompurify';
 
 export default function PostCard({ post }: { post: Post }) {
   return (
-    <div>
+    <div className="flex flex-col h-full">
       {post.metadata.hero?.imgix_url && (
         <Link href={`/posts/${post.slug}`}>
           <img
-            className="mb-5 h-[400px] w-full rounded-xl bg-no-repeat object-cover object-center transition-transform duration-200 ease-out hover:scale-[1.02]"
+            className="w-full h-48 object-cover object-center"
             src={`${post.metadata.hero?.imgix_url}?w=1400&auto=compression,format`}
             alt={post.title}
           />
         </Link>
       )}
-      <h2 className="pb-3 text-xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-200">
-        <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-      </h2>
-      <div className="flex flex-col justify-between space-y-4 md:flex-row md:space-y-0">
-        <div className="flex items-center space-x-2 text-zinc-500 md:space-y-0 dark:text-zinc-400">
-          <AuthorAvatar post={post} />
-          <AuthorAttribution post={post} />
-        </div>
-        <div className="flex select-none justify-start space-x-2 md:hidden md:justify-end">
-          {post.metadata.categories &&
-            post.metadata.categories.map((category) => (
-              <Tag key={category.title}>{category.title}</Tag>
-            ))}
-        </div>
-      </div>
-      <div
-        className="py-6 text-zinc-500 dark:text-zinc-300"
-        dangerouslySetInnerHTML={{
-          __html: sanitize(post.metadata.teaser) ?? '',
-        }}
-      />
-      <div className="flex items-center justify-between font-medium text-green-600 dark:text-green-200">
-        <Link href={`/posts/${post.slug}`}>
-          <div className="flex items-center space-x-2">
-            <span>Read article</span>
-            <ArrowRight className="h-4 w-4 text-inherit" />
+      <div className="flex flex-col flex-grow p-5 space-y-4">
+        <h2 className="text-xl font-semibold tracking-tight text-zinc-200">
+          <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+        </h2>
+
+        <div className="flex items-start space-x-3">
+          <div className="flex-shrink-0 mt-1">
+            <AuthorAvatar post={post} />
           </div>
-        </Link>
-        <div className="hidden select-none justify-end space-x-2 md:flex ">
-          {post.metadata.categories &&
-            post.metadata.categories.map((category) => (
-              <Tag key={category.title}>{category.title}</Tag>
-            ))}
+          <div className="flex flex-col text-zinc-400 text-sm">
+            <span>
+              by{' '}
+              <span className="text-green-300">
+                {post.metadata.author?.title || 'gmbcode'}
+              </span>
+            </span>
+          </div>
+        </div>
+
+        <div className="mt-auto pt-2 flex items-center justify-between">
+          <Link href={`/posts/${post.slug}`}>
+            <div className="flex items-center space-x-2 text-green-300 hover:text-green-200 transition-colors">
+              <span className="font-medium">Read article</span>
+              <ArrowRight className="h-4 w-4" />
+            </div>
+          </Link>
+          <br />
+        </div>
+        <div className="mt-auto pt-2 flex items-center justify-between">
+          {post.metadata.categories && post.metadata.categories.length > 0 && (
+            <div className="flex space-x-2">
+              <Tag>{post.metadata.categories[0].title}</Tag>
+            </div>
+          )}
         </div>
       </div>
     </div>
