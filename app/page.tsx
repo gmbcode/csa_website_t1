@@ -53,9 +53,9 @@ export default function LandingPage() {
       </div>
 
       {/* Foreground Content */}
-      <div className="z-10">
+      <div className="z-10 w-full flex flex-col items-center justify-center">
         {/* Logo */}
-        <div className="mb-10">
+        <div className="mb-10 flex justify-center items-center">
           <svg 
             width="400" 
             height="400" 
@@ -94,9 +94,9 @@ export default function LandingPage() {
         </div>
 
         {/* Hero Text */}
-        <h1 className="text-4xl font-bold tracking-wide">Welcome to CSA</h1>
-        <h2 className="text-3xl font-bold text-left py-10">About Us</h2>
-        <p className="text-xl text-left max-w-screen px-20">
+        <h1 className="text-4xl font-bold tracking-wide text-center">Welcome to CSA</h1>
+        <h2 className="text-3xl font-bold text-center py-10">About Us</h2>
+        <p className="text-xl text-center max-w-4xl mx-auto px-6">
           We, <i>The Computer Science Association</i>, are more than just an association; we're the energy behind the CSIS Department at BITS Pilani, Hyderabad Campus, the guardians of all things geeky and techy, and the creators of exciting coding adventures!
           <br /><br />
           Ever wondered who's behind the scenes making all those mind-blowing tech events happen? That's us, the CSA! From organizing hackathons that redefine coding marathons to hosting talks that'll ignite fresh perspectives, we're here to keep the CS culture thriving on campus.
