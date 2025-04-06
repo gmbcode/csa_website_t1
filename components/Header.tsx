@@ -89,7 +89,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
               </li>
               <li>
                 <a
-                  href="/team"
+                  href="/PORs"
                   className="text-white hover:text-gray-300 transition-colors duration-200"
                 >
                   PORs
@@ -105,10 +105,10 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
               </li>
               <li>
                 <a
-                  href="/contact"
+                  href="/resources"
                   className="text-white hover:text-gray-300 transition-colors duration-200"
                 >
-                  Contact Us
+                  Resources
                 </a>
               </li>
             </ul>
@@ -213,7 +213,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
                   </li>
                   <li className="border-b border-zinc-700 pb-3">
                     <a
-                      href="/team"
+                      href="/PORs"
                       className="block text-xl font-medium text-white hover:text-gray-300 transition-colors duration-200"
                       onClick={toggleMenu}
                     >
@@ -231,11 +231,11 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
                   </li>
                   <li className="border-b border-zinc-700 pb-3">
                     <a
-                      href="/contact"
+                      href="/resources"
                       className="block text-xl font-medium text-white hover:text-gray-300 transition-colors duration-200"
                       onClick={toggleMenu}
                     >
-                      Contact Us
+                      Resources
                     </a>
                   </li>
                 </ul>
