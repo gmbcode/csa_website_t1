@@ -15,11 +15,11 @@ const MapComponent = () => {
       .catch((err) => console.error(err));
   }, []);
   return (
-    <div style={{ height: '500px', width: '100%' }}>
+    <div style={{ height: '500px', width: '100%' ,z-index: 'inherit'}}>
       <MapContainer
         center={[20, 0]}
         zoom={2}
-        style={{ height: '500px', width: '60%', margin: '0 auto' ,z-index: 'inherit'}}
+        style={{ height: '500px', width: '60%', margin: '0 auto'}}
         scrollWheelZoom={true}
         dragging={true}
         maxBounds={[
