@@ -74,7 +74,7 @@ export default function LandingPage() {
   return (
     <div className="relative flex flex-col items-center justify-center min-h-screen p-6 text-center bg-black text-white overflow-hidden">
       {/* Background Container */}
-      <div id="background-polygons" className="absolute inset-0 z-0 pointer-events-none"></div>
+      <div id="background-polygons" className="absolute inset-0 z-0"></div>
 
       {/* Logo */}
       <div className="mb-10 z-10">
