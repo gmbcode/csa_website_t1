@@ -85,7 +85,6 @@ export default function LandingPage() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          {/* Replace "..." with actual SVG paths */}
           <path id="logoA" d="..." transform="translate(144,64)" stroke="white" strokeLinecap="round" fill="white" fillOpacity="0" />
           <path id="logoS" d="..." transform="translate(87.5,69.125)" stroke="white" strokeLinecap="round" fill="white" fillOpacity="0" />
           <path id="logoC" d="..." transform="translate(134,63)" stroke="white" strokeLinecap="round" fill="white" fillOpacity="0" />
@@ -111,10 +110,10 @@ export default function LandingPage() {
       <style jsx global>{`
         .floating-polygon {
           position: absolute;
-          background-color: rgba(255, 255, 255, 0.05);
+          background-color: rgba(255, 255, 255, 1);
           clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
           animation: floatRotate ease-in-out infinite;
-          opacity: 0.2;
+          opacity: 1;
           z-index: 0;
         }
 
