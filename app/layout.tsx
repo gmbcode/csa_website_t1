@@ -74,7 +74,7 @@ export default async function RootLayout({
     poly.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
 
     const gray = Math.floor(Math.random() * 55) + 200;
-    poly.style.backgroundColor = "rgba(" + gray + ", " + gray + ", " + gray + ", 0.1)";
+    poly.style.backgroundColor = "rgba(" + gray + ", " + gray + ", " + gray + ", 0.08)";
 
     container.appendChild(poly);
   }
