@@ -86,7 +86,7 @@ export default function LandingPage() {
         poly.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
 
         const gray = Math.floor(Math.random() * 55) + 200;
-        poly.style.borderColor = `rgba(${gray}, ${gray}, ${gray}, 0.3)`;
+        poly.style.backgroundColor = `rgba(${gray}, ${gray}, ${gray}, 0.2)`;
 
         container.appendChild(poly);
       }
@@ -131,9 +131,6 @@ export default function LandingPage() {
       <style jsx global>{`
         .floating-polygon {
           position: absolute;
-          background-color: transparent;
-          border-width: 1px;
-          border-style: solid;
           animation: floatRotate ease-in-out infinite;
           z-index: 0;
         }
