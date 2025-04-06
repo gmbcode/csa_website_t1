@@ -32,8 +32,8 @@ export default async function RootLayout({
       <body className="bg-white dark:bg-zinc-950">
         <SessionProvider>
           <Header name={siteData} />
-          <Background />
           {children}
+          <Background />
           <Footer />
         </SessionProvider>
       </body>
