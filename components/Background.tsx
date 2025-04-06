@@ -36,7 +36,7 @@ export default function Background(): JSX.Element {
       shape.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
 
       const shade = Math.floor(Math.random() * 40) + 180;
-      shape.style.backgroundColor = `rgba(${shade}, ${shade}, ${shade}, 0.05)`;
+      shape.style.backgroundColor = `rgba(${shade}, ${shade}, ${shade}, 0.15)`;
 
       container.appendChild(shape);
     }
