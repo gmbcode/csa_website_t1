@@ -33,7 +33,7 @@ export default function Background(): JSX.Element {
       shape.style.animation = "floatRotate ease-in-out infinite";
       shape.style.animationDuration = (10 + Math.random() * 10) + "s";
       shape.style.animationDelay = (Math.random() * 5) + "s";
-      shape.style.zIndex = "0";
+      shape.style.zIndex = "-2";
       shape.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
 
       const shade = Math.floor(Math.random() * 40) + 180;
