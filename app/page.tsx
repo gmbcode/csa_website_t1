@@ -53,18 +53,25 @@ export default function LandingPage() {
     // Polygon background animation
     const container = document.getElementById("background-polygons");
     if (container) {
-      const count = 20;
+      const count = 30;
+      const shapes = [
+        "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)", // diamond/square
+        "polygon(50% 0%, 100% 100%, 0% 100%)",          // triangle
+        "circle(50% at 50% 50%)"                         // circle
+      ];
+
       for (let i = 0; i < count; i++) {
         const poly = document.createElement("div");
         poly.className = "floating-polygon";
 
-        const size = Math.random() * 30 + 20;
+        const size = Math.random() * 40 + 20;
         poly.style.width = `${size}px`;
         poly.style.height = `${size}px`;
         poly.style.left = `${Math.random() * 100}%`;
         poly.style.top = `${Math.random() * 100}%`;
         poly.style.animationDuration = `${10 + Math.random() * 10}s`;
         poly.style.animationDelay = `${Math.random() * 5}s`;
+        poly.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
 
         container.appendChild(poly);
       }
@@ -110,10 +117,9 @@ export default function LandingPage() {
       <style jsx global>{`
         .floating-polygon {
           position: absolute;
-          background-color: rgba(255, 255, 255, 1);
-          clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+          background-color: transparent;
+          border: 1px solid rgba(255, 255, 255, 0.2);
           animation: floatRotate ease-in-out infinite;
-          opacity: 1;
           z-index: 0;
         }
 
