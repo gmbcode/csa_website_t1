@@ -20,7 +20,7 @@ export default function Background(): JSX.Element {
       shape.style.width = size + "px";
       shape.style.height = size + "px";
 
-      const cols = 10;
+      const cols = 8;
       const rows = 5;
       const col = i % cols;
       const row = Math.floor(i / cols);
