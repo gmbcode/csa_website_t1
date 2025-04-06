@@ -1,5 +1,5 @@
 # CSA Website T1
-![myimage](images/csalogo.png?raw=true)
+![csalogo](public/images/csalogo.png?raw=true)
 ## Steps to run locally
 1. Make sure you have pnpm setup correctly and on path
 2. Clone the repository into any desired folder
