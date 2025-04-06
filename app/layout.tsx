@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import Background from '../components/Background';
 
+
 const sans = Generator({
   src: '../fonts/Generator-Variable.ttf',
   variable: '--font-sans',
