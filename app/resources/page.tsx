@@ -1,9 +1,9 @@
 import React from "react";
 
 const resources = [
-  { title: "Card #1", description: "Description for card #1.", link: "https://www.google.com" },
-  { title: "Card #2", description: "Description for card #2.", link: "https://www.google.com" },
-  { title: "Card #3", description: "Description for card #3.", link: "https://www.google.com" },
+  { title: "Acad Drive #1", description: "Acad Drive by Rupesh", link: "https://drive.google.com/drive/folders/1IFOauYi1sac4eStmPAY2wmgLjsbmz2lx" },
+  { title: "Acad Drive #2", description: "Acad Drive by Umaang", link: "https://drive.google.com/drive/folders/1SpJjsevyTKRjHCx_BWC_3LNcW005nOmJ" },
+  { title: "Acad Drive #3", description: "Acad Hub by Arnav", link: "https://drive.google.com/drive/folders/1YaAKJbJfEqx6ganFsnRNiylYtTzy15OA" },
   { title: "Card #4", description: "Description for card #4.", link: "https://www.google.com" },
 ];
 
