@@ -108,7 +108,7 @@ export default function LandingPage() {
       </h2>
 
       {/* Polygon Animation Styles */}
-      <style jsx global>{
+      <style jsx global>{`
         .floating-polygon {
           position: absolute;
           background-color: rgba(255, 255, 255, 0.05);
@@ -129,7 +129,7 @@ export default function LandingPage() {
             transform: translateY(0) rotate(360deg);
           }
         }
-      }</style>
+      `}</style>
     </div>
   );
 }
