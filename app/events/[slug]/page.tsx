@@ -1,4 +1,6 @@
 import { SingleEvent } from "../../../cosmic/blocks/events/SingleEvent";
+
+
 export default async function SingleEventPage({
   params,
   searchParams,
@@ -8,7 +10,6 @@ export default async function SingleEventPage({
     status: "draft" | "published" | "any";
   };
 }) {
-
   const param = await params;
   return (
     <SingleEvent

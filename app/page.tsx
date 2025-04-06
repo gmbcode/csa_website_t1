@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
+import Background from '../components/Background';
 //import Background from '../components/Background'; // Adjust the path if needed
 
 export default function LandingPage() {
@@ -46,10 +47,7 @@ export default function LandingPage() {
   }, []);
 
   return (
-    <div className="relative flex flex-col items-center justify-center min-h-screen p-6 text-center bg-black text-white overflow-hidden">
-      {/* Animated Background */}
-
-      {/* Foreground Content */}
+    <div className="relative flex flex-col items-center justify-center min-h-screen p-6 text-center text-white overflow-hidden">
       <div className="z-10 w-full flex flex-col items-center justify-center">
         {/* Logo */}
         <div className="mb-10 flex justify-center items-center">
