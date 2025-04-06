@@ -20,7 +20,7 @@ export default function Background(): JSX.Element {
       shape.style.width = size + "px";
       shape.style.height = size + "px";
 
-      const cols = 10;
+      const cols = 8;
       const rows = 5;
       const col = i % cols;
       const row = Math.floor(i / cols);
@@ -33,7 +33,7 @@ export default function Background(): JSX.Element {
       shape.style.animation = "floatRotate ease-in-out infinite";
       shape.style.animationDuration = (10 + Math.random() * 10) + "s";
       shape.style.animationDelay = (Math.random() * 5) + "s";
-      shape.style.zIndex = "0";
+      shape.style.zIndex = "-2";
       shape.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
 
       const shade = Math.floor(Math.random() * 40) + 180;
@@ -53,5 +53,5 @@ export default function Background(): JSX.Element {
     document.head.appendChild(style);
   }, []);
 
-  return <div id="background-animation" className="absolute inset-0 z-0 pointer-events-none"></div>;
+  return <div id="background-animation" className="absolute inset-0 z-0 pointer-events-none overflow-x-hidden w-screen"></div>;
 }
