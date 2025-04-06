@@ -19,7 +19,7 @@ const MapComponent = () => {
       <MapContainer
         center={[20, 0]}
         zoom={2}
-        style={{ height: '500px', width: '60%', margin: '0 auto' }}
+        style={{ height: '500px', width: '60%', margin: '0 auto' ,z-index: 'inherit'}}
         scrollWheelZoom={true}
         dragging={true}
         maxBounds={[
