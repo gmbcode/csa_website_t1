@@ -27,12 +27,12 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const siteData = await getGlobalData();
-
+  const blogRoute = "/blog";
   return (
     <html lang="en" className={`${sans.variable} font-sans`}>
       <body className="bg-white dark:bg-zinc-950">
         <SessionProvider>
-          <Header name={siteData} />
+          {pathname !== blogRoute && <Header name={siteData} />}
           <Background />
           {children}
           <Footer />
