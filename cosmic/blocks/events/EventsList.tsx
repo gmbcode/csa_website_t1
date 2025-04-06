@@ -36,13 +36,13 @@ export async function EventsList({
     .limit(limit ? limit : 100)
     .skip(skip ? skip : 0)
     .status(status ? status : "published")
+
   if (noWrap) return <Events events={events} />
+
   return (
-    
-    <div
-      className={`m-auto mt-8 flex flex-col space-y-4 py-8 min-h-screen bg-gray-900`}
-    >
+    <div className= {`w-full flex flex-col px-4 gap-8 ${className}`}>
       <Events events={events} />
     </div>
   )
 }
+
