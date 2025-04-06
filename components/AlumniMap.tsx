@@ -15,7 +15,7 @@ const MapComponent = () => {
       .catch((err) => console.error(err));
   }, []);
   return (
-    <div style={{ height: '500px', width: '100%' ,z-index: 'inherit'}}>
+    <div style={{ height: '500px', width: '100%'}} className="z-0">
       <MapContainer
         center={[20, 0]}
         zoom={2}
