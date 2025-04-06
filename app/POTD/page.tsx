@@ -69,9 +69,9 @@ const UploadPage = () => {
   };
 
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white p-6">
+    <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white p-6">
       <h1 className="text-3xl font-bold mb-6">Problem Of The Day</h1>
-      <div className="bg-gray-800 p-6 rounded-lg shadow-md w-full max-w-2xl">
+      <div className="bg-gray-900 p-6 rounded-lg shadow-md w-full max-w-2xl">
         <h2 className="text-xl font-semibold mb-4">💻 Question:</h2>
         <p className="text-gray-300">{question.Question}</p>
         <h3 className="text-xl font-semibold mb-4">Input Format:</h3>
