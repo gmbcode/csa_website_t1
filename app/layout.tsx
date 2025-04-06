@@ -27,6 +27,8 @@ export default async function RootLayout({
   children: React.ReactNode;
 }) {
   const siteData = await getGlobalData();
+  const headersList = headers();
+  const pathname = headersList.get("x-invoke-path") || "";
   const blogRoute = "/blog";
   return (
     <html lang="en" className={`${sans.variable} font-sans`}>
