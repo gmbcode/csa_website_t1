@@ -13,8 +13,9 @@ export type EventCardType = {
     start_time: string
     end_date: string
     end_time: string
-    image: {
-      img_url: string
+    event_image: {
+      imgix_url?: string
+      url?: string
     }
   }
 }
@@ -26,30 +27,41 @@ export function EventCard({
   event: EventCardType
   className?: string
 }) {
+  const imageUrl = event.metadata.event_image?.imgix_url || event.metadata.event_image?.url
+
   return (
-    <div className={cn("w-full max-w-[1200px] p-4 bg-white dark:bg-gray-800 shadow-md rounded-lg ml-[100px]", className)} data-cosmic-object={event.id}>
-        <Link
-            className={cn("group relative mb-auto w-full", className)}
-            href={`/events/${event.slug}`}
-        >
-        <div className="mt-2">
-          <h1 className="text-2xl font-semibold text-zinc-700 dark:text-zinc-300">
-            {event.title}
-          </h1>
+    <div
+      className={cn(
+        "relative w-full h-96 rounded-lg shadow-md overflow-hidden mb-6",
+        className
+      )}
+      data-cosmic-object={event.id}
+    >
+      <Link href={`/events/${event.slug}`} className="block w-full h-full group">
+        {/* Background image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${imageUrl})` }}
+        />
+        {/* Dark overlay */}
+        <div className="absolute inset-0 bg-black bg-opacity-60 transition-opacity group-hover:bg-opacity-50" />
+
+        {/* Content */}
+        <div className="relative z-10 h-full flex flex-col justify-end p-6 text-white">
+          <h1 className="absolute top-12 left-12 text-5xl font-bold">{event.title}</h1>
           <div
-            className="pt-2 text-sm text-zinc-500 dark:text-zinc-300"
+            className="pt-2 text-sm opacity-90"
             dangerouslySetInnerHTML={{ __html: event.metadata.description }}
           />
-          <div className="mt-3 space-y-2 text-sm font-medium text-zinc-900 dark:text-zinc-50">
+          <div className="mt-3 space-y-1 text-sm font-medium">
             <div className="flex items-center space-x-2">
               <Calendar className="h-4 w-4" aria-label="Event date" />
               <span>{getFormattedDateFromString(event.metadata.start_date)}</span>
             </div>
             <div className="flex items-center space-x-1">
               <Clock className="h-4 w-4 mr-1" aria-label="Event time" />
-              <span>From {event.metadata.start_time} until {event.metadata.end_time}</span>
               {event.metadata.start_date !== event.metadata.end_date && (
-                <span> on {getFormattedDateFromString(event.metadata.end_date)}</span>
+                <span>{getFormattedDateFromString(event.metadata.end_date)}</span>
               )}
             </div>
             <div className="flex items-center space-x-2">
