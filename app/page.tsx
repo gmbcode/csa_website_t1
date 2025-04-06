@@ -53,7 +53,7 @@ export default function LandingPage() {
     // Polygon background animation
     const container = document.getElementById("background-polygons");
     if (container) {
-      const count = 30;
+      const count = 50;
       const shapes = [
         "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)", // diamond/square
         "polygon(50% 0%, 100% 100%, 0% 100%)",          // triangle
@@ -64,11 +64,21 @@ export default function LandingPage() {
         const poly = document.createElement("div");
         poly.className = "floating-polygon";
 
-        const size = Math.random() * 40 + 20;
+        const size = Math.random() * 30 + 20;
         poly.style.width = `${size}px`;
         poly.style.height = `${size}px`;
-        poly.style.left = `${Math.random() * 100}%`;
-        poly.style.top = `${Math.random() * 100}%`;
+
+        // Grid-like placement
+        const cols = 10;
+        const rows = 5;
+        const col = i % cols;
+        const row = Math.floor(i / cols);
+        const left = (col + Math.random() * 0.5) * (100 / cols);
+        const top = (row + Math.random() * 0.5) * (100 / rows);
+
+        poly.style.left = `${left}%`;
+        poly.style.top = `${top}%`;
+
         poly.style.animationDuration = `${10 + Math.random() * 10}s`;
         poly.style.animationDelay = `${Math.random() * 5}s`;
         poly.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
@@ -118,7 +128,7 @@ export default function LandingPage() {
         .floating-polygon {
           position: absolute;
           background-color: transparent;
-          border: 1px solid rgba(255, 255, 255, 0.2);
+          border: 1px solid rgba(255, 255, 255, 0.6);
           animation: floatRotate ease-in-out infinite;
           z-index: 0;
         }
