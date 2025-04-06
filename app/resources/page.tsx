@@ -4,7 +4,7 @@ const resources = [
   { title: "Acad Drive #1", description: "Acad Drive by Rupesh (23)", link: "https://drive.google.com/drive/folders/1IFOauYi1sac4eStmPAY2wmgLjsbmz2lx" },
   { title: "Acad Drive #2", description: "Acad Drive by Umaang (22)", link: "https://drive.google.com/drive/folders/1SpJjsevyTKRjHCx_BWC_3LNcW005nOmJ" },
   { title: "Acad Drive #3", description: "Acad Hub by Arnav (23 + 24) ", link: "https://drive.google.com/drive/folders/1YaAKJbJfEqx6ganFsnRNiylYtTzy15OA" },
-  { title: "Card #4", description: "CS Drive (Onedrive) ", link: "https://hyderabadbitspilaniacin0-my.sharepoint.com/:f:/g/personal/f20210075_hyderabad_bits-pilani_ac_in/EunGAZ-G5K1ErIlgk-n2-8YBc0nDlzhtjdHTmprPgNGrzg?e=ImbC9q" },
+  { title: "Acad Drive #4", description: "CS Drive (Onedrive) ", link: "https://hyderabadbitspilaniacin0-my.sharepoint.com/:f:/g/personal/f20210075_hyderabad_bits-pilani_ac_in/EunGAZ-G5K1ErIlgk-n2-8YBc0nDlzhtjdHTmprPgNGrzg?e=ImbC9q" },
 ];
 
 export default function ResourcesPage() {
