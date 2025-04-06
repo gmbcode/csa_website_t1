@@ -40,6 +40,9 @@ const MapComponent = () => {
             lat: number;
             lng: number;
             picture: string;
+            batch: string;
+            linkedin?: string;
+            github?: string;
           }) => (
             <Marker
               key={alumnus.id}
@@ -53,7 +56,13 @@ const MapComponent = () => {
               }
             >
               <Popup>
-                <div style={{ textAlign: 'center' }}>
+                <div
+                  style={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                  }}
+                >
                   <img
                     src={alumnus.picture}
                     alt={alumnus.name}
@@ -64,7 +73,36 @@ const MapComponent = () => {
                       marginBottom: '5px',
                     }}
                   />
-                  <p>{alumnus.name}</p>
+                  <p style={{ margin: 0, marginBottom: '2px' }}>
+                    {alumnus.name}
+                  </p>
+                  {alumnus.batch && (
+                    <p style={{ margin: 0, fontSize: '0.9em' }}>
+                      Batch: {alumnus.batch}
+                    </p>
+                  )}
+                  <div className="flex justify-center space-x-2 mt-1">
+                    {alumnus.linkedin && (
+                      <a
+                        href={alumnus.linkedin}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-blue-500 hover:underline"
+                      >
+                        LinkedIn
+                      </a>
+                    )}
+                    {alumnus.github && (
+                      <a
+                        href={alumnus.github}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="text-gray-800 dark:text-gray-300 hover:underline"
+                      >
+                        GitHub
+                      </a>
+                    )}
+                  </div>
                 </div>
               </Popup>
             </Marker>
