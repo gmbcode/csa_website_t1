@@ -53,5 +53,5 @@ export default function Background(): JSX.Element {
     document.head.appendChild(style);
   }, []);
 
-  return <div id="background-animation" className="absolute inset-0 z-0 pointer-events-none"></div>;
+  return <div id="background-animation" className="absolute inset-0 z-0 pointer-events-none overflow-x-hidden w-screen"></div>;
 }
