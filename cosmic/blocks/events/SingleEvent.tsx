@@ -14,13 +14,11 @@ export async function SingleEvent({
   className?: string
   status?: "draft" | "published" | "any"
 }) {
-  try {
     const { object: event } = await cosmic.objects
       .findOne(query)
       .props("id,slug,title,metadata")
       .depth(1)
       .status(status ? status : "published")
-
     return (
       <section
         className={`m-auto mt-8 max-w-[900px] px-4 pb-8 md:container ${className}`}
@@ -60,7 +58,7 @@ export async function SingleEvent({
             <div>
               <img
                 className="aspect-square h-full w-full rounded-xl border border-zinc-100 object-cover object-center dark:border-zinc-800 lg:h-full lg:w-full"
-                src={`${event.metadata.image.imgix_url}?w=2000&h=2000&auto=format,compression`}
+                src={`${event.metadata.event_image.imgix_url}?w=2000&h=2000&auto=format,compression`}
                 alt={event.title}
               />
             </div>
@@ -68,9 +66,6 @@ export async function SingleEvent({
               <h1 className="mb-2 mt-6 text-3xl font-extrabold leading-tight tracking-tight text-zinc-900 dark:text-zinc-50 md:mb-4 md:mt-0 md:text-4xl">
                 {event.title}
               </h1>
-              <div className="mb-8">
-                <Button type="submit">Get tickets</Button>
-              </div>
               <h3 className="mb-2 text-lg font-medium text-gray-900 dark:text-white">
                 Date and Time
               </h3>
@@ -108,13 +103,13 @@ export async function SingleEvent({
                   className="mb-6 text-sm text-gray-700 dark:text-gray-300"
                 />
               </div>
-              <div>
+              {/* <div>
                 <h3 className="mb-2 text-lg font-medium text-gray-900 dark:text-white">
                   Agenda
                 </h3>
                 <div className="mb-6 text-sm text-gray-700 dark:text-white">
                   <ul className="flex flex-col gap-4">
-                    {event.metadata.agenda.map((item: any) => (
+                    {event.metadata.event_agenda.map((item: any) => (
                       <li
                         key={item.item}
                         className="flex flex-col space-y-1 rounded-lg bg-gray-50 px-3 py-2 dark:bg-zinc-800"
@@ -127,13 +122,10 @@ export async function SingleEvent({
                     ))}
                   </ul>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
       </section>
     )
-  } catch (e: any) {
-    if (e.status === 404) return notFound()
-  }
 }

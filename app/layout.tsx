@@ -6,6 +6,7 @@ import Banner from '../components/Banner';
 import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { SessionProvider } from 'next-auth/react';
+import Background from '../components/Background';
 
 const sans = Generator({
   src: '../fonts/Generator-Variable.ttf',
@@ -32,6 +33,7 @@ export default async function RootLayout({
       <body className="bg-white dark:bg-zinc-950">
         <SessionProvider>
           <Header name={siteData} />
+          <Background />
           {children}
           <Footer />
         </SessionProvider>
