@@ -55,7 +55,7 @@ export default function LandingPage() {
     if (container) {
       const count = 50;
       const shapes = [
-        "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)", // diamond/square
+        "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)", // diamond
         "polygon(50% 0%, 100% 100%, 0% 100%)",          // triangle
         "circle(50% at 50% 50%)"                         // circle
       ];
@@ -68,13 +68,12 @@ export default function LandingPage() {
         poly.style.width = `${size}px`;
         poly.style.height = `${size}px`;
 
-        // Grid-like placement
         const cols = 10;
         const rows = 5;
         const col = i % cols;
         const row = Math.floor(i / cols);
-        const left = (col + Math.random() * 0.5) * (100 / cols);
-        const top = (row + Math.random() * 0.5) * (100 / rows);
+        const left = (col + Math.random()) * (100 / cols);
+        const top = (row + Math.random()) * (100 / rows);
 
         poly.style.left = `${left}%`;
         poly.style.top = `${top}%`;
@@ -82,6 +81,9 @@ export default function LandingPage() {
         poly.style.animationDuration = `${10 + Math.random() * 10}s`;
         poly.style.animationDelay = `${Math.random() * 5}s`;
         poly.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
+
+        const gray = Math.floor(Math.random() * 55) + 200;
+        poly.style.borderColor = `rgba(${gray}, ${gray}, ${gray}, 0.4)`;
 
         container.appendChild(poly);
       }
@@ -123,12 +125,12 @@ export default function LandingPage() {
         <i>"We are CSA, the champions of tech innovation and creators of a vibrant CS culture."</i>
       </h2>
 
-      {/* Polygon Animation Styles */}
       <style jsx global>{`
         .floating-polygon {
           position: absolute;
           background-color: transparent;
-          border: 1px solid rgba(255, 255, 255, 0.6);
+          border-width: 1px;
+          border-style: solid;
           animation: floatRotate ease-in-out infinite;
           z-index: 0;
         }
