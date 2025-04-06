@@ -29,7 +29,7 @@ export default async function RootLayout({
   return (
     <html lang="en" className={`${sans.variable} font-sans`}>
       <body className="bg-white dark:bg-zinc-950 relative overflow-hidden">
-        {/* Background Polygon Container */}
+        {/* Background Animation Container */}
         <div id="background-polygons" className="absolute inset-0 z-0 pointer-events-none"></div>
 
         <Header name={siteData} />
@@ -49,12 +49,12 @@ export default async function RootLayout({
   ];
 
   for (let i = 0; i < count; i++) {
-    const poly = document.createElement("div");
-    poly.className = "floating-polygon";
+    const shape = document.createElement("div");
+    shape.className = "floating-polygon";
 
     const size = Math.random() * 30 + 20;
-    poly.style.width = size + "px";
-    poly.style.height = size + "px";
+    shape.style.width = size + "px";
+    shape.style.height = size + "px";
 
     const cols = 10;
     const rows = 5;
@@ -63,23 +63,22 @@ export default async function RootLayout({
     const left = (col + Math.random()) * (100 / cols);
     const top = (row + Math.random()) * (100 / rows);
 
-    poly.style.left = left + "%";
-    poly.style.top = top + "%";
+    shape.style.left = left + "%";
+    shape.style.top = top + "%";
+    shape.style.position = "absolute";
+    shape.style.animation = "floatRotate ease-in-out infinite";
+    shape.style.animationDuration = (10 + Math.random() * 10) + "s";
+    shape.style.animationDelay = (Math.random() * 5) + "s";
+    shape.style.zIndex = "0";
+    shape.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
 
-    poly.style.position = 'absolute';
-    poly.style.animation = 'floatRotate ease-in-out infinite';
-    poly.style.animationDuration = (10 + Math.random() * 10) + "s";
-    poly.style.animationDelay = (Math.random() * 5) + "s";
-    poly.style.zIndex = '0';
-    poly.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
+    const shade = Math.floor(Math.random() * 40) + 180;
+    shape.style.backgroundColor = `rgba(${shade}, ${shade}, ${shade}, 0.05)`;
 
-    const gray = Math.floor(Math.random() * 55) + 200;
-    poly.style.backgroundColor = "rgba(" + gray + ", " + gray + ", " + gray + ", 0.08)";
-
-    container.appendChild(poly);
+    container.appendChild(shape);
   }
 
-  const style = document.createElement('style');
+  const style = document.createElement("style");
   style.innerHTML = `
     @keyframes floatRotate {
       0% { transform: translateY(0) rotate(0deg); }
