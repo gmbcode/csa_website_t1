@@ -3,14 +3,17 @@
 import { useEffect } from 'react';
 import { gsap } from 'gsap';
 
-const getMapJSON = require('dotted-map').getMapJSON;
-
-// Get map JSON for potential future use
-const mapJsonString = getMapJSON({ height: 60, grid: 'diagonal' });
-console.log(mapJsonString);
-
 export default function LandingPage() {
   useEffect(() => {
+    // Lazy-load dotted-map only in the browser
+    const loadMapData = async () => {
+      const { getMapJSON } = await import('dotted-map');
+      const mapJsonString = getMapJSON({ height: 60, grid: 'diagonal' });
+      console.log(mapJsonString);
+    };
+
+    loadMapData();
+
     const path1 = document.querySelector("#logoA");
     const path2 = document.querySelector("#logoS");
     const path3 = document.querySelector("#logoC");
@@ -50,14 +53,14 @@ export default function LandingPage() {
       });
     }
 
-    // Polygon background animation
+    // Polygon background animation using divs
     const container = document.getElementById("background-polygons");
     if (container) {
       const count = 50;
       const shapes = [
         "polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%)", // diamond
-        "polygon(50% 0%, 100% 100%, 0% 100%)",          // triangle
-        "circle(50% at 50% 50%)"                         // circle
+        "polygon(50% 0%, 100% 100%, 0% 100%)", // triangle
+        "circle(50% at 50% 50%)" // circle
       ];
 
       for (let i = 0; i < count; i++) {
@@ -83,7 +86,7 @@ export default function LandingPage() {
         poly.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
 
         const gray = Math.floor(Math.random() * 55) + 200;
-        poly.style.borderColor = `rgba(${gray}, ${gray}, ${gray}, 0.4)`;
+        poly.style.borderColor = `rgba(${gray}, ${gray}, ${gray}, 0.3)`;
 
         container.appendChild(poly);
       }
