@@ -15,3 +15,33 @@
     @apply pb-4 leading-relaxed tracking-normal text-zinc-600 last-of-type:pb-0 dark:text-zinc-400;
   }
 }
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 300ms ease-out forwards;
+}
+
+.animate-slide-out {
+  animation: slideOut 300ms ease-out forwards;
+}
