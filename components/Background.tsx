@@ -34,7 +34,6 @@ export default function Background(): JSX.Element {
       shapes.push([]);
     }
 
-<<<<<<< HEAD
     for (let l = 0; l < layerCount; l++) {
       for (let i = 0; i < shapesPerLayer; i++) {
         const shape = document.createElement("div");
@@ -43,23 +42,6 @@ export default function Background(): JSX.Element {
         const size = Math.random() * 10 + 10; // smaller shapes
         shape.style.width = `${size}px`;
         shape.style.height = `${size}px`;
-=======
-      const cols = 8;
-      const rows = 5;
-      const col = i % cols;
-      const row = Math.floor(i / cols);
-      const left = (col + Math.random()) * (100 / cols);
-      const top = (row + Math.random()) * (100 / rows);
-
-      shape.style.left = left + "%";
-      shape.style.top = top + "%";
-      shape.style.position = "absolute";
-      shape.style.animation = "floatRotate ease-in-out infinite";
-      shape.style.animationDuration = (10 + Math.random() * 10) + "s";
-      shape.style.animationDelay = (Math.random() * 5) + "s";
-      shape.style.zIndex = "-2";
-      shape.style.clipPath = shapes[Math.floor(Math.random() * shapes.length)];
->>>>>>> 6c0b533b7b2aa560eebf420ab7c50baed143fe4e
 
         const left = Math.random() * 100;
         const top = Math.random() * 100;
@@ -117,7 +99,6 @@ export default function Background(): JSX.Element {
     };
   }, []);
 
-<<<<<<< HEAD
   return (
     <div
       id="background-animation"
@@ -125,7 +106,4 @@ export default function Background(): JSX.Element {
       style={{ height: '100%', minHeight: '100vh' }}
     ></div>
   );
-=======
-  return <div id="background-animation" className="absolute inset-0 z-0 pointer-events-none overflow-x-hidden w-screen"></div>;
->>>>>>> 6c0b533b7b2aa560eebf420ab7c50baed143fe4e
 }
