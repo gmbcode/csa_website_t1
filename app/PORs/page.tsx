@@ -10,7 +10,7 @@ interface POR {
 
 const PORPage = () => {
   return (
-    <div className="pt-24 p-5 mx-auto bg-gray-900">
+    <div className="pt-24 p-5 mx-auto">
       <h1 className="text-3xl font-bold text-center mb-8 text-white ">Positions of Responsibility</h1>
       <ul className="space-y-16">
         {porData.map((por, i) => (
