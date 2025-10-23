@@ -1,20 +1,72 @@
-[
-    {
-      "id": "POR1",
-      "name": "POR1",
-      "image": "/images/person_placeholder.png",
-      "about": "Does POR activity."
-    },
-    {
-      "id": "POR2",
-      "name": "POR2",
-      "image": "/images/person_placeholder.png",
-      "about": "Does more POR activity."
-    },
-    {
-      "id": "POR3",
-      "name": "POR3",
-      "image": "/images/person_placeholder.png",
-      "about": "Does the remaining POR activity."
-    }
+  [
+  {
+    "id": "POR1",
+    "name": "Pratish Bansal",
+    "image": "/images/PORs/pratish.jpg",
+    "linkedin": "https://www.linkedin.com/in/pratish-bansal/",
+    "position": "President"
+  },
+  {
+    "id": "POR2",
+    "name": "Manas Tripathi",
+    "image": "/images/PORs/manas.jpg",
+    "linkedin": "https://www.linkedin.com/in/tripathi-manas/",
+    "position": "Secretary"
+  },
+  {
+    "id": "POR3",
+    "name": "Raunak Sarawgi",
+    "image": "/images/PORs/raunak.jpg",
+    "linkedin": "https://www.linkedin.com/in/raunak-sarawgi/",
+    "position": "Secretary"
+  },
+  {
+    "id": "POR4",
+    "name": "Ayaan Siddiqui",
+    "image": "/images/PORs/ayaan.jpg",
+    "linkedin": "https://www.linkedin.com/in/ayaan-siddiqui-079306270/",
+    "position": "Technical Lead"
+  },
+  {
+    "id": "POR5",
+    "name": "Aryan Agarwal",
+    "image": "/images/PORs/aryan.jpg",
+    "linkedin": "https://www.linkedin.com/in/aryan-agarwal-84a7a3327/",
+    "position": "Joint Secretary"
+  },
+  {
+    "id": "POR6",
+    "name": "Vedant Nichal",
+    "image": "/images/PORs/vedant.jpg",
+    "linkedin": "https://www.linkedin.com/in/vedant-nichal",
+    "position": "Joint Secretary"
+  },
+  {
+    "id": "POR7",
+    "name": "Ananya Srivastava",
+    "image": "/images/PORs/ananya.jpg",
+    "linkedin": "https://www.linkedin.com/in/ananya-srivastava-2537aa329/",
+    "position": "Treasurer"
+  },
+  {
+    "id": "POR8",
+    "name": "Vasavi Sugyamwar",
+    "image": "/images/PORs/vasavi.jpg",
+    "linkedin": "http://www.linkedin.com/in/vasavi1603",
+    "position": "Media Lead"
+  },
+  {
+    "id": "POR9",
+    "name": "Bhavya Shah",
+    "image": "/images/PORs/bhavya.jpg",
+    "linkedin": "https://www.linkedin.com/in/bhavya-shah-baa73a345/",
+    "position": "Techincal Advisor"
+  },
+  {
+    "id": "POR10",
+    "name": "Khushi Bhardwaj",
+    "image": "/images/PORs/khushi.jpg",
+    "linkedin": "https://www.linkedin.com/in/khushi-bhardwaj-b5b5722a3/",
+    "position": "Design Head"
+  }
 ]
