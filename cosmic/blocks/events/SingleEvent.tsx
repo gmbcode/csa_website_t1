@@ -1,9 +1,16 @@
-// app/events/[slug]/page.tsx
+// cosmic/blocks/events/SingleEvent.tsx
 import Link from "next/link"
 import { notFound } from "next/navigation"
 import { cosmic } from "../../../cosmic/client"
 import { Button } from "../../../cosmic/elements/Button"
 import { getFormattedDateFromString } from "../../../cosmic/utils"
+import { marked } from 'marked'
+
+// Configure marked options for better rendering
+marked.setOptions({
+  breaks: true, // Convert \n to <br>
+  gfm: true, // GitHub Flavored Markdown
+})
 
 export async function SingleEvent({
   query,
@@ -19,6 +26,11 @@ export async function SingleEvent({
       .props("id,slug,title,metadata")
       .depth(1)
       .status(status ? status : "published")
+    
+    // Convert markdown to HTML using marked
+    const descriptionHtml = marked(event.metadata.description || '') as string;
+    const locationHtml = marked(event.metadata.location || '') as string;
+    
     return (
       <section
         className={`m-auto mt-8 max-w-[900px] px-4 pb-8 md:container ${className}`}
@@ -88,9 +100,9 @@ export async function SingleEvent({
               </h3>
               <div
                 dangerouslySetInnerHTML={{
-                  __html: event.metadata.description,
+                  __html: descriptionHtml,
                 }}
-                className="mb-6 text-sm text-gray-700 dark:text-gray-300"
+                className="mb-6 text-sm text-gray-700 dark:text-gray-300 prose prose-sm dark:prose-invert max-w-none prose-headings:text-gray-900 dark:prose-headings:text-white prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-a:text-blue-500 prose-strong:text-gray-900 dark:prose-strong:text-white"
               />
               <div>
                 <h3 className="mb-2 text-lg font-medium text-gray-900 dark:text-white">
@@ -98,31 +110,11 @@ export async function SingleEvent({
                 </h3>
                 <div
                   dangerouslySetInnerHTML={{
-                    __html: event.metadata.location,
+                    __html: locationHtml,
                   }}
-                  className="mb-6 text-sm text-gray-700 dark:text-gray-300"
+                  className="mb-6 text-sm text-gray-700 dark:text-gray-300 prose prose-sm dark:prose-invert max-w-none prose-headings:text-gray-900 dark:prose-headings:text-white prose-p:text-gray-700 dark:prose-p:text-gray-300 prose-a:text-blue-500"
                 />
               </div>
-              {/* <div>
-                <h3 className="mb-2 text-lg font-medium text-gray-900 dark:text-white">
-                  Agenda
-                </h3>
-                <div className="mb-6 text-sm text-gray-700 dark:text-white">
-                  <ul className="flex flex-col gap-4">
-                    {event.metadata.event_agenda.map((item: any) => (
-                      <li
-                        key={item.item}
-                        className="flex flex-col space-y-1 rounded-lg bg-gray-50 px-3 py-2 dark:bg-zinc-800"
-                      >
-                        <span className="text-xs text-orange-600 dark:text-orange-400">
-                          {item.time}
-                        </span>
-                        <span className="font-medium">{item.item}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div> */}
             </div>
           </div>
         </div>
