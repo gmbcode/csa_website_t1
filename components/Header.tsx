@@ -21,9 +21,10 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
 
   // isMenuVisible controls whether the mobile overlay is rendered.
   // isMenuOpen controls whether the menu is open (affecting animation).
+  // isBannerVisible controls whether the banner is visible
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-
+  const [isBannerVisible, setisBannerVisible] = useState(true);
   // Lock scrolling on both html and body when menu is open
   useEffect(() => {
     const html = document.documentElement;
@@ -53,6 +54,11 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
       }, 300);
     }
   };
+
+  const handleBannerClick = () => {
+  setisBannerVisible(false);
+  window.location.href = 'https://csabitshyderabad.vercel.app/events/atmos-25-workshops';
+};
 
   return (
     <header className="sticky top-0 z-50 w-full mx-auto bg-white/75 backdrop-blur-lg shadow-md dark:bg-zinc-900/90">
@@ -151,10 +157,16 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
         </button>
         
       </div>
-      <div className="sticky top-0 left-0 w-full bg-[#1f2937] text-white text-center py-2 shadow-md z-50 cursor-pointer hover:bg-gray-800 transition rounded-full" 
-             onClick={() => (window.location.href = 'https://csabitshyderabad.vercel.app/events/atmos-25-workshops')}>
-               <span className="text-sm md:text-base tracking-wide">Click here to join us at ATMOS</span>
-              </div>
+      {/*banner for Event*/}
+      {isBannerVisible && (
+        <div
+          className="sticky top-0 left-0 w-full bg-[#1f2937] text-white text-center py-2 shadow-md z-50 cursor-pointer hover:bg-gray-600 transition"
+          onClick={handleBannerClick}
+        >
+          <span className="text-sm md:text-base tracking-wide">Click here to join us at ATMoS'25</span>
+        </div>
+      )}
+
 
       {/* Mobile Menu Portal */}
       {isMenuVisible && (
