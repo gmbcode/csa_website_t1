@@ -58,7 +58,6 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
     <header className="sticky top-0 z-50 w-full mx-auto bg-white/75 backdrop-blur-lg shadow-md dark:bg-zinc-900/90">
       <div className="flex items-center justify-between px-4 py-3">
         <SiteLogo siteData={name} />
-
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center space-x-6">
           <nav>
@@ -150,7 +149,12 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
             }`}
           />
         </button>
+        
       </div>
+      <div className="sticky top-0 left-0 w-full bg-[#1f2937] text-white text-center py-2 shadow-md z-50 cursor-pointer hover:bg-gray-800 transition rounded-full" 
+             onClick={() => (window.location.href = 'https://csabitshyderabad.vercel.app/events/atmos-25-workshops')}>
+               <span className="text-sm md:text-base tracking-wide">Click here to join us at ATMOS</span>
+              </div>
 
       {/* Mobile Menu Portal */}
       {isMenuVisible && (
