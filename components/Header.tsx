@@ -24,7 +24,14 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
   // isBannerVisible controls whether the banner is visible
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isBannerVisible, setisBannerVisible] = useState(true);
+  const [isBannerVisible, setisBannerVisible] = useState(false);
+  useEffect(() => {
+    if (window.location.href === "http://csabitshyderabad.vercel.app/events/atmos-25-workshops")
+      setisBannerVisible(false)
+    else 
+      setisBannerVisible(true) 
+    },
+   );
   // Lock scrolling on both html and body when menu is open
   useEffect(() => {
     const html = document.documentElement;
@@ -56,8 +63,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
   };
 
   const handleBannerClick = () => {
-  setisBannerVisible(false);
-  window.location.href = 'https://csabitshyderabad.vercel.app/events/atmos-25-workshops';
+  window.location.href = 'http://csabitshyderabad.vercel.app/events/atmos-25-workshops';
 };
 
   return (
