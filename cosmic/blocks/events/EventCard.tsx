@@ -49,7 +49,7 @@ export function EventCard({
         {/* Content */}
         <div className="relative z-10 h-full flex flex-col justify-end p-6 text-white">
           <h1 className="absolute text-wrap left-4 top-12 text-5xl font-bold md:left-12">{event.title}</h1>
-          {/* COMMENTING OUT TEXT PREVIEW Disable Text Preview*/}
+          {/* COMMENTING OUT TEXT PREVIEgW Disable Text Preview*/}
           {/*<div
             className="pt-2 text-sm opacity-90"
             dangerouslySetInnerHTML={{ __html: event.metadata.description }}
