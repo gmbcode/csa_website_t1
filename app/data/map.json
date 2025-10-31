@@ -19,5 +19,103 @@
     "lat": 35.6895,
     "lng": 139.6917,
     "picture": "/images/male.png"
+  },
+  {
+    "id": 4,
+    "name": "Siddharth Dash",
+    "lat": 17.406,
+    "lng": -78.477,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 5,
+    "name": "Yogesh Chopra",
+    "lat": 47.606,
+    "lng": 122.333,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 6,
+    "name": "Naveen Jafer",
+    "lat": 42.376,
+    "lng": 72.519,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 7,
+    "name": "Yash Raj",
+    "lat": 18.958,
+    "lng": 72.832,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 8,
+    "name": "Manoj Gottipati",
+    "lat": 33.750,
+    "lng": 84.388,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 9,
+    "name": "Tushar Aggarwal",
+    "lat": 47.606,
+    "lng": 122.333,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 10,
+    "name": "Rishi Kaushik",
+    "lat": 12.962,
+    "lng": -77.577,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 11,
+    "name": "Neel Shah",
+    "lat": 40.712,
+    "lng": 74.006,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 12,
+    "name": "Rishabh Pokharna",
+    "lat":  12.963,
+    "lng": -77.578,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 13,
+    "name": "Shrey Bansal",
+    "lat": 28.460,
+    "lng": -77.027,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 14,
+    "name": "Wajeeha Fatima",
+    "lat": 37.354,
+    "lng":  121.955,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 15,
+    "name": "Arnav Dhamija",
+    "lat": 47.606,
+    "lng": 122.333,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 16,
+    "name": "Roshan Babu",
+    "lat": 40.713,
+    "lng": 74.006,
+    "picture": "/images/male.png"
+  },
+  {
+    "id": 17,
+    "name": "Keyur Jain",
+    "lat": 17.407,
+    "lng": 78.477,
+    "picture": "/images/male.png"
   }
 ]}
