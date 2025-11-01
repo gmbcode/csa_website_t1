@@ -11,16 +11,14 @@ interface POR {
 const PORPage = () => {
   return (
     <div className="pt-24 p-5 mx-auto">
-      <h1 className="text-3xl font-bold text-center mb-8 text-white ">
+      <h1 className="text-3xl font-bold text-center mb-8 dark:text-white text-black">
         Positions of Responsibility
       </h1>
       <ul className="w-auto grid xs:grid-cols-2 xs:w-fit sm:grid-cols-2 lg:grid-cols-5 gap-7 sm:gap-10 mx-auto">
         {porData.map((por, i) => (
-          <div
-            key={i}
-          >
-            <div className="text-white flex justify-center items-center font-sans col-span-1">
-              <div className="p-3 rounded-3xl bg-[#1f2937] transition-transform duration-100 ease-out hover:scale-[105%]">
+          <div key={i}>
+            <div className="text-black dark:text-white flex justify-center items-center font-sans col-span-1">
+              <div className="p-3 rounded-3xl bg-[#eeeeee] dark:bg-[#1f2937] transition-transform duration-100 ease-out hover:scale-[105%] backdrop-blur-xl opacity-85">
                 <Image
                   src={por.image}
                   width={160}
@@ -33,7 +31,7 @@ const PORPage = () => {
                   <div className="md:text-lg text-md font-semibold text-center">
                     {por.name}
                   </div>
-                  <div className="text-gray-400 text-center">
+                  <div className="text-gray-800 dark:text-gray-400 text-center">
                     {por.position}
                   </div>
                 </div>
@@ -51,7 +49,7 @@ const PORPage = () => {
                     className="group-hover:scale-110 transition-all"
                   >
                     <path
-                      className="fill-white group-hover:fill-[#0B67C2] transition-colors"
+                      className="fill-black dark:fill-white group-hover:fill-[#0B67C2] transition-colors"
                       d="
                         M347.445,0H34.555C15.471,0,0,15.471,0,34.555v312.889C0,366.529,15.471,382,34.555,382h312.889
                         C366.529,382,382,366.529,382,347.444V34.555C382,15.471,366.529,0,347.445,0z M118.207,329.844c0,5.554-4.502,10.056-10.056,10.056
