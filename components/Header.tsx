@@ -24,14 +24,14 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
   // isBannerVisible controls whether the banner is visible
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isBannerVisible, setisBannerVisible] = useState(false);
+  const [isBannerVisible, setIsBannerVisible] = useState(false);
+
   useEffect(() => {
-    if (window.location.href === "http://csabitshyderabad.vercel.app/events/atmos-25-workshops")
-      setisBannerVisible(false)
-    else 
-      setisBannerVisible(true) 
-    },
-   );
+    if (window.location.href.endsWith('/events/atmos-25-workshops'))
+      setIsBannerVisible(false);
+    else setIsBannerVisible(true);
+  }, []);
+
   // Lock scrolling on both html and body when menu is open
   useEffect(() => {
     const html = document.documentElement;
@@ -63,11 +63,11 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
   };
 
   const handleBannerClick = () => {
-  window.location.href = 'http://csabitshyderabad.vercel.app/events/atmos-25-workshops';
-};
+    window.location.href = '/events/atmos-25-workshops';
+  };
 
   return (
-    <header className="sticky top-0 z-50 w-full mx-auto bg-white/75 backdrop-blur-lg shadow-md dark:bg-zinc-900/90">
+    <header className="sticky top-0 z-50 w-full mx-auto bg-white/75 backdrop-blur-lg dark:bg-zinc-900/90">
       <div className="flex items-center justify-between px-4 py-3">
         <SiteLogo siteData={name} />
         {/* Desktop Navigation */}
@@ -77,7 +77,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
               <li>
                 <a
                   href="/"
-                  className="text-white hover:text-gray-300 transition-colors duration-200"
+                  className="text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                 >
                   Home
                 </a>
@@ -85,7 +85,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
               <li>
                 <a
                   href="/blog"
-                  className="text-white hover:text-gray-300 transition-colors duration-200"
+                  className="text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                 >
                   Blog
                 </a>
@@ -93,7 +93,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
               <li>
                 <a
                   href="/events"
-                  className="text-white hover:text-gray-300 transition-colors duration-200"
+                  className="text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                 >
                   Events
                 </a>
@@ -101,7 +101,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
               <li>
                 <a
                   href="/PORs"
-                  className="text-white hover:text-gray-300 transition-colors duration-200"
+                  className="text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                 >
                   PORs
                 </a>
@@ -109,7 +109,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
               <li>
                 <a
                   href="/alumni"
-                  className="text-white hover:text-gray-300 transition-colors duration-200"
+                  className="text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                 >
                   Alumni
                 </a>
@@ -117,7 +117,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
               <li>
                 <a
                   href="/resources"
-                  className="text-white hover:text-gray-300 transition-colors duration-200"
+                  className="text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                 >
                   Resources
                 </a>
@@ -128,7 +128,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
             {session ? (
               <button
                 onClick={() => signOut()}
-                className="text-white hover:text-gray-300 transition-colors duration-200 focus:outline-none"
+                className="text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200 focus:outline-none"
               >
                 {session.user?.email}
               </button>
@@ -146,39 +146,39 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
           aria-expanded={isMenuOpen}
         >
           <span
-            className={`block w-6 h-0.5 bg-white transition-transform duration-300 ease-in-out ${
+            className={`block w-6 h-0.5 bg-black dark:bg-white transition-transform duration-300 ease-in-out ${
               isMenuOpen ? 'rotate-45 translate-y-2' : ''
             }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-white transition-opacity duration-300 ease-in-out ${
+            className={`block w-6 h-0.5 bg-black dark:bg-white transition-opacity duration-300 ease-in-out ${
               isMenuOpen ? 'opacity-0' : 'opacity-100'
             }`}
           />
           <span
-            className={`block w-6 h-0.5 bg-white transition-transform duration-300 ease-in-out ${
+            className={`block w-6 h-0.5 bg-black dark:bg-white transition-transform duration-300 ease-in-out ${
               isMenuOpen ? '-rotate-45 -translate-y-2' : ''
             }`}
           />
         </button>
-        
       </div>
       {/*banner for Event*/}
       {isBannerVisible && (
         <div
-          className="sticky top-0 left-0 w-full bg-[#1f2937] text-white text-center py-2 shadow-md z-50 cursor-pointer hover:bg-gray-600 transition"
+          className="sticky top-0 left-0 w-full bg-[#f4f4f4] dark:bg-[#1f2937] text-black dark:text-white text-center py-2 z-50 cursor-pointer hover:bg-[#eee] dark:hover:bg-gray-600 transition"
           onClick={handleBannerClick}
         >
-          <span className="text-sm md:text-base tracking-wide">Click here to join us at ATMoS'25</span>
+          <span className="text-sm md:text-base tracking-wide">
+            Click here to join us at ATMoS'25
+          </span>
         </div>
       )}
-
 
       {/* Mobile Menu Portal */}
       {isMenuVisible && (
         <MobileMenuPortal>
           <div
-            className={`fixed inset-0 bg-zinc-900/95 z-[60] ${
+            className={`fixed inset-0 bg-white/95 dark:bg-zinc-900/95 backdrop-blur-sm z-[1000] ${
               isMenuOpen ? 'animate-slide-in' : 'animate-slide-out'
             } transition-opacity duration-300 md:hidden`}
           >
@@ -189,7 +189,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="h-6 w-6 text-white"
+                className="h-6 w-6 text-black dark:text-white"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"
@@ -206,55 +206,55 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
             <div className="flex flex-col h-full pt-16 pb-6 px-6 overflow-y-auto">
               <nav className="flex-grow">
                 <ul className="flex flex-col space-y-4">
-                  <li className="border-b border-zinc-700 pb-3">
+                  <li className="border-b border-zinc-300 dark:border-zinc-700 pb-3">
                     <a
                       href="/"
-                      className="block text-xl font-medium text-white hover:text-gray-300 transition-colors duration-200"
+                      className="block text-xl font-medium text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                       onClick={toggleMenu}
                     >
                       Home
                     </a>
                   </li>
-                  <li className="border-b border-zinc-700 pb-3">
+                  <li className="border-b border-zinc-300 dark:border-zinc-700 pb-3">
                     <a
                       href="/blog"
-                      className="block text-xl font-medium text-white hover:text-gray-300 transition-colors duration-200"
+                      className="block text-xl font-medium text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                       onClick={toggleMenu}
                     >
                       Blog
                     </a>
                   </li>
-                  <li className="border-b border-zinc-700 pb-3">
+                  <li className="border-b border-zinc-300 dark:border-zinc-700 pb-3">
                     <a
                       href="/events"
-                      className="block text-xl font-medium text-white hover:text-gray-300 transition-colors duration-200"
+                      className="block text-xl font-medium text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                       onClick={toggleMenu}
                     >
                       Events
                     </a>
                   </li>
-                  <li className="border-b border-zinc-700 pb-3">
+                  <li className="border-b border-zinc-300 dark:border-zinc-700 pb-3">
                     <a
                       href="/PORs"
-                      className="block text-xl font-medium text-white hover:text-gray-300 transition-colors duration-200"
+                      className="block text-xl font-medium text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                       onClick={toggleMenu}
                     >
                       PORs
                     </a>
                   </li>
-                  <li className="border-b border-zinc-700 pb-3">
+                  <li className="border-b border-zinc-300 dark:border-zinc-700 pb-3">
                     <a
                       href="/alumni"
-                      className="block text-xl font-medium text-white hover:text-gray-300 transition-colors duration-200"
+                      className="block text-xl font-medium text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                       onClick={toggleMenu}
                     >
                       Alumni
                     </a>
                   </li>
-                  <li className="border-b border-zinc-700 pb-3">
+                  <li className="border-b border-zinc-300 dark:border-zinc-700 pb-3">
                     <a
                       href="/resources"
-                      className="block text-xl font-medium text-white hover:text-gray-300 transition-colors duration-200"
+                      className="block text-xl font-medium text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                       onClick={toggleMenu}
                     >
                       Resources
