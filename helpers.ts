@@ -55,7 +55,7 @@ const helpers = {
         return `${hours}:${minutes} ${ampm}`;
     },
 
-    stringToFriendlyDate: function (date_string: Date) {
+    stringToFriendlyDate: function (date_string: string) {
         const date = helpers.friendlyDate(new Date(date_string));
         return `${date.month} ${date.date}, ${date.year}`;
     }
