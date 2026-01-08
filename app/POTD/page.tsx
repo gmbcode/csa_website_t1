@@ -1,7 +1,16 @@
-'use client'
+  'use client'
 
 import { useState } from "react";
-import question from "../data/potd.json";
+import questions from "../data/potd.json";
+import numbers from "../data/randomQ.json";
+
+const date = new Date();
+const ref_date = new Date(1767810600000);
+
+const duration = date.valueOf() - ref_date.valueOf();
+const days = Math.floor(duration / 86400000);
+
+const question = questions[numbers[days % numbers.length]];
 
 const UploadPage = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
@@ -73,20 +82,20 @@ const UploadPage = () => {
       <h1 className="text-3xl font-bold mb-6">Problem Of The Day</h1>
       <div className="bg-gray-900 p-6 rounded-lg shadow-md w-full max-w-2xl">
         <h2 className="text-xl font-semibold mb-4">💻 Question:</h2>
-        <p className="text-gray-300">{question.Question}</p>
+        <p className="text-gray-300">{question.q} <span className="bg-gray-700 px-2 py-1 align-middle rounded text-white">{question.diff}</span></p>
         <h3 className="text-xl font-semibold mb-4">Input Format:</h3>
-        <p className="text-gray-300">{question["Input Format"]}</p>
+        <p className="text-gray-300">{question.input}</p>
         <h3 className="text-xl font-semibold mb-4">Output Format:</h3>
-        <p className="text-gray-300">{question["Output Format"]}</p>
+        <p className="text-gray-300">{question.output}</p>
         <h3 className="text-xl font-semibold mb-4">Example:</h3>
         <pre className="bg-black text-green-400 font-mono p-4 rounded-lg shadow-inner border border-gray-700 whitespace-pre-wrap">
-          {question.Example}
+          {question.eg}
         </pre>
         <h3 className="text-xl font-semibold mb-4">Explanation:</h3>
-        <p className="text-gray-300">{question.Explanation}</p>
+        <p className="text-gray-300">{question.expl}</p>
 
         <form onSubmit={handleSubmit} className="mt-6">
-          <label className="block mb-2 text-sm font-medium">Upload your solution:</label>
+          <label className="block mb-2 text-sm font-medium">Upload your solution (python, java and C++ supported):</label>
           <input
             type="file"
             accept=".cpp,.py,.java"

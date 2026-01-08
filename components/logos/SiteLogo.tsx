@@ -8,7 +8,7 @@ export default function SiteLogo({
   siteData: GlobalData;
 }): JSX.Element {
   return (
-    <div className="mx-auto flex w-full max-w-3xl flex-col items-center justify-between px-4 py-4 md:flex-row lg:px-0">
+    <div className="mx-auto flex w-full flex-col items-center justify-start gap-x-3 px-4 py-4 md:flex-row lg:px-0">
       <h1 className="flex space-x-2">
         <OBMLogo className="h-8 w-8" />
         <Link
@@ -18,7 +18,7 @@ export default function SiteLogo({
           {siteData.metadata.site_title}
         </Link>
       </h1>
-      <span className="relative hidden text-lg tracking-wide text-zinc-500 dark:text-zinc-200 md:flex">
+      <span className="relative hidden text-lg tracking-wide text-zinc-500 dark:text-zinc-400 md:flex">
         {siteData.metadata.site_tag}
       </span>
     </div>

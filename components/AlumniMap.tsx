@@ -11,8 +11,8 @@ const MapComponent = () => {
   useEffect(() => {
     fetch('/database/alumniData.json')
       .then((res) => res.json())
-      .then((data) => setAlumniData(data))
-      .catch((err) => console.error(err));
+      .then(setAlumniData)
+      .catch(console.error);
   }, []);
   return (
     <div style={{ height: '500px', width: '100%'}} className="z-0">
