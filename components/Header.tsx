@@ -100,6 +100,14 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
               </li>
               <li>
                 <a
+                  href="/POTD"
+                  className="text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
+                >
+                  POTD
+                </a>
+              </li>
+              <li>
+                <a
                   href="/PORs"
                   className="text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
                 >

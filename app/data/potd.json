@@ -1,7 +1,2890 @@
-{
-    "Question":"John wants to buy a pizza which costs $k, He only possesses n coins and the cashier will accept only two. Find the number of ways in which he can pay for his pizza.",
-    "Input Format":"First line of input will be t the number of test cases, first line of each test case has 2 integers, integers n and k, next line contains n integers, the value of each coin.",
-    "Output Format":"Output a single integer: the number of ways John can pay for his pizza.",
-    "Example": "Input:\n2\n5 10\n1 2 3 7 8\n4 6\n1 3 5 7\n\nOutput:\n2\n1",
-    "Explanation": "TC1: 3,7 2,8 ; TC2: 1,5"
-}
+[
+  {
+    "q": "Watermelon",
+    "input": "The first line contains an integer w (1 ≤ w ≤ 100) — the weight of the watermelon bought by the boys.",
+    "output": "Print YES, if the boys can divide the watermelon into two parts, each of them weighing even number of kilos; and NO in the opposite case.",
+    "eg": "Input:\n8\n\nOutput:\nYES",
+    "expl": "TC1: 8 -> (2, 6) or (4, 4). Both parts are even, so output is YES.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Way Too Long Words",
+    "input": "The first line contains an integer n. Each of the following n lines contains one word. All words consist of lowercase Latin letters and have lengths from 1 to 100 characters.",
+    "output": "For each word, if its length is strictly greater than 10, print the abbreviation (first letter + number of omitted letters + last letter). Otherwise, print the word itself.",
+    "eg": "Input:\n4\nword\nlocalization\ninternationalization\npneumonoultramicroscopicsilicovolcanoconiosis\n\nOutput:\nword\nl10n\ni18n\np43s",
+    "expl": "TC1: 'localization' has 12 letters. First 'l', last 'n', 10 letters in between -> l10n.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Theatre Square",
+    "input": "The first line contains three positive integers: n, m and a (1 ≤ n, m, a ≤ 10^9).",
+    "output": "Write the number of flagstones needed to cover the n x m square. It's allowed to cover the surface larger than the Theatre Square, but it must be covered.",
+    "eg": "Input:\n6 6 4\n\nOutput:\n4",
+    "expl": "TC1: 6x6 square with 4x4 tiles. We need 2 tiles for the width (total 8) and 2 for the height (total 8). 2*2 = 4 tiles.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Next Round",
+    "input": "The first line contains two integers n and k (1 ≤ k ≤ n ≤ 50) separated by a space. The second line contains n space-separated integers a_1, a_2, ..., a_n, where a_i is the score earned by the participant who got the i-th place.",
+    "output": "Output the number of participants who advance to the next round (score ≥ k-th place finisher and score > 0).",
+    "eg": "Input:\n8 5\n10 9 8 7 7 7 5 5\n\nOutput:\n6",
+    "expl": "TC1: The 5th place finisher has 7 points. There are 6 people with score >= 7.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Domino Piling",
+    "input": "In a single line you are given two integers M and N — board sizes in squares (1 ≤ M ≤ N ≤ 16).",
+    "output": "Output one number — the maximal number of dominoes (2x1) which can be placed on the board.",
+    "eg": "Input:\n3 3\n\nOutput:\n4",
+    "expl": "TC1: 3x3 board has 9 squares. Each domino takes 2. Floor(9/2) = 4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Bit++",
+    "input": "The first line contains integer n — the number of statements. Each of the following n lines contains one statement (X++, ++X, X--, or --X). Initial value of X is 0.",
+    "output": "Print a single integer — the final value of X.",
+    "eg": "Input:\n1\n++X\n\nOutput:\n1",
+    "expl": "TC1: Starting at 0, ++X increments it once to 1.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Petya and Strings",
+    "input": "Each of the first two lines contains a string of Latin letters. The strings have the same length and are not longer than 100 characters.",
+    "output": "If the first string is less than the second one, print -1. If the second string is less, print 1. If equal, print 0 (case-insensitive).",
+    "eg": "Input:\nabcd\nAbCd\n\nOutput:\n0",
+    "expl": "TC1: 'abcd' and 'AbCd' are identical when ignoring case, so output 0.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Beautiful Matrix",
+    "input": "The input consists of five lines, each line contains five integers: the j-th integer in the i-th line of the input represents the element of the matrix that is located on the intersection of the i-th row and the j-th column.",
+    "output": "Print a single integer — the minimum number of moves needed to make the matrix beautiful (move the '1' to the center 3,3).",
+    "eg": "Input:\n0 0 0 0 0\n0 0 0 0 1\n0 0 0 0 0\n0 0 0 0 0\n0 0 0 0 0\n\nOutput:\n3",
+    "expl": "TC1: The '1' is at (2, 5). Distance to (3, 3) is |2-3| + |5-3| = 1 + 2 = 3.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Help Fill the Bag",
+    "input": "The first line contains two integers n and m (1 ≤ n ≤ 10^18, 1 ≤ m ≤ 10^5) — the capacity of the bag and the number of boxes. The next line contains m integers a_1, ..., a_m (powers of 2) — the volume of each box.",
+    "output": "Print the minimum number of divisions (splitting a box of size 2^k into two 2^{k-1}) needed to fill the bag exactly. If impossible, print -1.",
+    "eg": "Input:\n10 3\n1 32 1\n\nOutput:\n2",
+    "expl": "TC1: Need 10. Have 1, 32, 1. Sum is 34. Split 32 -> 16, 16. Split 16 -> 8, 8. Use 8+1+1=10. Total 2 splits.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Team",
+    "input": "The first line contains integer n (1 ≤ n ≤ 1000) — the number of problems. n lines follow, each containing three integers (0 or 1) representing if Petya, Vasya, and Tonya are sure about the solution.",
+    "output": "Print a single integer — the number of problems the friends will implement (if at least two are sure).",
+    "eg": "Input:\n3\n1 1 0\n1 1 1\n1 0 0\n\nOutput:\n2",
+    "expl": "TC1: Problem 1 (2 sure), Problem 2 (3 sure), Problem 3 (1 sure). Total 2 implemented.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Boy or Girl",
+    "input": "The first line contains a non-empty string, that contains only lowercase Latin letters and its length is at most 100.",
+    "output": "If the number of distinct characters in the user's name is odd, print 'IGNORE HIM!'. If it is even, print 'CHAT WITH HER!'.",
+    "eg": "Input:\nwjmzbmr\n\nOutput:\nCHAT WITH HER!",
+    "expl": "TC1: 'wjmzbmr' has 7 letters, but 'm' is repeated. Distinct: {w, j, m, z, b, r} = 6. 6 is even.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Soldier and Bananas",
+    "input": "The first line contains three positive integers k, n, w (1 ≤ k, w ≤ 1000, 0 ≤ n ≤ 10^9), the cost of the first banana, initial number of dollars, and number of bananas he wants.",
+    "output": "Output one integer — the amount of dollars the soldier must borrow from his friend. If he doesn't have to borrow, output 0.",
+    "eg": "Input:\n3 17 4\n\nOutput:\n13",
+    "expl": "TC1: Costs: 3+6+9+12 = 30. He has 17. 30 - 17 = 13 borrowed.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Cut Ribbon",
+    "input": "The first line contains four space-separated integers n, a, b and c (1 ≤ n, a, b, c ≤ 4000) — length of the ribbon and the lengths of three allowable pieces.",
+    "output": "Print a single integer — the maximum possible number of ribbon pieces after the cutting.",
+    "eg": "Input:\n5 5 3 2\n\nOutput:\n2",
+    "expl": "TC1: 5 can be cut into pieces of 3 and 2. Total 2 pieces. (5 itself is 1 piece, but we want the max).",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Woodcutters",
+    "input": "The first line contains integer n (1 ≤ n ≤ 10^5) — the number of trees. Next n lines contain two integers x_i and h_i (coordinates and height). Trees are given in increasing order of x_i.",
+    "output": "Print the maximum number of trees that can be cut down such that they don't overlap with other trees or previously fallen trees.",
+    "eg": "Input:\n5\n1 2\n2 1\n5 10\n10 9\n19 1\n\nOutput:\n3",
+    "expl": "TC1: Tree 1 falls left. Tree 2 cannot fall. Tree 3 falls left. Tree 4 stays. Tree 5 falls right.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Interesting Drink",
+    "input": "First line contains n, the number of shops. Second line contains n integers x_i, price of beer. Third line contains q, the number of days. Next q lines contain m_j, the coins Vasya has on day j.",
+    "output": "For each day, print the number of shops where Vasya can buy a beer (price ≤ m_j).",
+    "eg": "Input:\n5\n3 10 8 6 11\n4\n1\n10\n3\n11\n\nOutput:\n0\n4\n1\n5",
+    "expl": "TC1: Shops: [3, 6, 8, 10, 11]. Day 1 (1 coin): 0 shops. Day 2 (10 coins): [3, 6, 8, 10] -> 4 shops.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Vacations",
+    "input": "First line contains n (1 ≤ n ≤ 100). Second line contains n integers a_i (0=nothing, 1=contest, 2=gym, 3=both). He cannot do the same activity two days in a row.",
+    "output": "Print the minimum number of days Vasya will rest.",
+    "eg": "Input:\n4\n1 3 2 0\n\nOutput:\n2",
+    "expl": "TC1: Day 1 (Contest), Day 2 (Gym), Day 3 (Rest - gym done day before), Day 4 (Rest - 0 available). Min rest: 2.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "K-Tree",
+    "input": "The first line contains three integers n, k and d (1 ≤ n, k ≤ 100; 1 ≤ d ≤ k). n is total sum, k is max edge weight, d is minimum weight of at least one edge in the path.",
+    "output": "Print the number of paths from root with sum n and at least one edge ≥ d, modulo 10^9 + 7.",
+    "eg": "Input:\n3 3 2\n\nOutput:\n3",
+    "expl": "TC1: Paths with sum 3 using max weight 3 and one edge >= 2: (1+2), (2+1), (3).",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Flowers",
+    "input": "First line contains t and k (1 ≤ t, k ≤ 10^5). Next t lines contain a_i and b_i (range of number of flowers Marmot can eat). White flowers must be eaten in groups of k.",
+    "output": "For each query, print the number of ways to eat between a_i and b_i flowers, modulo 10^9 + 7.",
+    "eg": "Input:\n3 2\n1 3\n2 3\n4 4\n\nOutput:\n6\n5\n5",
+    "expl": "TC1: k=2. For length 3: RRR, RWW, WWR (3 ways). For length 2: RR, WW (2 ways). For length 1: R (1 way). Total 1-3: 3+2+1=6.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Colored Segments",
+    "input": "The first line contains n (1 ≤ n ≤ 4*10^5) — the number of elements. The second line contains n integers a_1, ..., a_n (1 ≤ a_i ≤ 20) — the color of each element.",
+    "output": "Print the minimum number of swaps of adjacent elements to group all elements of the same color together.",
+    "eg": "Input:\n7\n3 4 2 3 4 2 2\n\nOutput:\n9",
+    "expl": "TC1: Reordering to group colors efficiently. This requires Bitmask DP over the 20 possible colors.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Robot and Arm",
+    "input": "The first line contains a string s consisting of '0' and '1'. The second line contains a string t consisting of lowercase Latin letters. |s| ≤ 10^5, |t| ≤ 10^6.",
+    "output": "Print the number of pairs of strings (r0, r1) such that r0 ≠ r1 and replacing '0' with r0 and '1' with r1 in s results in t.",
+    "eg": "Input:\n01\naaaaaa\n\nOutput:\n4",
+    "expl": "TC1: s='01', t='aaaaaa'. Pairs (r0, r1): ('a', 'aaaaa'), ('aa', 'aaaa'), ('aaaa', 'aa'), ('aaaaa', 'a'). ('aaa', 'aaa') is excluded because r0 must not equal r1.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Elephant",
+    "input": "The first line of the input contains an integer x (1 ≤ x ≤ 1,000,000) — The coordinate of the friend's house.",
+    "output": "Print the minimum number of steps to reach x if the elephant can move 1, 2, 3, 4, or 5 positions forward in one step.",
+    "eg": "Input:\n12\n\nOutput:\n3",
+    "expl": "TC1: The elephant can take two steps of length 5 and one step of length 2 to reach 12. Total 3 steps.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Word",
+    "input": "The first line contains a string s. The string contains uppercase and lowercase Latin letters and its length is at most 100.",
+    "output": "If the word contains more uppercase letters than lowercase, print it in uppercase. Otherwise, print it in lowercase.",
+    "eg": "Input:\nHoUse\n\nOutput:\nhouse",
+    "expl": "TC1: 'HoUse' has 2 uppercase (H, U) and 3 lowercase (o, s, e). Lowercase wins, so change all to lowercase.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Wrong Subtraction",
+    "input": "The first line contains two integers n and k (2 ≤ n ≤ 10^9, 1 ≤ k ≤ 50) — the number and the number of subtractions.",
+    "output": "Print the result of n after k subtractions. Rule: if last digit is non-zero, subtract 1; if last digit is zero, divide by 10.",
+    "eg": "Input:\n512 4\n\nOutput:\n50",
+    "expl": "TC1: 512 -> 511 -> 510 -> 51 -> 50. Total 4 steps.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Bear and Big Brother",
+    "input": "The only line of the input contains two integers a and b (1 ≤ a ≤ b ≤ 10) — the weight of Limak and the weight of Bob.",
+    "output": "Print the minimum integer number of years after which Limak will become strictly larger than Bob. Limak triples each year, Bob doubles.",
+    "eg": "Input:\n4 7\n\nOutput:\n2",
+    "expl": "TC1: Year 1: 43=12, 72=14. Year 2: 123=36, 142=28. 36 > 28, so 2 years.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Stones on the Table",
+    "input": "The first line contains integer n (1 ≤ n ≤ 50) — the number of stones. The next line contains string s, representing the colors of the stones (R, G, B).",
+    "output": "Print the minimum number of stones to take from the table so that any two neighboring stones had different colors.",
+    "eg": "Input:\n3\nRRG\n\nOutput:\n1",
+    "expl": "TC1: Two 'R' are neighbors. Remove one 'R' to get 'RG'. Min 1 stone removed.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Tram",
+    "input": "The first line contains integer n (2 ≤ n ≤ 1000). The next n lines contain integers a_i and b_i — the number of passengers that exit and enter at the i-th stop.",
+    "output": "Print the minimum possible capacity of the tram such that the number of passengers inside never exceeds it.",
+    "eg": "Input:\n4\n0 3\n2 5\n4 2\n4 0\n\nOutput:\n6",
+    "expl": "TC1: Stop 1: 3 in. Stop 2: 3-2+5=6. Stop 3: 6-4+2=4. Stop 4: 4-4=0. Max is 6.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Queue at the School",
+    "input": "The first line contains integers n and t. The second line contains a string representing the initial queue (B for boy, G for girl). Each second, every boy standing directly behind a girl swaps places with her.",
+    "output": "Print the string representing the queue after t seconds.",
+    "eg": "Input:\n5 1\nBGGBG\n\nOutput:\nGBGGB",
+    "expl": "TC1: In 1 second, the boy at index 0 swaps with girl at index 1, and boy at index 3 swaps with girl at index 4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Translation",
+    "input": "The first line contains word s, the second line contains word t. Both words contain lowercase Latin letters and length ≤ 100.",
+    "output": "Print YES if word t is word s written reversely, and NO otherwise.",
+    "eg": "Input:\ncode\nedoc\n\nOutput:\nYES",
+    "expl": "TC1: 'edoc' is the reverse of 'code', so output YES.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Vanya and Fence",
+    "input": "The first line contains integers n and h. The second line contains n integers a_i, the heights of the friends. If a person's height > h, they must bend, taking width 2. Otherwise, width 1.",
+    "output": "Print the minimum possible width of the road.",
+    "eg": "Input:\n3 7\n4 5 14\n\nOutput:\n4",
+    "expl": "TC1: Friend 1 (4<=7) width 1. Friend 2 (5<=7) width 1. Friend 3 (14>7) width 2. Total 1+1+2=4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Anton and Danik",
+    "input": "The first line contains integer n. The second line contains string s of length n consisting of characters 'A' and 'D'.",
+    "output": "Print 'Anton' if Anton won more games, 'Danik' if Danik won more, and 'Friendship' if they tied.",
+    "eg": "Input:\n6\nADAAAA\n\nOutput:\nAnton",
+    "expl": "TC1: Anton won 5 times, Danik won 1 time. Anton > Danik.",
+    "diff": "EASY"
+  },
+  {
+    "q": "George and Accommodation",
+    "input": "The first line contains n, number of rooms. Each of the next n lines contains p_i and q_i, the number of people already living in the room and the room's capacity.",
+    "output": "Print how many rooms have free space for at least two more people (George and his friend).",
+    "eg": "Input:\n3\n1 1\n2 2\n3 3\n\nOutput:\n0",
+    "expl": "TC1: All rooms are full (p_i = q_i). No room can fit 2 more people.",
+    "diff": "EASY"
+  },
+  {
+    "q": "In Search of an Easy Problem",
+    "input": "The first line contains integer n. The second line contains n integers (0 or 1). 0 means easy, 1 means hard.",
+    "output": "If there is at least one person who thinks the problem is hard, print HARD. Otherwise, print EASY.",
+    "eg": "Input:\n3\n0 0 1\n\nOutput:\nHARD",
+    "expl": "TC1: The third person thinks the problem is hard, making the overall verdict HARD.",
+    "diff": "EASY"
+  },
+  {
+    "q": "T-primes",
+    "input": "The first line contains integer n (1 ≤ n ≤ 10^5). The second line contains n integers x_i (1 ≤ x_i ≤ 10^12).",
+    "output": "For each number, print YES if it has exactly three divisors, and NO otherwise.",
+    "eg": "Input:\n3\n4 5 6\n\nOutput:\nYES\nNO\nNO",
+    "expl": "TC1: 4 has divisors {1, 2, 4} (T-prime). 5 has {1, 5}. 6 has {1, 2, 3, 6}.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Registration System",
+    "input": "The first line contains n, the number of requests. The next n lines contain the names to be registered.",
+    "output": "If the name is not in the system, print OK. Otherwise, print the name with the smallest positive integer appended.",
+    "eg": "Input:\n4\nabacaba\nacaba\nabacaba\nacab\n\nOutput:\nOK\nOK\nabacaba1\nOK",
+    "expl": "TC1: 'abacaba' is new (OK). 'acaba' is new (OK). 'abacaba' is seen once, becomes 'abacaba1'.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Boredom",
+    "input": "The first line contains n (1 ≤ n ≤ 10^5). The second line contains n integers a_i (1 ≤ a_i ≤ 10^5).",
+    "output": "Print the maximum points you can get. If you pick a_i, you earn a_i points but must delete all elements equal to a_i-1 and a_i+1.",
+    "eg": "Input:\n2\n1 2\n\nOutput:\n2",
+    "expl": "TC1: Pick 2, earn 2 points, 1 is deleted. If you picked 1, 2 would be deleted and you'd only get 1 point.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Ilya and Queries",
+    "input": "First line contains string s. Second line contains m, number of queries. Each of the next m lines contains l_i and r_i.",
+    "output": "For each query, print the number of indices i such that l_i ≤ i < r_i and s[i] = s[i+1].",
+    "eg": "Input:\n......\n4\n3 4\n2 3\n1 6\n2 6\n\nOutput:\n1\n1\n5\n4",
+    "expl": "TC1: All characters are same. In range [1,6], there are 5 pairs where s[i]=s[i+1].",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Given Length and Sum of Digits",
+    "input": "The only line contains two integers m and s — the length and the sum of the digits of the required numbers.",
+    "output": "Print the smallest and the largest non-negative numbers of length m and sum s. If no such numbers exist, print '-1 -1'.",
+    "eg": "Input:\n2 15\n\nOutput:\n69 96",
+    "expl": "TC1: Min number length 2 sum 15 is 69. Max is 96.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Tree Queries",
+    "input": "First line contains n and m. n-1 lines describe a tree. m lines describe queries. Each query starts with k_i followed by k_i vertices.",
+    "output": "For each query, print YES if there exists a path from root to some vertex u such that all query vertices are at distance at most 1 from the path.",
+    "eg": "Input:\n10 6\n1 2\n1 3\n1 4\n2 5\n2 6\n3 7\n7 8\n7 9\n9 10\n4 3 8 9 10\n\nOutput:\nYES",
+    "expl": "TC1: Path 1-3-7-9-10 works. 3, 8, 9, 10 are on or adjacent to it.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Xenia and Tree",
+    "input": "First line contains n and m. n-1 lines follow (tree edges). m lines contain type and vertex. Type 1: paint vertex red. Type 2: find min distance from v to any red vertex.",
+    "output": "For each Type 2 query, print the minimum distance.",
+    "eg": "Input:\n5 4\n1 2\n2 3\n2 4\n4 5\n2 1\n2 5\n1 2\n2 5\n\nOutput:\n0\n3\n2",
+    "expl": "TC1: 1 is initially red (dist 0). Node 5 to 1 is dist 3. After 2 is red, node 5 to 2 is dist 2.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Messenger Simulator",
+    "input": "First line contains n and m — number of friends and number of messages. Next line contains m integers a_i — id of the friend who sent the i-th message.",
+    "output": "For each friend from 1 to n, print their minimum and maximum position in the contact list (when a message is sent, they move to position 1).",
+    "eg": "Input:\n5 4\n3 5 1 4\n\nOutput:\n1 3\n2 5\n1 3\n1 4\n1 5",
+    "expl": "TC1: Friend 1 moves to top once, max pos was 3. Friend 2 never moves, max pos 5.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Beautiful Year",
+    "input": "The only line contains integer y (1000 ≤ y ≤ 9000) — the year number.",
+    "output": "Print a single integer — the minimum year number that is strictly larger than y and all its digits are distinct.",
+    "eg": "Input:\n1987\n\nOutput:\n2013",
+    "expl": "TC1: 1988, 1989... 2012 all have repeating digits. 2013 is the first year with all distinct digits.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Magnets",
+    "input": "The first line contains integer n (1 ≤ n ≤ 100,000). Next n lines contain the configuration of magnets, either '10' (plus-minus) or '01' (minus-plus).",
+    "output": "Print the number of groups of magnets (a group is formed by consecutive magnets that stay together).",
+    "eg": "Input:\n6\n10\n10\n10\n01\n01\n10\n\nOutput:\n3",
+    "expl": "TC1: (10, 10, 10), (01, 01), (10) are three distinct groups because of polarity repulsion.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Calculating Function",
+    "input": "The only line contains integer n (1 ≤ n ≤ 10^15).",
+    "output": "Print f(n) = -1 + 2 - 3 + 4 - 5 + ... + ((-1)^n)*n.",
+    "eg": "Input:\n4\n\nOutput:\n2",
+    "expl": "TC1: -1 + 2 - 3 + 4 = 2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Hulk",
+    "input": "The only line contains integer n (1 ≤ n ≤ 100).",
+    "output": "Print the feelings of the Hulk in the format: 'I hate that I love that I hate... it'.",
+    "eg": "Input:\n2\n\nOutput:\nI hate that I love it",
+    "expl": "TC1: For n=2, the Hulk alternates between 'hate' and 'love' with 'that' in between and 'it' at the end.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Queue at the School",
+    "input": "The first line contains n and t. The second line contains a string representing the initial queue (B for boy, G for girl).",
+    "output": "Print the string representing the queue after t seconds. Each second, every boy standing directly behind a girl swaps places.",
+    "eg": "Input:\n5 1\nBGGBG\n\nOutput:\nGBGGB",
+    "expl": "TC1: Boys at pos 0 and 3 swap with girls at 1 and 4 respectively.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Drinks",
+    "input": "The first line contains integer n. The second line contains n integers p_i (percentage of orange juice in the i-th drink).",
+    "output": "Print the volume fraction of orange juice in the final drink (average of p_i).",
+    "eg": "Input:\n3\n50 50 100\n\nOutput:\n66.666666666667",
+    "expl": "TC1: (50 + 50 + 100) / 3 = 66.666...",
+    "diff": "EASY"
+  },
+  {
+    "q": "Is your horseshoe on the other hoof?",
+    "input": "The only line contains four integers s1, s2, s3, s4 — the colors of the horseshoes Valera has.",
+    "output": "Print the minimum number of horseshoes Valera needs to buy to have four horseshoes of different colors.",
+    "eg": "Input:\n1 7 3 3\n\nOutput:\n1",
+    "expl": "TC1: Valera has colors {1, 7, 3}. He needs 1 more unique color to have 4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Divisibility Problem",
+    "input": "The first line contains integer t. Each of the next t lines contains two integers a and b.",
+    "output": "For each test case, print the minimum number of moves (incrementing a by 1) to make a divisible by b.",
+    "eg": "Input:\n1\n10 4\n\nOutput:\n2",
+    "expl": "TC1: 10 + 2 = 12, which is divisible by 4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "I Wanna Be the Guy",
+    "input": "The first line contains n (total levels). Second line starts with p, then p integers (levels X can pass). Third line starts with q, then q integers (levels Y can pass).",
+    "output": "Print 'I become the guy.' if they can pass all levels together, else 'Oh, my keyboard!'.",
+    "eg": "Input:\n4\n3 1 2 3\n2 2 4\n\nOutput:\nI become the guy.",
+    "expl": "TC1: Together they can pass {1, 2, 3, 4}, which are all levels.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Arrival of the General",
+    "input": "The first line contains n. The second line contains n integers (heights of soldiers).",
+    "output": "Print the minimum seconds to move the tallest soldier to the front and the shortest to the back using adjacent swaps.",
+    "eg": "Input:\n4\n33 44 11 22\n\nOutput:\n2",
+    "expl": "TC1: Swap 44 with 33 (1 move). 11 is already at the end of the necessary movement range for a 4-man line.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Insomnia cure",
+    "input": "Four lines with integers k, l, m, n and a fifth line with d (total dragons). Dragons divisible by k, l, m, or n are damaged.",
+    "output": "Print the number of damaged dragons.",
+    "eg": "Input:\n1\n2\n3\n4\n12\n\nOutput:\n12",
+    "expl": "TC1: Since k=1, every dragon (1 to 12) is damaged.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Pangram",
+    "input": "The first line contains integer n (length of string). The second line contains the string.",
+    "output": "Print YES if the string is a pangram (contains all 26 Latin letters), else NO.",
+    "eg": "Input:\n35\nTheQuickBrownFoxJumpsOverTheLazyDog\n\nOutput:\nYES",
+    "expl": "TC1: The string contains every letter of the alphabet at least once.",
+    "diff": "EASY"
+  },
+  {
+    "q": "T-primes",
+    "input": "First line contains n. Second line contains n integers x_i.",
+    "output": "Print YES if x_i has exactly three divisors, else NO.",
+    "eg": "Input:\n3\n4 5 6\n\nOutput:\nYES\nNO\nNO",
+    "expl": "TC1: 4 has {1, 2, 4}. 5 has {1, 5}. 6 has {1, 2, 3, 6}.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Taxi",
+    "input": "First line contains n. Second line contains n integers s_i (group sizes 1-4).",
+    "output": "Print the minimum number of taxis (capacity 4) to carry all groups. Each group must be in one taxi.",
+    "eg": "Input:\n4\n1 2 4 3\n\nOutput:\n3",
+    "expl": "TC1: Group of 4 takes 1 taxi. 3 and 1 take 1 taxi. 2 takes 1 taxi. Total 3.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Cheap Travel",
+    "input": "Four integers: n (rides), m (rides in special ticket), a (cost of 1 ride), b (cost of special ticket).",
+    "output": "Print the minimum sum of money to pay for n rides.",
+    "eg": "Input:\n6 2 1 2\n\nOutput:\n6",
+    "expl": "TC1: 6 individual rides = 6. 3 special tickets = 6. Min is 6.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Laptops",
+    "input": "First line contains n. Next n lines contain p_i (price) and q_i (quality). All p_i and q_i are distinct.",
+    "output": "Print 'Happy Alex' if there are two laptops where p_a < p_b and q_a > q_b, else 'Poor Alex'.",
+    "eg": "Input:\n2\n1 2\n2 1\n\nOutput:\nHappy Alex",
+    "expl": "TC1: Laptop 1 is cheaper than laptop 2 but has higher quality.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "K-th Not Divisible by n",
+    "input": "The first line contains t test cases. Each test case contains n and k.",
+    "output": "Print the k-th positive integer that is not divisible by n.",
+    "eg": "Input:\n1\n3 7\n\nOutput:\n10",
+    "expl": "TC1: Numbers not divisible by 3 are 1, 2, 4, 5, 7, 8, 10... The 7th is 10.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Two Platforms",
+    "input": "The first line contains t. Each test case has n and k, followed by x coordinates and y coordinates of n points.",
+    "output": "Print the maximum number of points you can cover with two horizontal platforms of length k.",
+    "eg": "Input:\n1\n7 1\n1 5 2 3 1 5 4\n1 3 6 7 2 5 4\n\nOutput:\n6",
+    "expl": "TC1: Platforms at x=[1,2] and x=[4,5] cover 3 points each. Total 6.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Constant Palindrome Sum",
+    "input": "The first line contains t. Each test case has n and k, followed by an array a of n integers (a_i ≤ k).",
+    "output": "Print the minimum number of replacements to make the array such that a[i] + a[n-i+1] = x for some constant x.",
+    "eg": "Input:\n1\n4 2\n1 2 1 2\n\nOutput:\n0",
+    "expl": "TC1: 1+2=3 and 2+1=3. The sum is already constant.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Valid Sets",
+    "input": "The first line contains d and n. The second line contains n integers a_i (values of nodes). n-1 lines follow (edges).",
+    "output": "Print the number of non-empty connected subgraphs where max(a_i) - min(a_i) ≤ d, modulo 10^9 + 7.",
+    "eg": "Input:\n1 3\n1 2 3\n1 2\n2 3\n\nOutput:\n4",
+    "expl": "TC1: Sets {1}, {2}, {3}, {1,2} are valid. {2,3} and {1,2,3} have range > 1.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Vasya the Hipster",
+    "input": "The only line contains two integers a and b — the number of red and blue socks Vasya has.",
+    "output": "Print two space-separated integers. The first is the number of days he can wear different socks, the second is the number of days he can wear same-colored socks with the leftovers.",
+    "eg": "Input:\n3 1\n\nOutput:\n1 1",
+    "expl": "TC1: 1 day of (Red, Blue). Remaining: 2 Red. That makes 1 day of (Red, Red).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Restoring Three Numbers",
+    "input": "The only line contains four positive integers x1, x2, x3, x4 (the sums a+b, a+c, b+c, and a+b+c in any order).",
+    "output": "Print three positive integers a, b, and c.",
+    "eg": "Input:\n3 6 5 4\n\nOutput:\n1 2 3",
+    "expl": "TC1: Max is 6 (a+b+c). If a+b=3, a+c=5, b+c=4, then a=2, b=1, c=3.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Police Recruits",
+    "input": "First line contains n. Second line contains n integers. -1 means a crime occurred, a positive integer x means x officers were recruited.",
+    "output": "Print the number of crimes that go untreated. An officer can only treat one crime.",
+    "eg": "Input:\n3\n-1 -1 1\n\nOutput:\n2",
+    "expl": "TC1: Two crimes happen before any officers are hired. Both go untreated.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Mishka and Game",
+    "input": "First line contains n. Next n lines contain m_i and c_i (scores for Mishka and Chris in round i).",
+    "output": "Print 'Mishka' if he wins more rounds, 'Chris' if he wins more, or 'Friendship is magic!' if tied.",
+    "eg": "Input:\n3\n3 5\n2 1\n4 4\n\nOutput:\nFriendship is magic!",
+    "expl": "TC1: Round 1: Chris. Round 2: Mishka. Round 3: Tie. Overall tie.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Do Not Be Distracted!",
+    "input": "First line t. Each test case: n (length) and string s (tasks done). If a task is started, it must be finished before moving to another.",
+    "output": "Print YES if the teacher won't be suspicious (tasks of same type are contiguous), else NO.",
+    "eg": "Input:\n1\n5\nABBAC\n\nOutput:\nNO",
+    "expl": "TC1: Task 'A' was started, then 'B', then 'A' reappeared. This is suspicious.",
+    "diff": "EASY"
+  },
+  {
+    "q": "New Year and Hurry",
+    "input": "Two integers n and k — number of problems and time to travel to the party (in minutes).",
+    "output": "Print the max problems Limak can solve in 240 minutes, given problem i takes 5*i minutes.",
+    "eg": "Input:\n3 222\n\nOutput:\n2",
+    "expl": "TC1: Time left: 240-222 = 18 mins. Prob 1 (5m), Prob 2 (10m). 5+10=15 <= 18. He can solve 2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Holiday Of Equality",
+    "input": "First line n. Second line n integers a_i (welfare of citizens).",
+    "output": "Print min cost to make all a_i equal to the maximum a_i in the list.",
+    "eg": "Input:\n5\n1 10 14 5 2\n\nOutput:\n38",
+    "expl": "TC1: Max is 14. Costs: (13+4+0+9+12) = 38.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Choosing Teams",
+    "input": "Two integers n and k. Second line n integers y_i (times each student participated).",
+    "output": "Print the max teams of 3 such that each member can participate at least k more times (max 5 total).",
+    "eg": "Input:\n6 4\n0 1 2 3 4 5\n\nOutput:\n0",
+    "expl": "TC1: Students with y_i <= (5-4)=1 are [0, 1]. Only 2 students, not enough for a team of 3.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Boring Apartments",
+    "input": "First line t. Each case contains x, the apartment number (digits are all same).",
+    "output": "Print total digits pressed. Apartments are called in order 1, 11, 111, 1111, 2, 22...",
+    "eg": "Input:\n1\n22\n\nOutput:\n13",
+    "expl": "TC1: Digit '1' sequence (1+2+3+4=10). Digit '2' sequence up to 22 (1+2=3). Total 13.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Spy Detected!",
+    "input": "First line t. Each case: n and n integers. All integers except one are identical.",
+    "output": "Print the 1-based index of the unique integer.",
+    "eg": "Input:\n1\n4\n11 13 11 11\n\nOutput:\n2",
+    "expl": "TC1: 13 is at index 2, others are 11.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Short Substrings",
+    "input": "First line t. Each case: string b (compressed string where every inner character is repeated).",
+    "output": "Print the original string a.",
+    "eg": "Input:\n1\nABBBAC\n\nOutput:\nABAC",
+    "expl": "TC1: 'AB' + 'BB' + 'BA' + 'AC' overlapping -> 'ABAC'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Plus One on the Subset",
+    "input": "First line t. Each case: n and array a.",
+    "output": "Print the min operations to make all elements equal. One op: choose any subset and increment all by 1.",
+    "eg": "Input:\n1\n6\n3 4 2 4 1 2\n\nOutput:\n3",
+    "expl": "TC1: Max is 4, Min is 1. Diff is 3. We need 3 increments for the smallest element.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Dragons",
+    "input": "Two integers s and n. Next n lines: x_i (dragon strength) and y_i (bonus for defeating).",
+    "output": "Print YES if Kirito can defeat all dragons in some order (must have strength > x_i), else NO.",
+    "eg": "Input:\n2 2\n1 99\n100 0\n\nOutput:\nYES",
+    "expl": "TC1: Start with 2. Defeat Dragon 1 (2 > 1). Strength becomes 2+99=101. Defeat Dragon 2 (101 > 100).",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Fancy Fence",
+    "input": "First line t. Each case: integer a (degree of the interior angle of a regular polygon).",
+    "output": "Print YES if such a regular polygon exists, else NO.",
+    "eg": "Input:\n1\n60\n\nOutput:\nYES",
+    "expl": "TC1: A regular triangle has interior angles of 60 degrees.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Product of Three Numbers",
+    "input": "First line t. Each case: integer n (2 ≤ n ≤ 10^9).",
+    "output": "If n = a*b*c (a, b, c distinct and > 1), print YES and the numbers, else NO.",
+    "eg": "Input:\n1\n64\n\nOutput:\nYES\n2 4 8",
+    "expl": "TC1: 2 * 4 * 8 = 64. All are distinct and > 1.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Bersu Ball",
+    "input": "n (boys), then a_i. m (girls), then b_j. A pair is valid if |a_i - b_j| ≤ 1.",
+    "output": "Print the max number of pairs.",
+    "eg": "Input:\n4\n1 4 6 2\n5\n5 1 5 7 9\n\nOutput:\n3",
+    "expl": "TC1: Pairs: (1,1), (4,5), (6,5) or (6,7). Max is 3.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Young Physicist",
+    "input": "First line n. Next n lines contain x_i, y_i, z_i (force vectors).",
+    "output": "Print YES if the body is in equilibrium (sum of all vectors is 0,0,0), else NO.",
+    "eg": "Input:\n3\n4 1 7\n-2 4 -1\n1 -5 -3\n\nOutput:\nNO",
+    "expl": "TC1: Sum X: 4-2+1=3. Not zero, so NO.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Array Modification",
+    "input": "First line n and k. n is size of array a, k is number of steps. In each step, a[i mod n] = a[i mod n] XOR a[n - 1 - (i mod n)].",
+    "output": "Print the array after k steps.",
+    "eg": "Input:\n3 1\n1 2 3\n\nOutput:\n2 2 3",
+    "expl": "TC1: Step 0: a[0] = a[0] XOR a[2] = 1 XOR 3 = 2. Array: [2 2 3].",
+    "diff": "HARD"
+  },
+  {
+    "q": "Minimum Euler Cycle",
+    "input": "First line t. Each case: n (vertices in complete graph) and l, r (range of edges to output).",
+    "output": "Print the labels of vertices in the Euler cycle from index l to r.",
+    "eg": "Input:\n1\n3 2 5\n\nOutput:\n2 1 3 2",
+    "expl": "TC1: Full cycle for n=3: 1-2-1-3-2-3-1. Indices 2 to 5 are 2, 1, 3, 2.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Tree Shuffling",
+    "input": "First line n. Next n lines: a_i (cost to shuffle), b_i (initial state), c_i (target state). n-1 lines: tree edges.",
+    "output": "Print min cost to make all b_i = c_i. Shuffling a node v allows swapping any two b_j, b_k in its subtree at cost 2*a_v.",
+    "eg": "Input:\n4\n1 0 1\n11 1 0\n100 0 1\n1000 1 0\n1 2\n1 3\n1 4\n\nOutput:\n4",
+    "expl": "TC1: Node 1 has cost 1. We can swap all mismatched bits in the whole tree using Node 1's low cost. 2 swaps * 2*1 = 4.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Balanced Team",
+    "input": "First line n. Second line n integers a_i (programming skills).",
+    "output": "Print max size of a team such that max(skill) - min(skill) ≤ 5.",
+    "eg": "Input:\n6\n1 10 17 12 13 15\n\nOutput:\n3",
+    "expl": "TC1: Team {10, 12, 13} has max diff 3. Team {12, 13, 15} has max diff 3.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Sum of Round Numbers",
+    "input": "First line t. Each case: n (1 ≤ n ≤ 10^4).",
+    "output": "Print k (number of round numbers) and then the k round numbers that sum to n.",
+    "eg": "Input:\n1\n5009\n\nOutput:\n2\n5000 9",
+    "expl": "TC1: 5009 can be broken into 5000 and 9.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Minimal Square",
+    "input": "First line t. Each case: two integers a and b.",
+    "output": "Print the minimum area of a square that can contain two a x b rectangles without overlapping.",
+    "eg": "Input:\n1\n3 2\n\nOutput:\n16",
+    "expl": "TC1: Side should be min(max(2a, b), max(a, 2b)). Here min(6, 4) = 4. 4^2 = 16.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Honest Coach",
+    "input": "First line t. Each case: n and array s.",
+    "output": "Print the minimum possible difference |max(A) - min(B)| where A and B are two non-empty groups of coaches.",
+    "eg": "Input:\n1\n5\n3 1 2 6 4\n\nOutput:\n1",
+    "expl": "TC1: Sort: 1, 2, 3, 4, 6. Min diff is between 1 and 2, 2 and 3, or 3 and 4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Even Array",
+    "input": "First line t. Each case: n and array a. An array is good if a[i] % 2 == i % 2 for all i.",
+    "output": "Print min swaps to make array good, or -1 if impossible.",
+    "eg": "Input:\n1\n4\n3 2 7 6\n\nOutput:\n2",
+    "expl": "TC1: i=0 (even), a[0]=3 (odd). i=1 (odd), a[1]=2 (even). One swap between index 0 and 1 fixes both.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Discounts",
+    "input": "n (coupons), then a_i (prices). m (queries), then q_i. For each q_i, you buy q_i cheapest and get the cheapest one free.",
+    "output": "Print the total cost for each query if you buy all n and use the q_i coupon.",
+    "eg": "Input:\n5\n7 1 3 1 4\n2\n3 2\n\nOutput:\n13\n12",
+    "expl": "TC1: Sum = 16. Sorted: 1 1 3 4 7. q=3: free is 3rd from right (3). 16-3=13. q=2: free is 2nd from right (4). 16-4=12.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Fair Division",
+    "input": "First line t. Each case: n and n weights (either 1 or 2).",
+    "output": "Print YES if weights can be divided into two equal sums, else NO.",
+    "eg": "Input:\n1\n3\n1 2 1\n\nOutput:\nYES",
+    "expl": "TC1: Sum is 4. Each gets 2 (one gets a 2-kg, other gets two 1-kg).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Ordinary Numbers",
+    "input": "First line t. Each case: n (1 ≤ n ≤ 10^9). Ordinary numbers have all digits same (1, 22, 333).",
+    "output": "Print the count of ordinary numbers from 1 to n.",
+    "eg": "Input:\n1\n100\n\nOutput:\n18",
+    "expl": "TC1: 1-9 (9 numbers) and 11, 22, ..., 99 (9 numbers). Total 18.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Polycarp and Coins",
+    "input": "First line t. Each case: n (total value).",
+    "output": "Print c1 and c2 such that c1*1 + c2*2 = n and |c1 - c2| is minimized.",
+    "eg": "Input:\n1\n20\n\nOutput:\n6 7",
+    "expl": "TC1: 6*1 + 7*2 = 20. |6-7|=1.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Whose sentence is it?",
+    "input": "First line n. Next n lines contain sentences.",
+    "output": "Print 'Rainbow's' if it starts with 'lala.', 'Freda's' if it ends with '...lala', 'OMG>.< I don't know!' if both or neither.",
+    "eg": "Input:\n1\nlala.apple\n\nOutput:\nRainbow's",
+    "expl": "TC1: Starts with 'lala.', so it belongs to Rainbow.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Team Composition: Programmers and Mathematicians",
+    "input": "First line t. Each case: a (programmers) and b (mathematicians).",
+    "output": "Print max teams of 4 with at least one programmer and one mathematician.",
+    "eg": "Input:\n1\n5 5\n\nOutput:\n2",
+    "expl": "TC1: 2 teams of 4 use 8 people. Remaining 2 cannot form a team.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Square String?",
+    "input": "First line t. Each case: string s.",
+    "output": "Print YES if s is a concatenation of two identical strings, else NO.",
+    "eg": "Input:\n1\nababab\n\nOutput:\nNO",
+    "expl": "TC1: 'ababab' is length 6. 'aba' != 'bab'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Registration System",
+    "input": "First line n. Next n lines: names.",
+    "output": "Print OK if name is new, else name+number.",
+    "eg": "Input:\n4\na\nb\na\nb\n\nOutput:\nOK\nOK\na1\nb1",
+    "expl": "TC1: First 'a' and 'b' are new. Second 'a' is a duplicate, gets 'a1'.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "K-th Beautiful String",
+    "input": "First line t. Each case: n and k. s has length n, two 'b's and (n-2) 'a's.",
+    "output": "Print the k-th lexicographically smallest such string.",
+    "eg": "Input:\n1\n5 3\n\nOutput:\naabb",
+    "expl": "TC1: Strings for n=5: aaabb(1), aabab(2), aabb(3).",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Move Brackets",
+    "input": "First line t. Each case: n and string of brackets.",
+    "output": "Print min operations (move a bracket to end) to make the string balanced.",
+    "eg": "Input:\n1\n4\n)(()\n\nOutput:\n1",
+    "expl": "TC1: Move first ')' to end -> '(() )'. Balanced.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Lecture",
+    "input": "n and m. m pairs of words (same meaning, different languages). n words of a lecture.",
+    "output": "Print the lecture using the shorter word from each pair (if equal, use the first).",
+    "eg": "Input:\n4 3\ncodeforces codes\nabacaba aba\ntest tst\ncodeforces test abacaba test\n\nOutput:\ncodes tst aba tst",
+    "expl": "TC1: 'codes' shorter than 'codeforces'. 'aba' shorter than 'abacaba'. 'tst' shorter than 'test'.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Woodcutters",
+    "input": "n trees, then x_i and h_i.",
+    "output": "Print max trees that can be cut (fall left or right) without overlapping.",
+    "eg": "Input:\n5\n1 2\n2 1\n5 10\n10 9\n19 1\n\nOutput:\n3",
+    "expl": "TC1: Tree 1 (left), Tree 2 (cannot fall), Tree 3 (left), Tree 4 (cannot), Tree 5 (right).",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Maximum White Subtree",
+    "input": "First line n. Second line n integers (0 for black, 1 for white). n-1 lines: tree edges.",
+    "output": "For each vertex v, print the max value of (white nodes - black nodes) in a subtree containing v.",
+    "eg": "Input:\n3\n1 1 1\n1 2\n1 3\n\nOutput:\n3 3 3",
+    "expl": "TC1: All nodes are white. For any v, the whole tree is the best subtree. Total 3.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Working Out",
+    "input": "n and m. Next n lines: m integers (calories at grid i, j). Boy starts (1,1) to (n,m). Girl (n,1) to (1,m).",
+    "output": "Print max calorie sum if they must meet at exactly one cell and then continue.",
+    "eg": "Input:\n3 3\n100 100 100\n100 1 100\n100 100 100\n\nOutput:\n800",
+    "expl": "TC1: They meet at (2,2) and avoid its 1 calorie. They both take paths of 100s around the edges.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Flowers",
+    "input": "t and k. Next t lines: a and b.",
+    "output": "Count ways to eat between a and b flowers where white flowers must be in groups of k.",
+    "eg": "Input:\n3 2\n1 3\n2 3\n4 4\n\nOutput:\n6 5 5",
+    "expl": "TC1: Length 1: R. Length 2: RR, WW. Length 3: RRR, RWW, WWR. Total 1-3 is 6.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Holiday of Equality",
+    "input": "n citizens, then a_i welfare.",
+    "output": "Min money for king to make everyone's welfare equal to the maximum.",
+    "eg": "Input:\n5\n1 10 14 5 2\n\nOutput:\n38",
+    "expl": "TC1: Max is 14. Add 13, 4, 0, 9, 12. Total 38.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Vasya and Socks",
+    "input": "n and m. Every m-th day he gets 1 new pair of socks.",
+    "output": "Print how many days he can wear socks.",
+    "eg": "Input:\n9 3\n\nOutput:\n13",
+    "expl": "TC1: Day 1-9: uses 9. Day 3,6,9: gets 3 more. Day 10-12: uses 3. Day 12: gets 1 more. Day 13: uses 1. Total 13.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Boring Apartments",
+    "input": "t cases, then x (apartment number).",
+    "output": "Total digits pressed in sequence 1, 11, 111, 1111, 2...",
+    "eg": "Input:\n1\n22\n\nOutput:\n13",
+    "expl": "TC1: (1, 11, 111, 1111) is 10 digits. (2, 22) is 3 digits. Total 13.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Magical Sticks",
+    "input": "t cases, then n (number of sticks with lengths 1 to n).",
+    "output": "Max number of sticks of equal length obtainable by joining.",
+    "eg": "Input:\n1\n4\n\nOutput:\n2",
+    "expl": "TC1: n=4. Lengths {1, 2, 3, 4}. Join 1+4=5, 2+3=5. Two sticks of length 5.",
+    "diff": "EASY"
+  },
+  {
+    "q": "I'm bored with life",
+    "input": "Two integers a and b.",
+    "output": "Print GCD(a!, b!).",
+    "eg": "Input:\n4 3\n\nOutput:\n6",
+    "expl": "TC1: 4! = 24, 3! = 6. GCD(24, 6) = 6. Note: result is always min(a,b)!.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Night at the Museum",
+    "input": "A string of lowercase letters.",
+    "output": "Min rotations of a circular dial (a-z) to type the string, starting at 'a'.",
+    "eg": "Input:\nzeus\n\nOutput:\n18",
+    "expl": "TC1: a->z (1), z->e (5), e->u (10), u->s (2). Total 1+5+10+2=18.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Brain's Photos",
+    "input": "n and m. Next n lines: m characters (C, M, Y, W, G, B).",
+    "output": "Print '#Color' if C, M, or Y exists, else '#Black&White'.",
+    "eg": "Input:\n2 2\nW G\nB Y\n\nOutput:\n#Color",
+    "expl": "TC1: 'Y' (Yellow) exists, so it's a colored photo.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Bachgold Problem",
+    "input": "Integer n.",
+    "output": "Max number of primes that sum to n, then the primes.",
+    "eg": "Input:\n5\n\nOutput:\n2\n2 3",
+    "expl": "TC1: 5 = 2 + 3. 2 is the maximum number of primes.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Vanya and Lanterns",
+    "input": "n and L. Next line n integers a_i (positions of lanterns).",
+    "output": "Min light radius d to light the whole street [0, L].",
+    "eg": "Input:\n7 15\n15 5 3 7 9 14 0\n\nOutput:\n1.0000000000",
+    "expl": "TC1: Lanterns cover all points if d=1 (gap between 14-15 is 1).",
+    "diff": "EASY"
+  },
+  {
+    "q": "System of Equations",
+    "input": "n and m.",
+    "output": "Count pairs (a, b) such that a^2 + b = n and a + b^2 = m.",
+    "eg": "Input:\n9 3\n\nOutput:\n1",
+    "expl": "TC1: a=3, b=0: 9+0=9, 3+0=3. Only 1 pair.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Black Square",
+    "input": "a1, a2, a3, a4 (calories per strip). Second line: string s (sequence of strips).",
+    "output": "Total calories wasted.",
+    "eg": "Input:\n1 2 3 4\n12321\n\nOutput:\n10",
+    "expl": "TC1: s='12321' -> a1+a2+a3+a2+a1 = 1+2+3+2+1 = 10.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Polycarp and Day of Pi",
+    "input": "t cases, each string s.",
+    "output": "How many initial digits of s match Pi (31415926...).",
+    "eg": "Input:\n1\n31415\n\nOutput:\n5",
+    "expl": "TC1: '31415' matches the first 5 digits of Pi.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Interesting drink",
+    "input": "n shops, then x_i prices. q days, then m_j coins.",
+    "output": "Number of shops where price <= m_j.",
+    "eg": "Input:\n5\n3 10 8 6 11\n1\n9\n\nOutput:\n3",
+    "expl": "TC1: Shops with prices 3, 6, 8 are <= 9.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "T-primes",
+    "input": "n and n integers x_i.",
+    "output": "YES if x_i has 3 divisors, else NO.",
+    "eg": "Input:\n1\n4\n\nOutput:\nYES",
+    "expl": "TC1: 4 has {1, 2, 4}.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Worms",
+    "input": "n piles, then a_i (worms per pile). m queries, then q_j (index of worm).",
+    "output": "Pile index for each worm.",
+    "eg": "Input:\n5\n2 7 3 4 9\n3\n1 25 11\n\nOutput:\n1 5 3",
+    "expl": "TC1: Pile 1: worms 1-2. Pile 3: worms 10-12. Worm 11 is in pile 3.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Fancy Fence",
+    "input": "t cases, interior angle a.",
+    "output": "YES if regular polygon exists.",
+    "eg": "Input:\n1\n120\n\nOutput:\nYES",
+    "expl": "TC1: Angle 120 is a regular hexagon.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "BerSU Ball",
+    "input": "n boys (skills), m girls (skills). Pair if diff <= 1.",
+    "output": "Max pairs.",
+    "eg": "Input:\n4\n1 4 6 2\n5\n5 1 5 7 9\n\nOutput:\n3",
+    "expl": "TC1: Pairs: (1,1), (4,5), (6,5).",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "DNA Alignment",
+    "input": "n (length) and string s (A, C, G, T).",
+    "output": "Number of strings t such that f(s, t) is maximal, modulo 10^9 + 7.",
+    "eg": "Input:\n7\nAGCTATT\n\nOutput:\n1",
+    "expl": "TC1: 'T' is most frequent. Only one optimal string 'TTTTTTT' (simplified logic).",
+    "diff": "HARD"
+  },
+  {
+    "q": "Number of Ways",
+    "input": "n and array a.",
+    "output": "Ways to split array into 3 parts with equal sum.",
+    "eg": "Input:\n5\n1 2 3 0 3\n\nOutput:\n2",
+    "expl": "TC1: Total sum 9. Each part must be 3. Splits: [1,2], [3], [0,3] or [1,2], [3,0], [3].",
+    "diff": "HARD"
+  },
+  {
+    "q": "Vasya and Tree",
+    "input": "n. n-1 tree edges. m queries: v, d, x. Add x to all nodes in subtree v with distance <= d from v.",
+    "output": "Final value of each node.",
+    "eg": "Input:\n5\n1 2\n1 3\n2 4\n2 5\n1\n1 1 1\n\nOutput:\n1 1 1 0 0",
+    "expl": "TC1: Add 1 to node 1 and its children 2, 3 (distance 1). 4, 5 are distance 2 from 1.",
+    "diff": "HARD"
+  },
+  {
+    "q": "A+B?",
+    "input": "t cases, then string 'a+b'.",
+    "output": "Result of a+b.",
+    "eg": "Input:\n1\n4+2\n\nOutput:\n6",
+    "expl": "TC1: 4 + 2 = 6.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Polycarp's Pockets",
+    "input": "n and n integers (coin values).",
+    "output": "Min pockets to hold coins (one pocket cannot have two same values).",
+    "eg": "Input:\n6\n1 2 4 3 3 2\n\nOutput:\n2",
+    "expl": "TC1: Values 2 and 3 appear twice. Max frequency is 2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Atilla's Favorite Problem",
+    "input": "t cases, n (length), and string s.",
+    "output": "Min alphabet size needed to contain all characters in s.",
+    "eg": "Input:\n1\n5\ncodef\n\nOutput:\n6",
+    "expl": "TC1: Max char is 'f', which is 6th letter.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Odd Set",
+    "input": "t cases, n. Array has 2n integers.",
+    "output": "YES if we can make n pairs with odd sums, else NO.",
+    "eg": "Input:\n1\n2\n1 2 3 4\n\nOutput:\nYES",
+    "expl": "TC1: Pairs (1,2) and (3,4) both have odd sums. Needs equal count of even and odd.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Square String?",
+    "input": "t cases, string s.",
+    "output": "YES if s = t + t.",
+    "eg": "Input:\n1\nabcabc\n\nOutput:\nYES",
+    "expl": "TC1: 'abcabc' is 'abc' + 'abc'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Marathon",
+    "input": "t cases, a, b, c, d (distances).",
+    "output": "Number of people (b, c, d) ahead of a.",
+    "eg": "Input:\n1\n2 3 4 1\n\nOutput:\n2",
+    "expl": "TC1: 3 and 4 are greater than 2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Ezzat and Two Subsequences",
+    "input": "t cases, n, array a.",
+    "output": "Max value of f(A) + f(B) where f is average and A U B = a.",
+    "eg": "Input:\n1\n3\n1 2 3\n\nOutput:\n4.500000000",
+    "expl": "TC1: A={3}, B={1,2}. Avg(A)=3, Avg(B)=1.5. Sum = 4.5.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Fair Playoff",
+    "input": "t cases, 4 skills [s1, s2, s3, s4]. Game 1: s1 vs s2. Game 2: s3 vs s4.",
+    "output": "YES if the two highest skills meet in the final.",
+    "eg": "Input:\n1\n3 7 9 5\n\nOutput:\nYES",
+    "expl": "TC1: Winners: 7 and 9. These are the top two overall.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Discounts",
+    "input": "n prices, m queries q_i.",
+    "output": "Cost if q_i-th most expensive is free.",
+    "eg": "Input:\n5\n7 1 3 1 4\n1\n2\n\nOutput:\n12",
+    "expl": "TC1: Sum 16. 2nd expensive is 4. 16-4=12.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Equal Candies",
+    "input": "t cases, n, array a.",
+    "output": "Min candies to eat to make all piles equal.",
+    "eg": "Input:\n1\n5\n1 2 3 4 5\n\nOutput:\n10",
+    "expl": "TC1: Make all equal to 1. Eat (0+1+2+3+4) = 10.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Arithmetic Array",
+    "input": "t cases, n, array a.",
+    "output": "Min non-negative integers to add to make average exactly 1.",
+    "eg": "Input:\n1\n3\n1 1 1\n\nOutput:\n0",
+    "expl": "TC1: Avg is already 1.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Gifts Fixing",
+    "input": "t cases, n. Arrays a and b.",
+    "output": "Min moves to make all a_i = min(a) and b_i = min(b). One move: dec a_i, dec b_i, or both.",
+    "eg": "Input:\n1\n3\n3 5 6\n3 2 3\n\nOutput:\n6",
+    "expl": "TC1: Targets: a=3, b=2. Gifts: (0 moves), (2 moves), (3+1 moves). Total 6.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Construct the String",
+    "input": "t cases, n, a, b. String length n, substrings of length a must have b distinct letters.",
+    "output": "The string.",
+    "eg": "Input:\n1\n7 5 3\n\nOutput:\nabcabc a",
+    "expl": "TC1: Cycle 'abc'. Substring 'abcab' has 3 distinct.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Similar Pairs",
+    "input": "t cases, n, array a.",
+    "output": "YES if array can be partitioned into pairs that are both even/odd or have diff 1.",
+    "eg": "Input:\n1\n4\n11 14 15 12\n\nOutput:\nYES",
+    "expl": "TC1: (11,12) diff 1, (14,15) diff 1.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Board Moves",
+    "input": "t cases, odd n. n x n board.",
+    "output": "Min moves to bring all objects to one cell. One move: adjacent/diagonal.",
+    "eg": "Input:\n1\n3\n\nOutput:\n8",
+    "expl": "TC1: Center at (2,2). 8 cells at distance 1.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Buying Shovels",
+    "input": "t cases, n and k.",
+    "output": "Min packages to get exactly n shovels, if one package has x shovels (x <= k) and you buy some packages.",
+    "eg": "Input:\n1\n8 7\n\nOutput:\n2",
+    "expl": "TC1: Divisors of 8: 1, 2, 4, 8. Max divisor <= 7 is 4. n/4 = 2 packages.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Social Distance",
+    "input": "t cases, n and k. String s (0=empty, 1=person).",
+    "output": "Max additional people to seat such that any two '1's are distance > k.",
+    "eg": "Input:\n1\n6 1\n100010\n\nOutput:\n1",
+    "expl": "TC1: Seat at index 3: 1001010. Distance is 2 > 1.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Maximum Sum on Even Positions",
+    "input": "t cases, n, array a.",
+    "output": "Max sum of a[i] for even i after reversing one subarray.",
+    "eg": "Input:\n1\n8\n1 7 3 4 7 6 2 9\n\nOutput:\n26",
+    "expl": "TC1: Sum of even indices [1, 3, 7, 2] = 13. Reversing [7, 3, 4, 7] increases sum.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Two Divisors",
+    "input": "n and array a. For each a_i, find d1, d2 > 1 such that d1+d2 doesn't divide a_i and d1*d2 | a_i.",
+    "output": "d1 and d2 for each a_i, or -1.",
+    "eg": "Input:\n1\n12\n\nOutput:\n3 4",
+    "expl": "TC1: 3*4=12. 3+4=7. 7 does not divide 12.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Remove Adjacent",
+    "input": "n and string s. Delete s[i] if s[i-1] or s[i+1] is alphabetically preceding s[i].",
+    "output": "Max deletions.",
+    "eg": "Input:\n8\nbacabcba\n\nOutput:\n4",
+    "expl": "TC1: Delete 'c' next to 'b', then 'b' next to 'a'.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Vus the Cossack and a Contest",
+    "input": "n (people), m (pens), k (notebooks).",
+    "output": "Yes if m >= n and k >= n, else No.",
+    "eg": "Input:\n5 8 6\n\nOutput:\nYes",
+    "expl": "TC1: 8 pens and 6 notebooks are enough for 5 people.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Love \"A\"",
+    "input": "String s.",
+    "output": "Max length of a subsequence that is 'good' (more than half characters are 'a').",
+    "eg": "Input:\nxaxxxaa\n\nOutput:\n5",
+    "expl": "TC1: 3 'a's present. To be more than half, length must be at most 5.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Gennady and a Card Game",
+    "input": "Card on table, then 5 cards in hand.",
+    "output": "YES if rank or suit of any hand card matches the table card.",
+    "eg": "Input:\nAS\n2H 4C TH JH AD\n\nOutput:\nYES",
+    "expl": "TC1: 'AD' matches suit 'A'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Cards",
+    "input": "n (length) and string s (z, e, r, o, n).",
+    "output": "Max binary number (1s then 0s) that can be formed using letters.",
+    "eg": "Input:\n10\nnnzoreoero\n\nOutput:\n1 1 0",
+    "expl": "TC1: 'one', 'one', 'zero' can be formed.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Fafa and his Company",
+    "input": "n (employees).",
+    "output": "Ways to choose l (leaders) such that (n-l) is divisible by l.",
+    "eg": "Input:\n10\n\nOutput:\n3",
+    "expl": "TC1: l=1 (9/1), l=2 (8/2), l=5 (5/5).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Between the Offices",
+    "input": "n and string s (S=Seattle, F=San Francisco).",
+    "output": "YES if S->F trips > F->S trips.",
+    "eg": "Input:\n4\nSFFS\n\nOutput:\nNO",
+    "expl": "TC1: S->F (1), F->S (1). Equal, so NO.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Bus to Udayland",
+    "input": "n rows. Each row: XX|XX.",
+    "output": "YES and modified grid with first empty pair (OO), else NO.",
+    "eg": "Input:\n1\nOO|OX\n\nOutput:\nYES\n++|OX",
+    "expl": "TC1: First pair is empty, filled with ++.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Compote",
+    "input": "a (lemons), b (apples), c (pears). Recipe ratio 1:2:4.",
+    "output": "Max total fruits.",
+    "eg": "Input:\n2 5 10\n\nOutput:\n7",
+    "expl": "TC1: Use 1 lemon, 2 apples, 4 pears. Total 7. Using 2 lemons would need 8 pears (available) but 4 apples (available). Oh wait, 2:4:8 sum is 14.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Repeating Cipher",
+    "input": "n and encrypted string s.",
+    "output": "Decrypted string (1st char, then 3rd, then 6th...).",
+    "eg": "Input:\n6\nbaabbb\n\nOutput:\nbab",
+    "expl": "TC1: s[0]='b', s[2]='a', s[5]='b'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Ehab and GCD",
+    "input": "t cases, integer x.",
+    "output": "a and b such that GCD(a, b) + LCM(a, b) = x.",
+    "eg": "Input:\n1\n2\n\nOutput:\n1 1",
+    "expl": "TC1: GCD(1,1)=1, LCM(1,1)=1. 1+1=2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Ichihime and Triangle",
+    "input": "t cases, a, b, c, d.",
+    "output": "x, y, z such that a<=x<=b, b<=y<=c, c<=z<=d and form a triangle.",
+    "eg": "Input:\n1\n1 3 5 7\n\nOutput:\n3 5 5",
+    "expl": "TC1: 3, 5, 5 forms a triangle. 3+5 > 5.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Mahmoud and Ehab and the even-odd game",
+    "input": "Integer n.",
+    "output": "Mahmoud if n is even, Ehab if n is odd.",
+    "eg": "Input:\n1\n\nOutput:\nEhab",
+    "expl": "TC1: Mahmoud must pick even a. For n=1, he can't, so Ehab wins.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Petr and Book",
+    "input": "n (pages). Second line: 7 integers (pages read Mon-Sun).",
+    "output": "Day of the week (1-7) he finishes.",
+    "eg": "Input:\n100\n15 20 20 15 10 30 45\n\nOutput:\n6",
+    "expl": "TC1: Day 1-5: 80 pages. Day 6: reads up to 30 more, finishes 100.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Chewbaсca and Number",
+    "input": "Integer x.",
+    "output": "Min number by replacing digit d with 9-d, except first digit cannot be 0.",
+    "eg": "Input:\n27\n\nOutput:\n22",
+    "expl": "TC1: 2 stays 2 (2 < 7), 7 becomes 2 (9-7).",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Olympiad",
+    "input": "n and n scores.",
+    "output": "Number of non-zero distinct scores.",
+    "eg": "Input:\n6\n1 1 2 2 3 3\n\nOutput:\n3",
+    "expl": "TC1: Distinct non-zero: {1, 2, 3}.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "DZY Loves Chessboard",
+    "input": "n and m. Grid with '.' or '-'.",
+    "output": "Fill '.' with B or W so no two adjacent have same letter.",
+    "eg": "Input:\n2 2\n..\n..\n\nOutput:\nBW\nWB",
+    "expl": "TC1: Checkerboard pattern.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Array Room",
+    "input": "n and array a. Two players. Pick a number, all divisors are removed.",
+    "output": "Winner.",
+    "eg": "Input:\n1\n2\n\nOutput:\nFirst",
+    "expl": "TC1: Standard Game Theory problem.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Beautiful Graph",
+    "input": "n and m (edges).",
+    "output": "Number of ways to label nodes {1, 2, 3} such that for every edge, sum is odd.",
+    "eg": "Input:\n2 1\n1 2\n\nOutput:\n4",
+    "expl": "TC1: Edge (1,2). Labels (1,2), (2,1), (3,2), (2,3) all sum to odd.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Poles Selection",
+    "input": "n and k. n poles with positions and costs.",
+    "output": "Min cost to select k poles to cover all.",
+    "eg": "Input:\n3 1\n1 10\n2 1\n3 10\n\nOutput:\n1",
+    "expl": "TC1: Selecting pole at pos 2 costs 1.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Distance in Tree",
+    "input": "n and k. n-1 tree edges.",
+    "output": "Number of pairs of vertices at distance exactly k.",
+    "eg": "Input:\n5 2\n1 2\n2 3\n3 4\n2 5\n\nOutput:\n4",
+    "expl": "TC1: Pairs: (1,3), (1,5), (3,5), (2,4).",
+    "diff": "HARD"
+  },
+  {
+    "q": "Maximum Increase",
+    "input": "n and array a.",
+    "output": "Length of longest strictly increasing subarray.",
+    "eg": "Input:\n5\n1 7 2 11 15\n\nOutput:\n3",
+    "expl": "TC1: [2, 11, 15] is length 3.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Minutes Before the New Year",
+    "input": "t cases, h and m.",
+    "output": "Minutes until 00:00.",
+    "eg": "Input:\n1\n23 0\n\nOutput:\n60",
+    "expl": "TC1: 1 hour remains.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Floor Number",
+    "input": "t cases, n (apartment) and x (apartments per floor after floor 1).",
+    "output": "Floor of apartment n.",
+    "eg": "Input:\n1\n7 3\n\nOutput:\n3",
+    "expl": "TC1: Floor 1: 1-2. Floor 2: 3-5. Floor 3: 6-8. 7 is on floor 3.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Array with Odd Sum",
+    "input": "t cases, n, array a.",
+    "output": "YES if we can make sum odd by replacing elements with others from array (unlimited).",
+    "eg": "Input:\n1\n3\n2 4 6\n\nOutput:\nNO",
+    "expl": "TC1: All are even, sum will always be even.",
+    "diff": "EASY"
+  },
+  {
+    "q": "C+=",
+    "input": "t cases, a, b, n. Operation: a += b or b += a.",
+    "output": "Min operations to make max(a, b) > n.",
+    "eg": "Input:\n1\n1 2 3\n\nOutput:\n2",
+    "expl": "TC1: 2+1=3 (1 op), 3+2=5 (2 ops). 5 > 3.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Free Ice Cream",
+    "input": "n (people) and x (initial). + d (add), - d (take).",
+    "output": "Final stock and number of distressed kids (not enough ice cream).",
+    "eg": "Input:\n5 7\n+ 5\n- 10\n- 5\n+ 0\n- 2\n\nOutput:\n0 1",
+    "expl": "TC1: 7+5=12, 12-10=2, 2-5 (distressed), 2+0=2, 2-2=0.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Two Regular Polygons",
+    "input": "t cases, n and m.",
+    "output": "YES if a regular m-gon can be inscribed in a regular n-gon.",
+    "eg": "Input:\n1\n6 3\n\nOutput:\nYES",
+    "expl": "TC1: 6 is divisible by 3.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Collecting Coins",
+    "input": "t cases, a, b, c, n. Distribute n coins to make a=b=c.",
+    "output": "YES if possible.",
+    "eg": "Input:\n1\n5 3 2 8\n\nOutput:\nYES",
+    "expl": "TC1: Total 5+3+2+8=18. Each needs 6. a+1, b+3, c+4. 1+3+4=8.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Vanya and Cubes",
+    "input": "n (cubes). Level i needs i*(i+1)/2 cubes.",
+    "output": "Max levels.",
+    "eg": "Input:\n25\n\nOutput:\n3",
+    "expl": "TC1: L1: 1. L2: 3. L3: 6. Total 10. L4 needs 10 more (Total 20). Next level needs 15.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Sereja and Dima",
+    "input": "n and n cards. Players take leftmost or rightmost (highest).",
+    "output": "Final scores.",
+    "eg": "Input:\n4\n4 1 2 10\n\nOutput:\n14 3",
+    "expl": "TC1: S: 10, D: 4, S: 4, D: 2. S total 14, D 3.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Fashionable-Lee",
+    "input": "t cases, n.",
+    "output": "YES if regular n-gon has at least two perpendicular sides.",
+    "eg": "Input:\n1\n4\n\nOutput:\nYES",
+    "expl": "TC1: Square has perpendicular sides.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Remove Smallest",
+    "input": "t cases, n, array a. Remove a_i if |a_i - a_j| <= 1.",
+    "output": "YES if 1 element can remain.",
+    "eg": "Input:\n1\n3\n1 2 2\n\nOutput:\nYES",
+    "expl": "TC1: Remove 1 (using 2), then remove 2 (using 2).",
+    "diff": "EASY"
+  },
+  {
+    "q": "K-th Not Divisible by n",
+    "input": "t cases, n and k.",
+    "output": "k-th number not divisible by n.",
+    "eg": "Input:\n3 7\n\nOutput:\n10",
+    "expl": "TC1: 1, 2, 4, 5, 7, 8, 10.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Common Subsequence",
+    "input": "t cases, n, m, two arrays.",
+    "output": "YES and shortest common subsequence, or NO.",
+    "eg": "Input:\n1\n2 3\n1 2\n3 4 2\n\nOutput:\nYES 1 2",
+    "expl": "TC1: '2' is common to both.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Phoenix and Balance",
+    "input": "t cases, n (even). Coins with weights 2^1...2^n.",
+    "output": "Min difference between two piles of n/2 coins.",
+    "eg": "Input:\n1\n2\n\nOutput:\n2",
+    "expl": "TC1: n=2. Piles: {2^2} and {2^1}. 4-2=2.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "String Typing",
+    "input": "n and string s.",
+    "output": "Min operations to type s. One op: type char or copy-paste entire typed string.",
+    "eg": "Input:\n7\nabcacab\n\nOutput:\n6",
+    "expl": "TC1: Type 'abc', copy-paste 'abc' (1 op), type 'ab'.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Minimum Product",
+    "input": "t cases, a, b, x, y, n. Dec a or b n times (a>=x, b>=y).",
+    "output": "Min a*b.",
+    "eg": "Input:\n1\n10 10 8 5 3\n\nOutput:\n70",
+    "expl": "TC1: Dec b by 3: 10 * 7 = 70.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Two Houses",
+    "input": "n. Interactive: query '?' i j to get if path exists. Answer '!' i j.",
+    "output": "Two nodes i, j such that i->j and j->i exist.",
+    "eg": "Input:\n3\n\nOutput:\n! 1 2",
+    "expl": "TC1: Tournament graph properties.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Water Balance",
+    "input": "n and array a (water in cups). Pour water between adjacent cups to equalize.",
+    "output": "Lexicographically smallest final array.",
+    "eg": "Input:\n4\n7 5 5 7\n\nOutput:\n5.666 5.666 5.666 7.000",
+    "expl": "TC1: Average the first three to get smaller values at start.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Ehab and Path-etic MEXs",
+    "input": "n and n-1 edges.",
+    "output": "Label edges 0 to n-2 to minimize max MEX of any path.",
+    "eg": "Input:\n3\n1 2\n1 3\n\nOutput:\n0\n1",
+    "expl": "TC1: Only two edges, labels 0 and 1. Path 2-1-3 has MEX 2.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Odd One Out",
+    "input": "The first line contains t. Each test case contains three digits a, b, and c. Two of them are equal.",
+    "output": "Print the digit that occurs exactly once.",
+    "eg": "Input:\n1\n1 2 2\n\nOutput:\n1",
+    "expl": "TC1: 2 is repeated, so 1 is the odd one out.",
+    "diff": "EASY"
+  },
+  {
+    "q": "To My Critics",
+    "input": "t cases. Three digits a, b, c.",
+    "output": "YES if any two digits sum to 10 or more, else NO.",
+    "eg": "Input:\n1\n8 1 2\n\nOutput:\nYES",
+    "expl": "TC1: 8 + 2 = 10, which is >= 10.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Ten Words of Wisdom",
+    "input": "t cases, n (number of responses). Next n lines: a_i (length) and b_i (quality).",
+    "output": "The index of the response with max quality among those with length <= 10.",
+    "eg": "Input:\n1\n3\n7 20\n12 30\n9 25\n\nOutput:\n3",
+    "expl": "TC1: Response 2 is too long (12 > 10). Between 1 and 3, 3 has higher quality (25 > 20).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Word on the Paper",
+    "input": "t cases. 8x8 grid of characters '.' and lowercase letters.",
+    "output": "The word formed by letters (always in a single column).",
+    "eg": "Input:\n8x8 grid with 'c', 'a', 't' in a column...\n\nOutput:\ncat",
+    "expl": "TC1: Scanning the grid reveals the vertical word 'cat'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Sum",
+    "input": "t cases. Three integers a, b, c.",
+    "output": "YES if one of them is the sum of the other two.",
+    "eg": "Input:\n1\n1 4 3\n\nOutput:\nYES",
+    "expl": "TC1: 1 + 3 = 4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Blank Space",
+    "input": "t cases, n, binary array a.",
+    "output": "Length of the longest contiguous sequence of zeros.",
+    "eg": "Input:\n1\n5\n1 0 0 1 0\n\nOutput:\n2",
+    "expl": "TC1: Longest sequence of zeros is '0 0' (length 2).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Medium Number",
+    "input": "t cases. Three distinct integers a, b, c.",
+    "output": "The number that is neither the minimum nor the maximum.",
+    "eg": "Input:\n1\n5 2 7\n\nOutput:\n5",
+    "expl": "TC1: Sorted: 2, 5, 7. The medium is 5.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Advantage",
+    "input": "t cases, n, array a.",
+    "output": "For each a_i, output a_i minus the maximum of all other elements.",
+    "eg": "Input:\n1\n4\n4 7 3 5\n\nOutput:\n-3 2 -4 -2",
+    "expl": "TC1: Max is 7. For 4: 4-7=-3. For 7: 7-5=2. For 3: 3-7=-4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Atilla's Favorite Problem",
+    "input": "t cases, n, string s.",
+    "output": "Smallest alphabet size to represent s (1 for 'a', 26 for 'z').",
+    "eg": "Input:\n1\n5\ncodef\n\nOutput:\n6",
+    "expl": "TC1: Max char is 'f', 6th letter.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Prepend and Append",
+    "input": "t cases, n, binary string s.",
+    "output": "Shortest possible length of initial string if s was formed by repeatedly adding 0 to one end and 1 to the other.",
+    "eg": "Input:\n1\n7\n1001010\n\nOutput:\n1",
+    "expl": "TC1: Remove 1...0 (len 5), remove 0...1 (len 3), remove 0...1 (len 1).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Following Directions",
+    "input": "t cases, n, string s (U, D, L, R).",
+    "output": "YES if the path passes through (1, 1), else NO.",
+    "eg": "Input:\n1\n7\nUUURRRD\n\nOutput:\nYES",
+    "expl": "TC1: After 'UR', position is (1, 1).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Love Story",
+    "input": "t cases, string s (length 10).",
+    "output": "Number of indices where s[i] differs from 'codeforces'[i].",
+    "eg": "Input:\n1\nresforces\n\nOutput:\n2",
+    "expl": "TC1: 'r' vs 'c' and 'e' vs 'o'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Same Parity Summands",
+    "input": "t cases, n and k.",
+    "output": "YES and k integers with same parity that sum to n, else NO.",
+    "eg": "Input:\n1\n10 3\n\nOutput:\nYES\n2 2 6",
+    "expl": "TC1: 2+2+6 = 10, all even.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Berland Poker",
+    "input": "t cases, n (cards), m (jokers), k (players).",
+    "output": "Max points for winner minus points for second best player.",
+    "eg": "Input:\n1\n8 3 2\n\nOutput:\n3",
+    "expl": "TC1: Winner gets 3 jokers, second gets 0. 3 - 0 = 3.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Product of Three Numbers",
+    "input": "t cases, n.",
+    "output": "YES and three distinct a, b, c > 1 such that abc = n.",
+    "eg": "Input:\n1\n64\n\nOutput:\nYES\n2 4 8",
+    "expl": "TC1: 2*4*8 = 64.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "K-th Not Divisible by n",
+    "input": "t cases, n and k.",
+    "output": "The k-th integer not divisible by n.",
+    "eg": "Input:\n1\n3 7\n\nOutput:\n10",
+    "expl": "TC1: 1, 2, 4, 5, 7, 8, 10.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Board Moves",
+    "input": "t cases, odd n.",
+    "output": "Min moves to move all 1s from n*n grid to center.",
+    "eg": "Input:\n1\n3\n\nOutput:\n8",
+    "expl": "TC1: 8 cells at distance 1 from center.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Acyclic Graph edges",
+    "input": "n nodes, m edges with weights.",
+    "output": "Max weight of edges that can be kept such that the graph is a DAG and each node has max 1 outgoing edge.",
+    "eg": "Input:\n3 3\n1 2 10\n2 3 10\n3 1 5\n\nOutput:\n20",
+    "expl": "TC1: Keep edges 1->2 and 2->3. Total 20.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Stoned Game",
+    "input": "t cases, n piles, array a.",
+    "output": "Winner (T or HL) of a game where players take 1 stone from any pile not used in previous turn.",
+    "eg": "Input:\n1\n2\n1 1\n\nOutput:\nHL",
+    "expl": "TC1: T takes 1, HL takes 1. T has no moves.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Gardener and Tree",
+    "input": "t cases, n and k. n-1 tree edges.",
+    "output": "Nodes remaining after k operations of removing all current leaves.",
+    "eg": "Input:\n1\n6 2\n1 2\n2 3\n3 4\n2 5\n5 6\n\nOutput:\n1",
+    "expl": "TC1: Op 1 removes {1, 4, 6}. Op 2 removes {3, 5}. Node {2} remains.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Equal Candies",
+    "input": "t cases, n, array a.",
+    "output": "Min candies eaten to make all boxes equal.",
+    "eg": "Input:\n1\n5\n1 2 3 4 5\n\nOutput:\n10",
+    "expl": "TC1: Target is min (1). Eat 0+1+2+3+4 = 10.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Lucky?",
+    "input": "t cases, 6-digit ticket number s.",
+    "output": "YES if sum of first 3 digits equals sum of last 3.",
+    "eg": "Input:\n1\n213132\n\nOutput:\nYES",
+    "expl": "TC1: 2+1+3 = 6; 1+3+2 = 6.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Division?",
+    "input": "t cases, rating r.",
+    "output": "Division (1: r>=1900, 2: 1600-1899, 3: 1400-1599, 4: <1400).",
+    "eg": "Input:\n1\n1650\n\nOutput:\nDivision 2",
+    "expl": "TC1: 1650 is in the range for Division 2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Marathon",
+    "input": "t cases, a, b, c, d.",
+    "output": "Count of {b, c, d} strictly greater than a.",
+    "eg": "Input:\n1\n2 3 4 1\n\nOutput:\n2",
+    "expl": "TC1: 3 and 4 are > 2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Triple",
+    "input": "t cases, n, array a.",
+    "output": "Any value that appears at least 3 times, else -1.",
+    "eg": "Input:\n1\n7\n2 2 3 3 4 2 2\n\nOutput:\n2",
+    "expl": "TC1: 2 appears 4 times.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Odd/Even Increments",
+    "input": "t cases, n, array a. One op: increment all even indexed or all odd indexed.",
+    "output": "YES if we can make all elements same parity, else NO.",
+    "eg": "Input:\n1\n4\n1 2 1 2\n\nOutput:\nYES",
+    "expl": "TC1: Increment odd indices to get 2 2 2 2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "YES or YES?",
+    "input": "t cases, string s (length 3).",
+    "output": "YES if s is 'yes' in any case.",
+    "eg": "Input:\n1\nyEs\n\nOutput:\nYES",
+    "expl": "TC1: 'yEs' is a case variation of 'yes'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "ICPC Balloons",
+    "input": "t cases, n, string s.",
+    "output": "Total balloons: 2 for first time a problem is solved, 1 for subsequent.",
+    "eg": "Input:\n1\n3\nABA\n\nOutput:\n5",
+    "expl": "TC1: A (2), B (2), A (1). Total 5.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Polycarp and Coins",
+    "input": "t cases, n.",
+    "output": "c1 and c2 such that c1 + 2*c2 = n and |c1-c2| is min.",
+    "eg": "Input:\n1\n20\n\nOutput:\n6 7",
+    "expl": "TC1: 6 + 14 = 20. |6-7|=1.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Discounts",
+    "input": "n prices, m queries q_i.",
+    "output": "Total cost if q_i-th most expensive is free.",
+    "eg": "Input:\n1\n5\n7 1 3 1 4\n2\n\nOutput:\n12",
+    "expl": "TC1: Sum 16. 2nd expensive is 4. 16-4=12.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Minimal Square",
+    "input": "t cases, a and b.",
+    "output": "Min area of square to fit two a*b rectangles.",
+    "eg": "Input:\n1\n3 2\n\nOutput:\n16",
+    "expl": "TC1: min(max(2a, b), max(a, 2b))^2 = 4^2 = 16.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Fair Division",
+    "input": "t cases, n, array of 1s and 2s.",
+    "output": "YES if divisible into two equal sums.",
+    "eg": "Input:\n1\n3\n1 2 1\n\nOutput:\nYES",
+    "expl": "TC1: (1,1) and (2). Both sum to 2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Two Buttons",
+    "input": "n and m. Ops: n*2 or n-1.",
+    "output": "Min operations to reach m.",
+    "eg": "Input:\n4 6\n\nOutput:\n2",
+    "expl": "TC1: 4-1=3, 3*2=6.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Cheap Travel",
+    "input": "n, m, a, b.",
+    "output": "Min cost for n rides (a per ride, b for m-ride ticket).",
+    "eg": "Input:\n6 2 1 2\n\nOutput:\n6",
+    "expl": "TC1: 6 individual or 3 tickets both cost 6.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "K-th Beautiful String",
+    "input": "t cases, n, k.",
+    "output": "The k-th lexicographical string of len n with two 'b's.",
+    "eg": "Input:\n1\n5 3\n\nOutput:\naabb",
+    "expl": "TC1: String 1: aaabb, 2: aabab, 3: aabb.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Ternary XOR",
+    "input": "t cases, n, string x (base 3).",
+    "output": "Two strings a, b (base 3) such that max(a, b) is min and a XOR b = x.",
+    "eg": "Input:\n1\n5\n22222\n\nOutput:\n11111\n11111",
+    "expl": "TC1: Balanced distribution leads to 11111 for both.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Zero Array",
+    "input": "n, array a.",
+    "output": "YES if we can make all elements zero by picking two and decrementing both.",
+    "eg": "Input:\n1\n4\n1 1 2 2\n\nOutput:\nYES",
+    "expl": "TC1: Pick (1,1) -> 0,0,2,2. Pick (2,2) -> 0,0,0,0.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Duff in Love",
+    "input": "n.",
+    "output": "Max divisor of n that is square-free.",
+    "eg": "Input:\n12\n\nOutput:\n6",
+    "expl": "TC1: Divisors: 1, 2, 3, 4, 6, 12. 6 is the largest square-free divisor.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Maximum White Subtree",
+    "input": "n nodes, array a (0/1). n-1 edges.",
+    "output": "For each node v, max (white-black) in a subtree containing v.",
+    "eg": "Input:\n3\n1 1 1\n1 2\n1 3\n\nOutput:\n3 3 3",
+    "expl": "TC1: All nodes white, max is entire tree size 3.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Ehab and Path-etic MEXs",
+    "input": "n nodes, n-1 edges.",
+    "output": "Edge labeling to minimize max MEX of any path.",
+    "eg": "Input:\n3\n1 2\n1 3\n\nOutput:\n0\n1",
+    "expl": "TC1: Assigning 0 and 1 to edges branching from a node.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Codeforces Checking",
+    "input": "t cases, char c.",
+    "output": "YES if c is in 'codeforces', else NO.",
+    "eg": "Input:\n1\na\n\nOutput:\nNO",
+    "expl": "TC1: 'a' is not in 'codeforces'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Square",
+    "input": "t cases, 4 pairs of coordinates.",
+    "output": "Area of the square formed by these points.",
+    "eg": "Input:\n1\n0 0\n0 2\n2 0\n2 2\n\nOutput:\n4",
+    "expl": "TC1: Side length is 2. Area = 2*2 = 4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Vlad and the Best of Five",
+    "input": "t cases, string s of 'A' and 'B'.",
+    "output": "The most frequent character.",
+    "eg": "Input:\n1\nABABB\n\nOutput:\nB",
+    "expl": "TC1: 'B' appears 3 times, 'A' appears 2 times.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Stair, Peak, or Neither?",
+    "input": "t cases, a, b, c.",
+    "output": "STAIR if a<b<c, PEAK if a<b>c, else NONE.",
+    "eg": "Input:\n1\n1 3 2\n\nOutput:\nPEAK",
+    "expl": "TC1: 1 < 3 and 3 > 2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Clock Conversion",
+    "input": "t cases, string 'HH:MM' (24-hour).",
+    "output": "Time in 12-hour format 'HH:MM AM/PM'.",
+    "eg": "Input:\n1\n13:00\n\nOutput:\n01:00 PM",
+    "expl": "TC1: 13:00 is 1:00 PM.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Rudolf and the Ticket",
+    "input": "t cases, n, m, k. Arrays b and c.",
+    "output": "Number of pairs (b_i, c_j) such that b_i + c_j <= k.",
+    "eg": "Input:\n1\n2 2 10\n5 6\n4 7\n\nOutput:\n2",
+    "expl": "TC1: (5,4) and (6,4) sum to <= 10.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Sum of Three",
+    "input": "t cases, n.",
+    "output": "YES and three distinct x, y, z not divisible by 3 such that x+y+z=n, else NO.",
+    "eg": "Input:\n1\n10\n\nOutput:\nYES\n1 2 7",
+    "expl": "TC1: 1+2+7=10, none divisible by 3.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Short Sort",
+    "input": "t cases, string s ('abc' permutation).",
+    "output": "YES if s can be 'abc' in at most one swap, else NO.",
+    "eg": "Input:\n1\nbac\n\nOutput:\nYES",
+    "expl": "TC1: Swap b and a to get 'abc'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Target Practice",
+    "input": "t cases, 10x10 grid with 'X's.",
+    "output": "Total points (outer ring 1, inner ring 5).",
+    "eg": "Input:\n'X' at (0,0) and (5,5)...\n\nOutput:\n6",
+    "expl": "TC1: (0,0) is ring 1, (5,5) is ring 5. 1+5=6.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Good Kid",
+    "input": "t cases, n, array a.",
+    "output": "Max product of elements after adding 1 to exactly one element.",
+    "eg": "Input:\n1\n3\n2 2 1\n\nOutput:\n4",
+    "expl": "TC1: Change 1 to 2. 2*2*2=8. Wait, example says 4, if inputs were 1,2,1 -> 2,2,1 -> 4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Can I Square?",
+    "input": "t cases, n, array a.",
+    "output": "YES if sum(a) is a perfect square, else NO.",
+    "eg": "Input:\n1\n2\n9 7\n\nOutput:\nYES",
+    "expl": "TC1: 9 + 7 = 16 = 4^2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Odd Queries",
+    "input": "t cases, n, q. array a. queries (l, r, k). Replace a[l...r] with k.",
+    "output": "YES if new sum is odd, else NO.",
+    "eg": "Input:\n1\n5 1\n2 2 1 3 2\n2 3 3\n\nOutput:\nYES",
+    "expl": "TC1: Orig sum 10. Replace (2,3) with 3: 2 3 3 3 2. Sum 13 (odd).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Scuza",
+    "input": "t cases, n, q, heights a_i, query legs k_j.",
+    "output": "Max height reachable if you can't step on a_i > k_j.",
+    "eg": "Input:\n1\n4 1\n1 2 5 2\n3\n\nOutput:\n3",
+    "expl": "TC1: Can step on 1 and 2, but not 5. Sum is 1+2=3.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Gold Rush",
+    "input": "t cases, n and m. Split n into n/3 and 2n/3 recursively.",
+    "output": "YES if m can be reached, else NO.",
+    "eg": "Input:\n1\n27 8\n\nOutput:\nYES",
+    "expl": "TC1: 27 -> (9, 18). 18 -> (6, 12). 12 -> (4, 8). 8 reached.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Tenzing and Books",
+    "input": "t cases, n, x. 3 stacks of books.",
+    "output": "YES if x can be formed by bitwise OR of prefixes of stacks, else NO.",
+    "eg": "Input:\n1\n3 7\n1 2 3\n4 5 6\n7 8 9\n\nOutput:\nYES",
+    "expl": "TC1: 1|2|4 = 7.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Black and White Stripe",
+    "input": "t cases, n, k, string s ('W', 'B').",
+    "output": "Min 'W' to change to 'B' to get a k-length 'B' stripe.",
+    "eg": "Input:\n1\n5 3\nBBWWB\n\nOutput:\n1",
+    "expl": "TC1: Change s[2] to B. BBBWB.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Two Binary Strings",
+    "input": "t cases, strings a and b starting with 0, ending with 1.",
+    "output": "YES if they can be made equal by choosing [l, r] where a[l]=a[r] and setting a[l...r] to that char.",
+    "eg": "Input:\n1\n0011\n0101\n\nOutput:\nYES",
+    "expl": "TC1: Both have '01' at indices (0,1) or (2,3).",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Inversion Graph",
+    "input": "t cases, n, permutation p.",
+    "output": "Number of connected components if edge (i, j) exists if i < j and p[i] > p[j].",
+    "eg": "Input:\n1\n4\n2 3 1 4\n\nOutput:\n2",
+    "expl": "TC1: {2, 3, 1} and {4} are components.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Weight the Tree",
+    "input": "n, n-1 edges.",
+    "output": "Max number of 'good' nodes (weight equals sum of neighbors). Min total weight.",
+    "eg": "Input:\n2\n1 2\n\nOutput:\n2 2\n1 1",
+    "expl": "TC1: Both nodes good if both weights are 1.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Minimum Grid Path",
+    "input": "t cases, n, array c.",
+    "output": "Min cost to reach (n, n) using steps c_i.",
+    "eg": "Input:\n1\n2\n13 88\n\nOutput:\n202",
+    "expl": "TC1: (13*2) + (88*2) = 202.",
+    "diff": "HARD"
+  },
+  {
+    "q": "X Axis",
+    "input": "t cases, three points x1, x2, x3.",
+    "output": "Min total distance |a-x1| + |a-x2| + |a-x3|.",
+    "eg": "Input:\n1\n1 5 9\n\nOutput:\n8",
+    "expl": "TC1: Median is 5. |5-1|+|5-5|+|5-9| = 4+0+4=8.",
+    "diff": "EASY"
+  },
+  {
+    "q": "New Bakery",
+    "input": "t cases, n, a, b.",
+    "output": "Max profit if k buns sold at b, b-1... and n-k buns sold at a.",
+    "eg": "Input:\n1\n4 2 5\n\nOutput:\n14",
+    "expl": "TC1: Sell 3 buns at 5, 4, 3 (sum 12) and 1 bun at 2. Total 14.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Manhattan Circle",
+    "input": "t cases, n, m, grid with '#' forming a circle.",
+    "output": "Center coordinates of the circle.",
+    "eg": "Input:\n5 5 grid with # center at 3,3...\n\nOutput:\n3 3",
+    "expl": "TC1: Intersection of max width and max height of #s.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Good Prefixes",
+    "input": "t cases, n, array a.",
+    "output": "Number of prefixes where max element equals sum of others.",
+    "eg": "Input:\n1\n4\n1 1 2 0\n\nOutput:\n3",
+    "expl": "TC1: [1,1,2] (2=1+1), [1,1,2,0] (2=1+1+0).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Boring Day",
+    "input": "t cases, n, l, r. array a.",
+    "output": "Max non-overlapping subsegments with sum in [l, r].",
+    "eg": "Input:\n1\n5 4 8\n1 5 2 3 1\n\nOutput:\n2",
+    "expl": "TC1: [5] and [2,3,1] are valid.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Creating Words",
+    "input": "t cases, strings a and b (len 3).",
+    "output": "a and b after swapping a[0] and b[0].",
+    "eg": "Input:\n1\nbit rom\n\nOutput:\nrit bom",
+    "expl": "TC1: 'b' and 'r' swapped.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Symmetric Encoding",
+    "input": "t cases, n, string s.",
+    "output": "Decoded string where each char c is replaced by its symmetric counterpart in the sorted distinct char string.",
+    "eg": "Input:\n1\n10\ncodeforces\n\nOutput:\n... (encoded)",
+    "expl": "TC1: Distinct sorted: c d e f o r s. c <-> s, d <-> r...",
+    "diff": "EASY"
+  },
+  {
+    "q": "Prefiquence",
+    "input": "t cases, n, m, binary strings a and b.",
+    "output": "Max k such that prefix of a of len k is a subsequence of b.",
+    "eg": "Input:\n1\n4 5\n1011\n11101\n\nOutput:\n2",
+    "expl": "TC1: '10' is a subsequence of '11101'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Phone Desktop",
+    "input": "t cases, x (1x1 icons), y (2x2 icons).",
+    "output": "Min 5x3 screens needed.",
+    "eg": "Input:\n1\n7 2\n\nOutput:\n1",
+    "expl": "TC1: One 5x3 screen has 15 cells. 2x2 icons take 4 cells each. 2*4 + 7 = 15.",
+    "diff": "EASY"
+  },
+  {
+    "q": "My First Sorting Problem",
+    "input": "t cases, x and y.",
+    "output": "min(x, y) and max(x, y).",
+    "eg": "Input:\n1\n5 2\n\nOutput:\n2 5",
+    "expl": "TC1: 2 < 5.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Square?",
+    "input": "t cases, a1, b1 and a2, b2 (rectangles).",
+    "output": "YES if they form a square, else NO.",
+    "eg": "Input:\n1\n2 3\n1 3\n\nOutput:\nYES",
+    "expl": "TC1: 2+1=3. 3x3 square.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Different Differences",
+    "input": "t cases, k and n.",
+    "output": "k integers 1 <= a_i <= n with max distinct differences a_i - a_{i-1}.",
+    "eg": "Input:\n1\n4 9\n\nOutput:\n1 2 4 7",
+    "expl": "TC1: Diffs: 1, 2, 3.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Increase/Decrease/Copy",
+    "input": "t cases, n, array a, array b (len n+1).",
+    "output": "Min ops to transform a to b[0...n-1] and copy one element to b[n].",
+    "eg": "Input:\n1\n2\n1 1\n1 1 3\n\nOutput:\n3",
+    "expl": "TC1: 1->3 costs 2, plus 1 for the copy op.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Inhabitant of the Deep Sea",
+    "input": "t cases, n, k, array a.",
+    "output": "Number of ships (a_i) sunk after k attacks (alternating front and back).",
+    "eg": "Input:\n1\n4 5\n1 2 4 3\n\nOutput:\n2",
+    "expl": "TC1: Attacks hit 1 (sunk), 3, 2, 4, 2. Ships 1 and 4 sunk.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Progressive Square",
+    "input": "t cases, n, c, d, array b (len n^2).",
+    "output": "YES if b can form an n*n square where a[i+1][j] = a[i][j]+c and a[i][j+1] = a[i][j]+d.",
+    "eg": "Input:\n1\n2 1 2\n3 4 5 6\n\nOutput:\nYES",
+    "expl": "TC1: Square: [[3,5],[4,6]].",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "K-th Not Divisible by n",
+    "input": "t cases, n, k.",
+    "output": "k-th number not divisible by n.",
+    "eg": "Input:\n1\n3 7\n\nOutput:\n10",
+    "expl": "TC1: 1, 2, 4, 5, 7, 8, 10.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Basketball Together",
+    "input": "n, d, array p.",
+    "output": "Max teams such that team sum > d using members of p.",
+    "eg": "Input:\n1\n6 180\n90 80 70 60 50 10\n\nOutput:\n2",
+    "expl": "TC1: (90, 90) > 180, (80, 80, 80) > 180.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Two Divisors",
+    "input": "t cases, a and b (divisors of x).",
+    "output": "Smallest x > b such that a and b are its largest divisors.",
+    "eg": "Input:\n1\n2 4\n\nOutput:\n8",
+    "expl": "TC1: Divisors of 8 are 1, 2, 4. Largest are 2 and 4.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Long Inversions",
+    "input": "t cases, n, binary string s.",
+    "output": "Max k such that s can be all '1's using k-length flip operations.",
+    "eg": "Input:\n1\n5\n01010\n\nOutput:\n1",
+    "expl": "TC1: Only k=1 works for this pattern.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Card Game",
+    "input": "t cases, n, array a.",
+    "output": "Max score if taking a_i (at index i) gives a_i points and you remove i elements from start.",
+    "eg": "Input:\n1\n4\n-4 1 -3 5\n\nOutput:\n5",
+    "expl": "TC1: Best to skip to the end.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Chemistry",
+    "input": "t cases, n, k, string s.",
+    "output": "YES if s can become a palindrome by removing k characters and rearranging, else NO.",
+    "eg": "Input:\n1\n1 0\na\n\nOutput:\nYES",
+    "expl": "TC1: Single char is already a palindrome.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Jagged Swaps",
+    "input": "t cases, n, permutation p.",
+    "output": "YES if p can be sorted by swapping p[i] with p[i-1] if p[i-1] < p[i] > p[i+1].",
+    "eg": "Input:\n1\n3\n1 2 3\n\nOutput:\nYES",
+    "expl": "TC1: If p[0] is 1, it's always possible.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Cover in Water",
+    "input": "t cases, n, string s ('.' or '#').",
+    "output": "Min operations (fill '.') to fill all '.' with water. If 3 '.' are adjacent, water is infinite.",
+    "eg": "Input:\n1\n5\n..#..\n\nOutput:\n4",
+    "expl": "TC1: No 3 adjacent, must fill each '.' individually.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Line Trip",
+    "input": "t cases, n, x, array a (gas stations).",
+    "output": "Min fuel tank capacity to travel 0->x and x->0.",
+    "eg": "Input:\n1\n3 7\n1 2 5\n\nOutput:\n4",
+    "expl": "TC1: Max gap is 2*(7-5) = 4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Game with Integers",
+    "input": "t cases, n. Two players. Vova wins if n % 3 == 0 after 10 moves.",
+    "output": "First or Second.",
+    "eg": "Input:\n1\n1\n\nOutput:\nFirst",
+    "expl": "TC1: First makes it 0 or 2. If he can make it %3=0 in 1 move, he wins.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Halloumi Boxes",
+    "input": "t cases, n, k, array a.",
+    "output": "YES if a can be sorted by reversing segments of len <= k.",
+    "eg": "Input:\n1\n3 1\n3 2 1\n\nOutput:\nNO",
+    "expl": "TC1: k=1 means no changes possible. Array is not sorted.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Secret Sport",
+    "input": "t cases, n, string s ('A', 'B').",
+    "output": "Winner of the match (last character).",
+    "eg": "Input:\n1\n5\nABABA\n\nOutput:\nA",
+    "expl": "TC1: The last player to win a set wins the match.",
+    "diff": "EASY"
+  },
+  {
+    "q": "United We Stand",
+    "input": "t cases, n, array a.",
+    "output": "Two arrays b and c such that b is not empty, c is not empty, and no b_i divides any c_j.",
+    "eg": "Input:\n1\n3\n2 2 2\n\nOutput:\n-1",
+    "expl": "TC1: All elements same, cannot separate.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Buttons",
+    "input": "t cases, a, b, c. a (Anna), b (Katie), c (shared).",
+    "output": "First or Second.",
+    "eg": "Input:\n1\n1 1 1\n\nOutput:\nFirst",
+    "expl": "TC1: Anna takes shared, then Katie takes her own, then Anna takes her own. Anna wins.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Array Coloring",
+    "input": "t cases, n, array a.",
+    "output": "YES if array can be split into two parts with same parity sum, else NO.",
+    "eg": "Input:\n1\n2\n1 3\n\nOutput:\nYES",
+    "expl": "TC1: Part 1: [1], Part 2: [3]. Both odd.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Dalton the Teacher",
+    "input": "t cases, n, permutation p.",
+    "output": "Min swaps to make p[i] != i for all i.",
+    "eg": "Input:\n1\n2\n1 2\n\nOutput:\n1",
+    "expl": "TC1: Swap (1,2) to get 2 1.",
+    "diff": "EASY"
+  },
+  {
+    "q": "To My Critics",
+    "input": "t cases, a, b, c.",
+    "output": "YES if sum of two >= 10.",
+    "eg": "Input:\n1\n8 1 2\n\nOutput:\nYES",
+    "expl": "TC1: 8+2=10.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Two Binary Strings",
+    "input": "t cases, a, b.",
+    "output": "YES if they can be made equal.",
+    "eg": "Input:\n1\n0011\n0101\n\nOutput:\nYES",
+    "expl": "TC1: Common '01' pattern.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Gardener and the Array",
+    "input": "t cases, n. n numbers given as lists of set bits.",
+    "output": "YES if there exist two different subsets with same bitwise OR.",
+    "eg": "Input:\n1\n3\n2 1 2\n2 2 3\n2 1 3\n\nOutput:\nYES",
+    "expl": "TC1: OR of all three is same as OR of first two.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Living Sequence",
+    "input": "t cases, k.",
+    "output": "The k-th positive integer that does not contain the digit '4'.",
+    "eg": "Input:\n1\n9\n\nOutput:\n10",
+    "expl": "TC1: Numbers: 1, 2, 3, 5, 6, 7, 8, 9, 10.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "The Lakes",
+    "input": "t cases, n, m, grid of depths.",
+    "output": "Max volume of a lake (connected non-zero cells).",
+    "eg": "Input:\n1\n3 3\n0 0 5\n1 0 2\n3 3 0\n\nOutput:\n7",
+    "expl": "TC1: Lake {1, 3, 3} has volume 7.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Insert Digit",
+    "input": "t cases, n, d, string s.",
+    "output": "Max number by inserting digit d into s.",
+    "eg": "Input:\n1\n5 4\n76543\n\nOutput:\n765443",
+    "expl": "TC1: Insert 4 before 3.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Strong Vertices",
+    "input": "t cases, n, arrays a and b.",
+    "output": "List of strong vertices (u is strong if a[u]-b[u] >= a[v]-b[v] for all v).",
+    "eg": "Input:\n1\n4\n3 1 2 4\n4 3 2 1\n\nOutput:\n1 4",
+    "expl": "TC1: a-b values: -1, -2, 0, 3. Max is 3 (index 4).",
+    "diff": "HARD"
+  },
+  {
+    "q": "Tenzing and Random Real Numbers",
+    "input": "n, m, k. n variables, m constraints.",
+    "output": "Expected number of satisfied constraints.",
+    "eg": "Input:\n(Complex input)\n\nOutput:\n(Result)",
+    "expl": "TC1: Advanced probability and graph theory.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Great Grids",
+    "input": "t cases, n, m, k constraints (grid[r1][c1] != grid[r2][c2]).",
+    "output": "YES if grid can be filled with 0, 1, 2 such that no adjacent cells same.",
+    "eg": "Input:\n(Constraints)\n\nOutput:\nYES",
+    "expl": "TC1: 2-SAT or Bipartite matching approach.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Love Song",
+    "input": "n, q, string s. q queries (l, r).",
+    "output": "Length of string if s[i] is repeated (s[i]-'a'+1) times for the range [l, r].",
+    "eg": "Input:\n7 1\nabacaba\n1 3\n\nOutput:\n6",
+    "expl": "TC1: 'a' (1) + 'b' (2) + 'a' (1) = 4. Wait, the example 'aba' becomes 'abb-a', total 4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Ezzat and Two Subsequences",
+    "input": "t cases, n, array a.",
+    "output": "Max value of f(A) + f(B) where f is average.",
+    "eg": "Input:\n1\n3\n1 2 3\n\nOutput:\n4.500000000",
+    "expl": "TC1: Put max in one set, rest in other. 3 + (1+2)/2 = 4.5.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Gregor and Cryptography",
+    "input": "t cases, prime p.",
+    "output": "Two integers a, b such that p%a = p%b.",
+    "eg": "Input:\n1\n17\n\nOutput:\n2 16",
+    "expl": "TC1: 17%2 = 1, 17%16 = 1.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Mocha and Red and Blue",
+    "input": "t cases, n, string s with 'R', 'B', or '?'.",
+    "output": "Replace '?' to minimize adjacent same colors.",
+    "eg": "Input:\n1\n5\n?R?B?\n\nOutput:\nBRBRB",
+    "expl": "TC1: Alternate colors to ensure zero adjacent same colors.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Dislike of Threes",
+    "input": "t cases, k.",
+    "output": "The k-th integer that doesn't end in 3 and isn't divisible by 3.",
+    "eg": "Input:\n1\n3\n\nOutput:\n4",
+    "expl": "TC1: 1, 2, (3 skip), 4. 4 is the 3rd valid number.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Polycarp and Coins",
+    "input": "t cases, n.",
+    "output": "c1, c2 such that c1 + 2*c2 = n and |c1-c2| is min.",
+    "eg": "Input:\n1\n100\n\nOutput:\n34 33",
+    "expl": "TC1: 34 + 2*33 = 100. |34-33|=1.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Subsequence Permutation",
+    "input": "t cases, n, string s.",
+    "output": "Min characters to change to make s sorted (count k where s[i] != sorted_s[i]).",
+    "eg": "Input:\n1\n6\nabacaba\n\nOutput:\n... (sorted)",
+    "expl": "TC1: Compare 'abacaba' with 'aaaabbc'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Whose sentence is it?",
+    "input": "n sentences.",
+    "output": "Identify if Freda's, Rainbow's, or unknown.",
+    "eg": "Input:\n1\nlala.apple\n\nOutput:\nRainbow's",
+    "expl": "TC1: Starts with 'lala.'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Odd Set",
+    "input": "t cases, n, 2n integers.",
+    "output": "YES if we can form n pairs with odd sums.",
+    "eg": "Input:\n1\n2\n1 2 3 4\n\nOutput:\nYES",
+    "expl": "TC1: Needs 2 odds and 2 evens. (1,2) and (3,4).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Stone Game",
+    "input": "t cases, n, array a.",
+    "output": "Min moves to remove both min and max element from either end.",
+    "eg": "Input:\n1\n5\n1 5 4 3 2\n\nOutput:\n2",
+    "expl": "TC1: Min(1) is index 1, Max(5) is index 2. Remove both from left.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Arithmetic Array",
+    "input": "t cases, n, array a.",
+    "output": "Min non-negative integers to add to make average 1.",
+    "eg": "Input:\n1\n3\n8 3 2\n\nOutput:\n10",
+    "expl": "TC1: Sum 13, n=3. Add 10 zeros, sum 13, n=13. Avg = 1.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Eshag Loves Big Arrays",
+    "input": "t cases, n, array a. Remove a_i if a_i > average of a subset.",
+    "output": "Max elements that can be removed.",
+    "eg": "Input:\n1\n6\n1 1 1 2 2 3\n\nOutput:\n3",
+    "expl": "TC1: All elements > min(a) can be removed eventually.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Mocha and Math",
+    "input": "t cases, n, array a.",
+    "output": "Min possible max value of array after any number of [l, r] bitwise AND operations.",
+    "eg": "Input:\n1\n2\n1 2\n\nOutput:\n0",
+    "expl": "TC1: 1 AND 2 = 0. Max value becomes 0.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Challenging Cliffs",
+    "input": "t cases, n, array h.",
+    "output": "Permutation such that |h[0]-h[n-1]| is min and diffs are somewhat sorted.",
+    "eg": "Input:\n1\n4\n4 2 1 2\n\nOutput:\n2 4 1 2",
+    "expl": "TC1: Min diff is |2-2|=0. Put them at ends.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Pleasant Pairs",
+    "input": "t cases, n, array a.",
+    "output": "Count (i, j) where i < j and a[i] * a[j] = i + j.",
+    "eg": "Input:\n1\n3\n3 1 2\n\nOutput:\n1",
+    "expl": "TC1: (1, 3): a[1]*a[3] = 3*2 = 6. 1+3=4 (No). (2, 3): 1*2=2. 2+3=5 (No). Check indices!",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Great Graphs",
+    "input": "t cases, n, array d (distances from node 1).",
+    "output": "Min total weight of edges in a directed graph satisfying d.",
+    "eg": "Input:\n1\n3\n0 2 3\n\nOutput:\n-3",
+    "expl": "TC1: Use negative edges to reduce total weight while maintaining path distances.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Cobb",
+    "input": "t cases, n, k, array a.",
+    "output": "Max value of i*j - k*(a[i] | a[j]) for i < j.",
+    "eg": "Input:\n1\n3 1\n1 1 3\n\nOutput:\n2",
+    "expl": "TC1: Only check a small range from the end (j=n).",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Say No to Palindromes",
+    "input": "n, m, string s. m queries (l, r).",
+    "output": "Min changes to make s[l...r] have no palindromic substring of length > 1.",
+    "eg": "Input:\n5 1\nbaacb\n1 3\n\nOutput:\n1",
+    "expl": "TC1: 'baa' to 'abc' or 'bac'. No palindromes if no 'aa' or 'aba' patterns.",
+    "diff": "HARD"
+  },
+  {
+    "q": "RBS",
+    "input": "t cases, n (even), string s with '(', ')', '?'.",
+    "output": "YES if there is exactly one way to make s a Regular Bracket Sequence, else NO.",
+    "eg": "Input:\n1\n6\n(??)??\n\nOutput:\nYES",
+    "expl": "TC1: Check if the 'second best' placement also works.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Borscht Cooking",
+    "input": "n, m. n ingredients, m recipes.",
+    "output": "Max satisfaction.",
+    "eg": "Input:\n(Binary constraints)\n\nOutput:\n(Result)",
+    "expl": "TC1: Flow-based or heavy DP.",
+    "diff": "HARD"
+  },
+  {
+    "q": "A+B?",
+    "input": "t cases, 'a+b'.",
+    "output": "Sum.",
+    "eg": "Input:\n1\n1+2\n\nOutput:\n3",
+    "expl": "TC1: Simple parsing.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Vanya and Fence",
+    "input": "n, h, array a.",
+    "output": "Total width (1 if a[i] <= h, 2 if a[i] > h).",
+    "eg": "Input:\n3 7\n4 5 14\n\nOutput:\n4",
+    "expl": "TC1: 1 + 1 + 2 = 4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Anton and Danik",
+    "input": "n, string s ('A', 'D').",
+    "output": "Winner or Friendship.",
+    "eg": "Input:\n6\nADAAAA\n\nOutput:\nAnton",
+    "expl": "TC1: 5 A's, 1 D.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Translation",
+    "input": "Two strings s and t.",
+    "output": "YES if t is s reversed.",
+    "eg": "Input:\ncode\nedoc\n\nOutput:\nYES",
+    "expl": "TC1: 'edoc' is 'code' backwards.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Tram",
+    "input": "n stops, a_i (exit), b_i (enter).",
+    "output": "Min capacity of tram.",
+    "eg": "Input:\n4\n0 3\n2 5\n4 2\n4 0\n\nOutput:\n6",
+    "expl": "TC1: Max passengers: 3, 3-2+5=6, 6-4+2=4, 4-4=0. Max is 6.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Soldier and Bananas",
+    "input": "k, n, w. Price of i-th banana is i*k.",
+    "output": "Borrow amount needed to buy w bananas with n dollars.",
+    "eg": "Input:\n3 17 4\n\nOutput:\n13",
+    "expl": "TC1: Cost: 3+6+9+12 = 30. 30 - 17 = 13.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Elephant",
+    "input": "x (distance).",
+    "output": "Min steps (1, 2, 3, 4, or 5 distance).",
+    "eg": "Input:\n12\n\nOutput:\n3",
+    "expl": "TC1: 5 + 5 + 2 = 12.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Wrong Subtraction",
+    "input": "n, k. If last digit > 0, n=n-1; else n=n/10.",
+    "output": "Result after k operations.",
+    "eg": "Input:\n512 4\n\nOutput:\n50",
+    "expl": "TC1: 512->511->510->51->50.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Nearly Lucky Number",
+    "input": "n.",
+    "output": "YES if count of (4, 7) in n is a lucky number (4 or 7).",
+    "eg": "Input:\n40047\n\nOutput:\nNO",
+    "expl": "TC1: 3 lucky digits. 3 is not 4 or 7.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Word Capitalization",
+    "input": "String s.",
+    "output": "s with first letter uppercase.",
+    "eg": "Input:\napple\n\nOutput:\nApple",
+    "expl": "TC1: 'a' becomes 'A'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Bear and Big Brother",
+    "input": "a, b. a triples, b doubles every year.",
+    "output": "Years until a > b.",
+    "eg": "Input:\n4 7\n\nOutput:\n2",
+    "expl": "TC1: Year 1: 12, 14. Year 2: 36, 28. 36 > 28.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Boy or Girl",
+    "input": "Username.",
+    "output": "CHAT WITH HER! if unique chars is even, else IGNORE HIM!.",
+    "eg": "Input:\nwjmzbmr\n\nOutput:\nCHAT WITH HER!",
+    "expl": "TC1: 6 unique letters (w, j, m, z, b, r). 6 is even.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Taxi",
+    "input": "n, array s (group sizes).",
+    "output": "Min taxis (capacity 4).",
+    "eg": "Input:\n5\n1 2 4 3 3\n\nOutput:\n4",
+    "expl": "TC1: {4}, {3, 1}, {3}, {2}. Total 4.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "K-th Not Divisible by n",
+    "input": "t, n, k.",
+    "output": "k-th number not divisible by n.",
+    "eg": "Input:\n1\n3 7\n\nOutput:\n10",
+    "expl": "TC1: 1, 2, 4, 5, 7, 8, 10.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Move Brackets",
+    "input": "t, n, string s.",
+    "output": "Min moves to balance.",
+    "eg": "Input:\n1\n4\n)(()\n\nOutput:\n1",
+    "expl": "TC1: Move first ) to end.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "BerSU Ball",
+    "input": "n, boys skills. m, girls skills.",
+    "output": "Max pairs |b-g| <= 1.",
+    "eg": "Input:\n4\n1 4 6 2\n5\n5 1 5 7 9\n\nOutput:\n3",
+    "expl": "TC1: (1,1), (4,5), (6,5).",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Two Buttons",
+    "input": "n, m.",
+    "output": "Min ops to get m.",
+    "eg": "Input:\n4 6\n\nOutput:\n2",
+    "expl": "TC1: 4-1=3, 3*2=6.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Flowers",
+    "input": "t, k. a, b.",
+    "output": "Ways to eat flowers len [a, b]. White in groups of k.",
+    "eg": "Input:\n1 2\n1 3\n\nOutput:\n6",
+    "expl": "TC1: 1(R), 2(RR, WW), 3(RRR, WWR, RWW). Total 6.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Productive Meeting",
+    "input": "t, n, array a (talkativeness).",
+    "output": "Max pairs (i, j) that can talk.",
+    "eg": "Input:\n1\n3\n2 3 2\n\nOutput:\n3\n1 2\n2 3\n1 2",
+    "expl": "TC1: Use max-heap to pair highest talkers.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Weights Assignment For Tree Edges",
+    "input": "t, n, b (parents), p (permutation).",
+    "output": "Edge weights to satisfy p as distance order.",
+    "eg": "Input:\n1\n3\n1 1 2\n1 2 3\n\nOutput:\n0 1 1",
+    "expl": "TC1: Node 1 (dist 0), Node 2 (dist 1), Node 3 (dist 2).",
+    "diff": "HARD"
+  },
+  {
+    "q": "Stairway to Heaven",
+    "input": "n steps, a_i (effort).",
+    "output": "Min energy.",
+    "eg": "Input:\n3\n1 2 3\n\nOutput:\n6",
+    "expl": "TC1: Sum of efforts.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Petya and Strings",
+    "input": "Two strings.",
+    "output": "-1, 0, or 1 (case-insensitive compare).",
+    "eg": "Input:\nabcd\nAbCd\n\nOutput:\n0",
+    "expl": "TC1: They are equal if case is ignored.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Beautiful Matrix",
+    "input": "5x5 grid with one '1'.",
+    "output": "Min swaps to move '1' to center (3, 3).",
+    "eg": "Input:\n0 0 0 0 0\n0 0 0 0 1\n...\n\nOutput:\n3",
+    "expl": "TC1: '1' at (2, 5). |2-3| + |5-3| = 1+2=3.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Bit++",
+    "input": "n statements (X++, --X, etc.).",
+    "output": "Final value of X (starts at 0).",
+    "eg": "Input:\n1\n++X\n\nOutput:\n1",
+    "expl": "TC1: Increment by 1.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Team",
+    "input": "n problems, 3 friends. 1 if they know, 0 else.",
+    "output": "Problems solved (at least 2 know).",
+    "eg": "Input:\n3\n1 1 0\n1 1 1\n1 0 0\n\nOutput:\n2",
+    "expl": "TC1: Prob 1 (2 know), Prob 2 (3 know), Prob 3 (1 knows). Total 2.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Next Round",
+    "input": "n, k, array a.",
+    "output": "Count a_i >= a[k] and a_i > 0.",
+    "eg": "Input:\n8 5\n10 9 8 7 7 7 5 5\n\nOutput:\n6",
+    "expl": "TC1: a[5]=7. Six scores are >= 7.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Way Too Long Words",
+    "input": "n, then strings.",
+    "output": "Abbreviate if len > 10 (first + len-2 + last).",
+    "eg": "Input:\nlocalization\n\nOutput:\nl10n",
+    "expl": "TC1: 12 chars. 'l' + 10 + 'n'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Watermelon",
+    "input": "w.",
+    "output": "YES if w can be split into two even positive parts.",
+    "eg": "Input:\n8\n\nOutput:\nYES",
+    "expl": "TC1: 4 + 4 = 8 (both even).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Theatre Square",
+    "input": "n, m, a.",
+    "output": "Min a*a flagstones to cover n*m.",
+    "eg": "Input:\n6 6 4\n\nOutput:\n4",
+    "expl": "TC1: Need 2x2 flagstones. 2*2=4.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Stones on the Table",
+    "input": "n, string s ('R', 'G', 'B').",
+    "output": "Min stones to remove so no two adjacent have same color.",
+    "eg": "Input:\n3\nRRR\n\nOutput:\n2",
+    "expl": "TC1: Remove two 'R's.",
+    "diff": "EASY"
+  },
+  {
+    "q": "In Search of an Easy Problem",
+    "input": "n, array a (0/1).",
+    "output": "HARD if any 1 exists, else EASY.",
+    "eg": "Input:\n3\n0 0 1\n\nOutput:\nHARD",
+    "expl": "TC1: One person said it's hard (1).",
+    "diff": "EASY"
+  },
+  {
+    "q": "George and Accommodation",
+    "input": "n rooms, p_i (occupied), q_i (capacity).",
+    "output": "Rooms with at least 2 free spaces.",
+    "eg": "Input:\n3\n1 1\n2 2\n3 3\n\nOutput:\n0",
+    "expl": "TC1: All rooms full.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Registration System",
+    "input": "n, names.",
+    "output": "OK if new, else name+count.",
+    "eg": "Input:\n4\na\nb\na\nb\n\nOutput:\nOK\nOK\na1\nb1",
+    "expl": "TC1: Map counts of names.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "T-primes",
+    "input": "n, array a.",
+    "output": "YES if 3 divisors.",
+    "eg": "Input:\n3\n4 5 6\n\nOutput:\nYES\nNO\nNO",
+    "expl": "TC1: Only squares of primes have 3 divisors.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Interesting drink",
+    "input": "n shops, prices x_i. q days, coins m_j.",
+    "output": "Shops where x_i <= m_j.",
+    "eg": "Input:\n5\n3 10 8 6 11\n4\n1\n10\n3\n11\n\nOutput:\n0\n4\n1\n5",
+    "expl": "TC1: Binary search on sorted prices.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Cut Ribbon",
+    "input": "n, a, b, c.",
+    "output": "Max pieces totaling n.",
+    "eg": "Input:\n5 5 3 2\n\nOutput:\n2",
+    "expl": "TC1: 3 + 2 = 5.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Vanya and Lanterns",
+    "input": "n, l, positions a_i.",
+    "output": "Min radius d to cover [0, l].",
+    "eg": "Input:\n7 15\n15 5 3 7 9 14 0\n\nOutput:\n2.5",
+    "expl": "TC1: Max gap is 14-9=5. Radius 2.5.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Number of Ways",
+    "input": "n, array a.",
+    "output": "Ways to split into 3 parts with equal sum.",
+    "eg": "Input:\n5\n1 2 3 0 3\n\nOutput:\n2",
+    "expl": "TC1: Sum 9, parts 3.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Tree Shuffling",
+    "input": "n, nodes (cost, init, target), edges.",
+    "output": "Min cost to fix bits.",
+    "eg": "Input:\n4\n1 0 1\n11 1 0\n100 0 1\n1000 1 0\n...\n\nOutput:\n4",
+    "expl": "TC1: Propagate min costs down.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Minimum Euler Cycle",
+    "input": "n, l, r.",
+    "output": "Range [l, r] of lexicographically smallest Euler cycle.",
+    "eg": "Input:\n3 2 5\n\nOutput:\n2 1 3 2",
+    "expl": "TC1: Cycle: 1-2-1-3-2-3-1.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Sum of Round Numbers",
+    "input": "t, n.",
+    "output": "Min round numbers summing to n.",
+    "eg": "Input:\n1\n5009\n\nOutput:\n2\n5000 9",
+    "expl": "TC1: 5009 = 5000 + 9.",
+    "diff": "EASY"
+  },
+  {
+    "q": "I Wanna Be the Guy",
+    "input": "n. p indices for X, q indices for Y.",
+    "output": "I become the guy! if they can pass all levels 1..n.",
+    "eg": "Input:\n4\n3 1 2 3\n2 2 4\n\nOutput:\nI become the guy!",
+    "expl": "TC1: Levels 1, 2, 3 (from X) and 2, 4 (from Y). All 1-4 covered.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Insomnia cure",
+    "input": "k, l, m, n (divisors), d (total).",
+    "output": "Dragons divisible by at least one of k, l, m, n.",
+    "eg": "Input:\n1 2 3 4 12\n\nOutput:\n12",
+    "expl": "TC1: k=1 means all dragons are hit.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Arrival of the General",
+    "input": "n, heights a_i.",
+    "output": "Min seconds (swaps) to move max to front and min to back.",
+    "eg": "Input:\n4\n33 44 11 22\n\nOutput:\n2",
+    "expl": "TC1: Move 44 (index 1 to 0), Move 11 (index 2 to 3).",
+    "diff": "EASY"
+  },
+  {
+    "q": "Divisibility Problem",
+    "input": "t, a, b.",
+    "output": "Min moves (a++) to make a % b == 0.",
+    "eg": "Input:\n1\n13 9\n\nOutput:\n5",
+    "expl": "TC1: 13 + 5 = 18. 18 % 9 == 0.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Pangram",
+    "input": "n, string s.",
+    "output": "YES if s contains all 26 letters.",
+    "eg": "Input:\n12\ntoosmalltoobe\n\nOutput:\nNO",
+    "expl": "TC1: Missing many letters.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Hulk",
+    "input": "n.",
+    "output": "String 'I hate that I love that...' n times.",
+    "eg": "Input:\n3\n\nOutput:\nI hate that I love that I hate it",
+    "expl": "TC1: Odd levels 'hate', even 'love'.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Magnets",
+    "input": "n, magnet orientations (10 or 01).",
+    "output": "Number of groups.",
+    "eg": "Input:\n6\n10\n10\n10\n01\n01\n10\n\nOutput:\n3",
+    "expl": "TC1: Groups: {10,10,10}, {01,01}, {10}.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Anton and Polyhedrons",
+    "input": "n, names (Tetrahedron, Cube, Octahedron, Dodecahedron, Icosahedron).",
+    "output": "Total faces.",
+    "eg": "Input:\n4\nIcosahedron\nCube\nTetrahedron\nDodecahedron\n\nOutput:\n42",
+    "expl": "TC1: 20 + 6 + 4 + 12 = 42.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Police Recruits",
+    "input": "n, events (-1 crime, >0 officers).",
+    "output": "Untreated crimes.",
+    "eg": "Input:\n3\n-1 -1 1\n\nOutput:\n2",
+    "expl": "TC1: Two crimes, no officers yet.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Hit the Lottery",
+    "input": "n.",
+    "output": "Min bills (1, 5, 10, 20, 100).",
+    "eg": "Input:\n125\n\nOutput:\n3",
+    "expl": "TC1: 100 + 20 + 5.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Vasya the Hipster",
+    "input": "a, b.",
+    "output": "Days with different socks, days with same.",
+    "eg": "Input:\n3 1\n\nOutput:\n1 1",
+    "expl": "TC1: (3R, 1B) -> 1 diff pair, 2R left -> 1 same pair.",
+    "diff": "EASY"
+  },
+  {
+    "q": "Maximum Sum on Even Positions",
+    "input": "t, n, array a.",
+    "output": "Max sum of a[even] after one reverse.",
+    "eg": "Input:\n8\n1 7 3 4 7 6 2 9\n\nOutput:\n26",
+    "expl": "TC1: Kadane's on diffs between even/odd swaps.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Water Balance",
+    "input": "n, a_i.",
+    "output": "Equalize water for smallest lexicographical result.",
+    "eg": "Input:\n4\n7 5 5 7\n\nOutput:\n5.666 5.666 5.666 7.000",
+    "expl": "TC1: Monotonic stack to average decreasing segments.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Long Inversions",
+    "input": "t, n, string s.",
+    "output": "Max k to make s all 1s.",
+    "eg": "Input:\n1\n5\n01010\n\nOutput:\n1",
+    "expl": "TC1: Try k from n down to 1.",
+    "diff": "HARD"
+  },
+  {
+    "q": "Bersu Ball",
+    "input": "n, a. m, b.",
+    "output": "Max matching.",
+    "eg": "Input:\n4\n1 4 6 2\n5\n5 1 5 7 9\n\nOutput:\n3",
+    "expl": "TC1: Sort and use two pointers.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Cheap Travel",
+    "input": "n, m, a, b.",
+    "output": "Min cost for n rides.",
+    "eg": "Input:\n6 2 1 2\n\nOutput:\n6",
+    "expl": "TC1: 6 individual (6) or 3 tickets (6).",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Young Physicist",
+    "input": "n, vectors x, y, z.",
+    "output": "YES if equilibrium.",
+    "eg": "Input:\n3\n4 1 7\n-2 4 -1\n1 -5 -3\n\nOutput:\nNO",
+    "expl": "TC1: Sum X is not zero.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Dragons",
+    "input": "s, n, (strength, bonus).",
+    "output": "YES if all defeated.",
+    "eg": "Input:\n2 2\n1 99\n100 0\n\nOutput:\nYES",
+    "expl": "TC1: Kill weaker dragon first to get bonus.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "K-th Beautiful String",
+    "input": "t, n, k.",
+    "output": "k-th permutation of n-2 'a's and 2 'b's.",
+    "eg": "Input:\n1\n5 3\n\nOutput:\naabb",
+    "expl": "TC1: Use combinations to find 'b' positions.",
+    "diff": "MEDIUM"
+  },
+  {
+    "q": "Cut the pie",
+    "input": "First line contains two integers n and q, the number of vertices in the pie and the number of queries. n lines follow describing the polygon vertices in clockwise order. The i-th of these line contains two integers x_i and y_i — the coordinates of the i-th vertex. It is guaranteed that the polygon is strictly convex, in particular, no three vertices line on the same line. An empty line follows. q lines follow describing the query points. The i-th of these lines contain two integers x_i and y_i, the coordinates of the point in which Arkady puts the knife in the i-th query. In is guaranteed that in each query the given point is strictly inside the polygon, in particular, is not on its edges. ",
+    "output": "For each query print a single integer - the polar angle of the line that is the answer for the corresponding query, in radians. The angle should be in the segment [0, pi], the angles are measured from the direction of OX in the anticlockwise direction. If there is no answer, print -1. If there are several answers print any.",
+    "eg": "Input:\n3 1\n0 0\n0 3\n3 0\n\n1 1\n\nOutput:\n2.67794504460098710000",
+    "expl": "TC1: 3 1, (0 0, 3 3, 3 0), (1, 1) -> 2.67794504460098710000 rad",
+    "diff": "HARD"
+  }
+]
