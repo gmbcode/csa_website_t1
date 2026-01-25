@@ -1,16 +1,22 @@
-  'use client'
+'use client'
 
 import { useState } from "react";
 import questions from "../data/potd.json";
 import numbers from "../data/randomQ.json";
 
 const date = new Date();
-const ref_date = new Date(1767810600000);
+const ref_date = new Date(1767810600000); // Note: This date is in 2026
 
 const duration = date.valueOf() - ref_date.valueOf();
 const days = Math.floor(duration / 86400000);
 
-const question = questions[numbers[days % numbers.length]];
+// Fix: Ensure the index is always positive using proper modulo arithmetic
+const numbersLength = numbers.length;
+const safeIndex = ((days % numbersLength) + numbersLength) % numbersLength;
+
+const questionIndex = numbers[safeIndex];
+// Fix: Add a fallback in case the index is invalid or the question doesn't exist
+const question = questions[questionIndex] || questions[0];
 
 const UploadPage = () => {
   const [selectedFile, setSelectedFile] = useState<File | null>(null);
@@ -77,6 +83,11 @@ const UploadPage = () => {
     reader.readAsText(selectedFile);
   };
 
+  // Guard clause to prevent rendering if question is still somehow undefined
+  if (!question) {
+    return <div className="min-h-screen flex items-center justify-center text-white">Loading problem...</div>;
+  }
+
   return (
     <div className="min-h-screen flex flex-col items-center justify-center text-white p-6">
       <h1 className="text-3xl font-bold mb-6">Problem Of The Day</h1>
@@ -113,7 +124,7 @@ const UploadPage = () => {
         {selectedFile && (
           <p className="text-green-400 mt-3">Selected file: {selectedFile.name}</p>
         )}
-{output && (
+        {output && (
           <div className="mt-6 bg-gray-700 p-4 rounded-lg">
             <h3 className="text-xl font-semibold mb-2">Execution Output:</h3>
             <pre className="text-green-400 whitespace-pre-wrap">{output}</pre>
