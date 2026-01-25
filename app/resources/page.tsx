@@ -56,14 +56,14 @@ export default function ResourcesPage() {
       {/* Toggle Button */}
       <button
         onClick={() => setShowHidden(!showHidden)}
-        className="col-span-full w-[97%] mx-auto mt-6 mb-6  p-4 text-center bg-[#eeeeee] dark:bg-[#1f2937] text-white rounded-2xl shadow-lg hover:shadow-xl -shadow cursor-pointer flex flex-col justify-center items-center cursor-pointer  hover:scale-105"
+        className="col-span-full w-[97%] mx-auto mt-6 mb-6  p-4 text-center bg-[#eeeeee] dark:bg-[#1f2937] text-white rounded-2xl shadow-lg hover:shadow-xl -shadow cursor-pointer flex flex-col justify-center items-center hover:scale-105"
       >
         {showHidden ? "Hide additional drives" : "Show additional drives for CSE"}
       </button>
       
 
       {/*Resource cards which are toggle visible*/}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
         {hidden.map((resource, index) => (
     <a
       key={`h-${index}`}
