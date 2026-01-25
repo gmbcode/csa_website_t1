@@ -24,13 +24,13 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
   // isBannerVisible controls whether the banner is visible
   const [isMenuVisible, setIsMenuVisible] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [isBannerVisible, setIsBannerVisible] = useState(false);
+  //const [isBannerVisible, setIsBannerVisible] = useState(false);
 
-  useEffect(() => {
+  {/*useEffect(() => {
     if (window.location.href.endsWith('/events/atmos-25-workshops'))
       setIsBannerVisible(false);
     else setIsBannerVisible(true);
-  }, []);
+  }, []);*/}
 
   // Lock scrolling on both html and body when menu is open
   useEffect(() => {
@@ -62,9 +62,9 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
     }
   };
 
-  const handleBannerClick = () => {
+  {/*const handleBannerClick = () => {
     window.location.href = '/events/atmos-25-workshops';
-  };
+  };*/}
 
   return (
     <header className="sticky top-0 z-50 w-full mx-auto bg-white/75 backdrop-blur-lg dark:bg-zinc-900/90">
@@ -170,7 +170,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
           />
         </button>
       </div>
-      {/*banner for Event*/}
+      {/* banner for atmos 25'
       {isBannerVisible && (
         <div
           className="sticky top-0 left-0 w-full bg-[#f4f4f4] dark:bg-[#1f2937] text-black dark:text-white text-center py-2 z-50 cursor-pointer hover:bg-[#eee] dark:hover:bg-gray-600 transition"
@@ -180,7 +180,7 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
             Click here to join us at ATMoS'25
           </span>
         </div>
-      )}
+      )}*/}
 
       {/* Mobile Menu Portal */}
       {isMenuVisible && (
@@ -239,6 +239,15 @@ export default function Header({ name }: { name: GlobalData }): JSX.Element {
                       onClick={toggleMenu}
                     >
                       Events
+                    </a>
+                  </li>
+                  <li className="border-b border-zinc-300 dark:border-zinc-700 pb-3">
+                    <a
+                      href="/POTD"
+                      className="block text-xl font-medium text-black hover:text-gray-600 dark:text-white dark:hover:text-gray-300 transition-colors duration-200"
+                      onClick={toggleMenu}
+                    >
+                      POTD
                     </a>
                   </li>
                   <li className="border-b border-zinc-300 dark:border-zinc-700 pb-3">
