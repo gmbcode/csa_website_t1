@@ -9,22 +9,6 @@
   },
   {
     "id": 2,
-    "name": "Tobit K Joshy",
-    "lat": 51.5074,
-    "lng": -0.1278,
-    "picture": "/images/male.png",
-    "batch": "2024"
-  },
-  {
-    "id": 3,
-    "name": "Vihaan Prabhu",
-    "lat": 35.6895,
-    "lng": 139.6917,
-    "picture": "/images/male.png",
-    "batch": "2024"
-  },
-  {
-    "id": 4,
     "name": "Siddharth Dash",
     "lat": 17.406,
     "lng": -78.477,
@@ -32,7 +16,7 @@
     "batch": "2011"
   },
   {
-    "id": 5,
+    "id": 3,
     "name": "Yogesh Chopra",
     "lat": 47.606,
     "lng": 122.333,
@@ -40,7 +24,7 @@
     "batch": "2013"
   },
   {
-    "id": 6,
+    "id": 4,
     "name": "Naveen Jafer",
     "lat": 42.376,
     "lng": 72.519,
@@ -48,7 +32,7 @@
     "batch": "2013"
   },
   {
-    "id": 7,
+    "id": 5,
     "name": "Yash Raj",
     "lat": 18.958,
     "lng": 72.832,
@@ -56,7 +40,7 @@
     "batch": "2013"
   },
   {
-    "id": 8,
+    "id": 6,
     "name": "Manoj Gottipati",
     "lat": 33.750,
     "lng": 84.388,
@@ -64,7 +48,7 @@
     "batch": "2013"
   },
   {
-    "id": 9,
+    "id": 7,
     "name": "Tushar Aggarwal",
     "lat": 47.606,
     "lng": 122.333,
@@ -72,7 +56,7 @@
     "batch": "2015"
   },
   {
-    "id": 10,
+    "id": 8,
     "name": "Rishi Kaushik",
     "lat": 12.962,
     "lng": -77.577,
@@ -80,7 +64,7 @@
     "batch": "2015"
   },
   {
-    "id": 11,
+    "id": 9,
     "name": "Neel Shah",
     "lat": 40.712,
     "lng": 74.006,
@@ -88,7 +72,7 @@
     "batch": "2014"
   },
   {
-    "id": 12,
+    "id": 10,
     "name": "Rishabh Pokharna",
     "lat":  12.963,
     "lng": -77.578,
@@ -96,7 +80,7 @@
     "batch": "2014"
   },
   {
-    "id": 13,
+    "id": 11,
     "name": "Shrey Bansal",
     "lat": 28.460,
     "lng": -77.027,
@@ -104,7 +88,7 @@
     "batch": "2014"
   },
   {
-    "id": 14,
+    "id": 12,
     "name": "Wajeeha Fatima",
     "lat": 37.354,
     "lng":  121.955,
@@ -112,7 +96,7 @@
     "batch": "2014"
   },
   {
-    "id": 15,
+    "id": 13,
     "name": "Arnav Dhamija",
     "lat": 47.606,
     "lng": 122.333,
@@ -120,7 +104,7 @@
     "batch": "2015"
   },
   {
-    "id": 16,
+    "id": 14,
     "name": "Roshan Babu",
     "lat": 40.713,
     "lng": 74.006,
@@ -128,7 +112,7 @@
     "batch": "2015"
   },
   {
-    "id": 17,
+    "id": 15,
     "name": "Keyur Jain",
     "lat": 17.407,
     "lng": 78.477,
