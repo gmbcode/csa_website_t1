@@ -24,7 +24,7 @@ export default function ResourcesPage() {
       <h1 className="text-3xl font-bold mb-6 mt-4 text-black dark:text-white">Resources</h1>
       
       {/* Resource Cards which are always visible*/}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
           {visible.map((resource, index) => (
           <a key={index} href={resource.link} target="_blank" rel="noopener noreferrer" className="no-underline">
             <div className="p-4 text-center bg-[#eeeeee] dark:bg-[#1f2937] text-white rounded-2xl shadow-lg hover:shadow-xl w-full lg:aspect-square md:aspect-square flex flex-col justify-center items-center hover:scale-105  ">
@@ -58,12 +58,12 @@ export default function ResourcesPage() {
         onClick={() => setShowHidden(!showHidden)}
         className="col-span-full w-[97%] mx-auto mt-6 mb-6  p-4 text-center bg-[#eeeeee] dark:bg-[#1f2937] text-white rounded-2xl shadow-lg hover:shadow-xl -shadow cursor-pointer flex flex-col justify-center items-center hover:scale-105"
       >
-        {showHidden ? "Hide additional drives" : "Show additional drives for CSE"}
+        {showHidden ? "Hide additional drives" : "Show additional drives of first year courses"}
       </button>
       
 
       {/*Resource cards which are toggle visible*/}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-6">
         {hidden.map((resource, index) => (
     <a
       key={`h-${index}`}
