@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "es2016",
-    "jsx": "preserve",
+    "jsx": "react-jsx",
     "module": "commonjs",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
