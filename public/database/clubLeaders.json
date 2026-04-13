@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "name": "Vihaan",
+    "title": "Happy Birthday",
+    "imageUrl": "/images/male.png"
+  },
+  {
+    "id": 2,
+    "name": "Tobit",
+    "title": "4 am",
+    "imageUrl": "/images/male.png"
+  },
+  {
+    "id": 3,
+    "name": "Bhavya",
+    "title": "Cosmic",
+    "imageUrl": "/images/male.png"
+  }
+]

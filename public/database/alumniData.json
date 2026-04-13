@@ -1,0 +1,1947 @@
+[
+    {
+        "id": 1,
+        "name": "Siddharth Dash",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2011",
+        "linkedin": "https://www.linkedin.com/in/siddharth-dash-rollingthunder/"
+    },
+    {
+        "id": 2,
+        "name": "Amrit Pal",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2011"
+    },
+    {
+        "id": 3,
+        "name": "Arjun Prasad",
+        "lat": "37.59",
+        "lng": "-77.556",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/arjun-p-prasad/"
+    },
+    {
+        "id": 4,
+        "name": "Naveen Jafer",
+        "lat": "42.376",
+        "lng": "-72.519",
+        "picture": "/images/male.png",
+        "batch": "2013",
+        "linkedin": "https://www.linkedin.com/in/naveen-jafer-nizar-96a92892/"
+    },
+    {
+        "id": 5,
+        "name": "Akshay Tiwari",
+        "lat": "37.368",
+        "lng": "-122.036",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/the-curs0r/"
+    },
+    {
+        "id": 6,
+        "name": "Manoj Gottipati",
+        "lat": "33.75",
+        "lng": "-84.388",
+        "picture": "/images/male.png",
+        "batch": "2013",
+        "linkedin": "https://www.linkedin.com/in/manojgottipati31/"
+    },
+    {
+        "id": 7,
+        "name": "Ankur Raj",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2014"
+    },
+    {
+        "id": 8,
+        "name": "Deepak Pandey",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2014"
+    },
+    {
+        "id": 9,
+        "name": "Rishabh Pokharna",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2014",
+        "linkedin": "https://www.linkedin.com/in/rishabh-pokharna/"
+    },
+    {
+        "id": 10,
+        "name": "Shrey Bansal",
+        "lat": "28.459",
+        "lng": "77.026",
+        "picture": "/images/male.png",
+        "batch": "2014",
+        "linkedin": "https://www.linkedin.com/in/shrey-bansal-161928108/"
+    },
+    {
+        "id": 11,
+        "name": "Praneeth Kuthriventi",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2014"
+    },
+    {
+        "id": 12,
+        "name": "Poojitha Reddy",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2014",
+        "linkedin": "https://www.linkedin.com/in/poojitha-reddy-malla-a6945013b/"
+    },
+    {
+        "id": 13,
+        "name": "Yogesh Chopra",
+        "lat": "47.606",
+        "lng": "-122.333",
+        "picture": "/images/male.png",
+        "batch": "2013",
+        "linkedin": "https://www.linkedin.com/in/yogesh-chopra-200908121/"
+    },
+    {
+        "id": 14,
+        "name": "Avi Jain",
+        "lat": "47.606",
+        "lng": "-122.333",
+        "picture": "/images/male.png",
+        "batch": "2014",
+        "linkedin": "https://www.linkedin.com/in/avi-jain-33486ba2/"
+    },
+    {
+        "id": 15,
+        "name": "Tushar Aggarwal",
+        "lat": "47.606",
+        "lng": "-122.333",
+        "picture": "/images/male.png",
+        "batch": "2015",
+        "linkedin": "https://www.linkedin.com/in/tushar-aggarwal/"
+    },
+    {
+        "id": 16,
+        "name": "Uddhav Mishra",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2014",
+        "linkedin": "https://www.linkedin.com/in/uddhav-mishra-032bb0106/"
+    },
+    {
+        "id": 17,
+        "name": "Kaustubh Welankar",
+        "lat": "47.606",
+        "lng": "-122.333",
+        "picture": "/images/male.png",
+        "batch": "2016",
+        "linkedin": "https://www.linkedin.com/in/kaustubh-welankar-971b51122/"
+    },
+    {
+        "id": 18,
+        "name": "Arnav Dhamija",
+        "lat": "37.354",
+        "lng": "-121.955",
+        "picture": "/images/male.png",
+        "batch": "2015",
+        "linkedin": "https://www.linkedin.com/in/arnav-dhamija/"
+    },
+    {
+        "id": 19,
+        "name": "Sai Rajiv Krishna S",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2014",
+        "linkedin": "https://www.linkedin.com/in/sai-rajiv-krishna-s-425056124/"
+    },
+    {
+        "id": 20,
+        "name": "Shaik Mohamed Ansa Zaiba",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2014",
+        "linkedin": "https://www.linkedin.com/in/ansa-zaiba/"
+    },
+    {
+        "id": 21,
+        "name": "Md. Farhaan",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2015"
+    },
+    {
+        "id": 22,
+        "name": "Jaya Venkatesh",
+        "lat": "37.354",
+        "lng": "-121.955",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/venkatesh-jaya/"
+    },
+    {
+        "id": 23,
+        "name": "Mohit Goyal",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2015",
+        "linkedin": "https://www.linkedin.com/in/mohitgoyal18/"
+    },
+    {
+        "id": 24,
+        "name": "Rishi Kaushik",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2015",
+        "linkedin": "https://www.linkedin.com/in/rishi-kaushik-9ab6a212a/"
+    },
+    {
+        "id": 25,
+        "name": "Lakshmi Bayanagari",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2015"
+    },
+    {
+        "id": 26,
+        "name": "Srimanta Barua",
+        "lat": "37.338",
+        "lng": "-121.885",
+        "picture": "/images/male.png",
+        "batch": "2014",
+        "linkedin": "https://www.linkedin.com/in/srimanta-barua/"
+    },
+    {
+        "id": 27,
+        "name": "Keyur Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2015",
+        "linkedin": "https://www.linkedin.com/in/keyursjain/"
+    },
+    {
+        "id": 28,
+        "name": "Wajeeha Fatima",
+        "lat": "37.338",
+        "lng": "-121.885",
+        "picture": "/images/male.png",
+        "batch": "2014",
+        "linkedin": "https://www.linkedin.com/in/wajeehafathima/"
+    },
+    {
+        "id": 29,
+        "name": "Aman Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2016"
+    },
+    {
+        "id": 30,
+        "name": "Anshul Garg",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2016",
+        "linkedin": "https://www.linkedin.com/in/anshul-garg-41b76a246/"
+    },
+    {
+        "id": 31,
+        "name": "Simran Malik",
+        "lat": "32.715",
+        "lng": "-117.161",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/simranmalik4/"
+    },
+    {
+        "id": 32,
+        "name": "Ashish Gupta",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2016",
+        "linkedin": "https://www.linkedin.com/in/ashishgup1/"
+    },
+    {
+        "id": 33,
+        "name": "Mahir Shah",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2016",
+        "linkedin": "https://www.linkedin.com/in/mahir-shah/"
+    },
+    {
+        "id": 34,
+        "name": "Shubham Bhardwaj",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2016",
+        "linkedin": "https://www.linkedin.com/in/shubham-bhardwaj-ba02b616b/"
+    },
+    {
+        "id": 35,
+        "name": "Aayush Jain",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2016",
+        "linkedin": "https://www.linkedin.com/in/jain98aayush/"
+    },
+    {
+        "id": 36,
+        "name": "Toshit Jain",
+        "lat": "40.76",
+        "lng": "-111.888",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/toshit/"
+    },
+    {
+        "id": 37,
+        "name": "Abid Abdullah",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2016",
+        "linkedin": "https://www.linkedin.com/in/abid-abdullah-604a2312a/"
+    },
+    {
+        "id": 38,
+        "name": "Vishnu Teja",
+        "lat": "37.453",
+        "lng": "-122.181",
+        "picture": "/images/male.png",
+        "batch": "2016",
+        "linkedin": "https://www.linkedin.com/in/vishnu-teja-n/"
+    },
+    {
+        "id": 39,
+        "name": "Anshul Kanodia",
+        "lat": "23.344",
+        "lng": "85.309",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/anshul-kanodia-476427203/"
+    },
+    {
+        "id": 40,
+        "name": "Aditya Mahajan",
+        "lat": "35.779",
+        "lng": "-78.638",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/aditya-mahajan-a0364126b/"
+    },
+    {
+        "id": 41,
+        "name": "Rynaa Grover",
+        "lat": "37.39",
+        "lng": "-122.081",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/rynaagrover/"
+    },
+    {
+        "id": 42,
+        "name": "Koushik S",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2017"
+    },
+    {
+        "id": 43,
+        "name": "Naman Khunteta",
+        "lat": "18.524",
+        "lng": "73.878",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/naman-khunteta/"
+    },
+    {
+        "id": 44,
+        "name": "R Sairam",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/r-sairam/"
+    },
+    {
+        "id": 45,
+        "name": "Rashi Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/rashi-jain-2109/"
+    },
+    {
+        "id": 46,
+        "name": "Kunal Verma",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/kunal-verma-537b98155/"
+    },
+    {
+        "id": 47,
+        "name": "Muzaffar Ahmed",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/muzaffr/"
+    },
+    {
+        "id": 48,
+        "name": "Neal Menon",
+        "lat": "51.557",
+        "lng": "-0.141",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/nealmenon/"
+    },
+    {
+        "id": 49,
+        "name": "Pranjal Gupta",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/pranjalgupta2199/"
+    },
+    {
+        "id": 50,
+        "name": "Jeevan Jyot Singh",
+        "lat": "18.524",
+        "lng": "73.878",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/jeevanjyot/"
+    },
+    {
+        "id": 51,
+        "name": "Kaushik Perika",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/kaushik-p98/"
+    },
+    {
+        "id": 52,
+        "name": "Pavan Darbha",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/pavan-darbha-21662a190/"
+    },
+    {
+        "id": 53,
+        "name": "Rahul Pillai",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/rahul-pillai-a7b963205/"
+    },
+    {
+        "id": 54,
+        "name": "Vijay Krishna",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2017",
+        "linkedin": "https://www.linkedin.com/in/vijay-krishna-r-4b0970198/"
+    },
+    {
+        "id": 55,
+        "name": "Rishabh Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/risbjn/"
+    },
+    {
+        "id": 56,
+        "name": "Saumya Shikhar Mishra",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/saumya-shikhar-mishra/"
+    },
+    {
+        "id": 57,
+        "name": "Shivang Singh",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2018"
+    },
+    {
+        "id": 58,
+        "name": "Jatin Arora",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/jatinarora135/"
+    },
+    {
+        "id": 59,
+        "name": "Venkat Srinik",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2018"
+    },
+    {
+        "id": 60,
+        "name": "Rohan Sinha",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/rohan-sinha1110/"
+    },
+    {
+        "id": 61,
+        "name": "Ritika Reddy",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2018"
+    },
+    {
+        "id": 62,
+        "name": "Sristi Sharma",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/sharma-sristi/"
+    },
+    {
+        "id": 63,
+        "name": "Tej Sukhatme",
+        "lat": "52.52",
+        "lng": "13.405",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/tej-sukhatme/"
+    },
+    {
+        "id": 64,
+        "name": "Madhura Banerjee",
+        "lat": "37.441",
+        "lng": "-122.143",
+        "picture": "/images/male.png",
+        "batch": "2016",
+        "linkedin": "https://www.linkedin.com/in/madhura-banerjee-cbs/"
+    },
+    {
+        "id": 65,
+        "name": "Pratyush Banerjee",
+        "lat": "28.535",
+        "lng": "77.391",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/pratyush-banerjee/"
+    },
+    {
+        "id": 66,
+        "name": "Kushagra Verma",
+        "lat": "28.535",
+        "lng": "77.391",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/kushagra-verma-349155206/"
+    },
+    {
+        "id": 67,
+        "name": "Kushagra Lavania",
+        "lat": "26.449",
+        "lng": "80.331",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/kushagra-lavania-252780191/"
+    },
+    {
+        "id": 68,
+        "name": "Ameetesh Sharma",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/ameetesh-sharma-369897165/"
+    },
+    {
+        "id": 69,
+        "name": "Ridhiman Agarwal",
+        "lat": "26.449",
+        "lng": "80.331",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/ridhiman-agrawal-382516191/"
+    },
+    {
+        "id": 70,
+        "name": "Vashi Chaudhary",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/vashi-chaudhary/"
+    },
+    {
+        "id": 71,
+        "name": "Adarsh Das",
+        "lat": "28.535",
+        "lng": "77.391",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/adarsh-das-8684ab240/"
+    },
+    {
+        "id": 72,
+        "name": "Harshit Gakhar",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/gakhar201/"
+    },
+    {
+        "id": 73,
+        "name": "Aditya Pratap Singh",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2019"
+    },
+    {
+        "id": 74,
+        "name": "Neel Shah",
+        "lat": "40.712",
+        "lng": "-74.006",
+        "picture": "/images/male.png",
+        "batch": "2014",
+        "linkedin": "https://www.linkedin.com/in/neelshah101/"
+    },
+    {
+        "id": 75,
+        "name": "Samarth Soni",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/samarth-soni-3372241ab/"
+    },
+    {
+        "id": 76,
+        "name": "Ojashvi Tarunabh",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/tarunabhojashvi/"
+    },
+    {
+        "id": 77,
+        "name": "Atharv Pagar",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2019"
+    },
+    {
+        "id": 78,
+        "name": "Saloni Singh",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/saloni-singh-bba995192/"
+    },
+    {
+        "id": 79,
+        "name": "Hriday Gajulapalli",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/hriday-gajulapalli/"
+    },
+    {
+        "id": 80,
+        "name": "Kaustubh Bhanj",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/kaustubh-bhanj-1b637b258/"
+    },
+    {
+        "id": 81,
+        "name": "Amogh Bharadwaj",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/amogh-bharadwaj-70836b281/"
+    },
+    {
+        "id": 82,
+        "name": "Abhipal Sharma",
+        "lat": "40.678",
+        "lng": "-73.944",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/abhipal-sharma-3798601b1/"
+    },
+    {
+        "id": 83,
+        "name": "Kruti Baraiya",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/kruti-baraiya/"
+    },
+    {
+        "id": 84,
+        "name": "Devanshi Gupta",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2019"
+    },
+    {
+        "id": 85,
+        "name": "Abhigna Shrikal",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2019"
+    },
+    {
+        "id": 86,
+        "name": "Sudhanshu Chhajed",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/sudhanshu-chhajed-18942617b/"
+    },
+    {
+        "id": 87,
+        "name": "Vastal Nagelia",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/vatsalnagelia/"
+    },
+    {
+        "id": 88,
+        "name": "Roshan Babu",
+        "lat": "40.712",
+        "lng": "-74.006",
+        "picture": "/images/male.png",
+        "batch": "2015",
+        "linkedin": "https://www.linkedin.com/in/roshan-babu/"
+    },
+    {
+        "id": 89,
+        "name": "Shreya Guda",
+        "lat": "47.61",
+        "lng": "-122.201",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/shreya-guda-4a1b31192/"
+    },
+    {
+        "id": 90,
+        "name": "Aayush Shah",
+        "lat": "28.459",
+        "lng": "77.026",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/aayushkevalshah/"
+    },
+    {
+        "id": 91,
+        "name": "Chandra Vamsi TV",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2019",
+        "linkedin": "https://www.linkedin.com/in/tvcv901/"
+    },
+    {
+        "id": 92,
+        "name": "Shivansh Shrivastava",
+        "lat": "28.459",
+        "lng": "77.026",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/shivansh-shrivastava-716013205/"
+    },
+    {
+        "id": 93,
+        "name": "Samyu Kamtam",
+        "lat": "40.712",
+        "lng": "-74.006",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/samyukamtam/"
+    },
+    {
+        "id": 94,
+        "name": "Khooshrin Pithawalla",
+        "lat": "33.684",
+        "lng": "-117.826",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/khooshrin/"
+    },
+    {
+        "id": 95,
+        "name": "Chirag Jaju",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/chiragjaju/"
+    },
+    {
+        "id": 96,
+        "name": "Mohit Duggal",
+        "lat": "31.326",
+        "lng": "75.576",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/mohit-duggal-0990b6203/"
+    },
+    {
+        "id": 97,
+        "name": "Yash Raj",
+        "lat": "18.958",
+        "lng": "72.832",
+        "picture": "/images/male.png",
+        "batch": "2013",
+        "linkedin": "https://www.linkedin.com/in/yash-raj-240915136/"
+    },
+    {
+        "id": 98,
+        "name": "Manan Mayur Popat",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024"
+    },
+    {
+        "id": 99,
+        "name": "Madhur Saraf Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/madhursarafjain/"
+    },
+    {
+        "id": 100,
+        "name": "Anirud Samala",
+        "lat": "18.958",
+        "lng": "72.832",
+        "picture": "/images/male.png",
+        "batch": "2014",
+        "linkedin": "https://www.linkedin.com/in/anirudsamala/"
+    },
+    {
+        "id": 101,
+        "name": "Shubhankar Vivek Shastri",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/shubhankar-vivek-shastri-a0a043205/"
+    },
+    {
+        "id": 102,
+        "name": "Arya Ashutosh Pathak",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2020"
+    },
+    {
+        "id": 103,
+        "name": "Khushi Biyani",
+        "lat": "22.719",
+        "lng": "75.857",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/khushi-biyani-a166b11b7/"
+    },
+    {
+        "id": 104,
+        "name": "Alankar Agarwal",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/alankar-agarwal/"
+    },
+    {
+        "id": 105,
+        "name": "Kartikay Goel",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2020"
+    },
+    {
+        "id": 106,
+        "name": "Anish Agarwal",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/anish20/"
+    },
+    {
+        "id": 107,
+        "name": "Bhavya Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/bhavya-jain-703320134/"
+    },
+    {
+        "id": 108,
+        "name": "Rohith Paul",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/rohith-paul-121200206/"
+    },
+    {
+        "id": 109,
+        "name": "Sai Prasanna Panda",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/saipanda9/"
+    },
+    {
+        "id": 110,
+        "name": "Shyam N V",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/shyamnv/"
+    },
+    {
+        "id": 111,
+        "name": "Kishan Koundinya",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/kishan-koundinya-b41341288/"
+    },
+    {
+        "id": 112,
+        "name": "Parth Tulsyan",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/parth-tulsyan/"
+    },
+    {
+        "id": 113,
+        "name": "Devarshi Sanghani",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/devarshi-sanghani-6b546b205/"
+    },
+    {
+        "id": 114,
+        "name": "Siddhant Panda",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/siddhantpanda28/"
+    },
+    {
+        "id": 115,
+        "name": "Lahari Gangineni",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/lahari-gangineni/"
+    },
+    {
+        "id": 116,
+        "name": "Vishnu Praneeth Palavali",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/vishnu-praneeth-palavali-83b953226/"
+    },
+    {
+        "id": 117,
+        "name": "Vibhum Raj Tripathi",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/vibhum-raj-tripathi-830a91223/"
+    },
+    {
+        "id": 118,
+        "name": "Ashwin Arun",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2020",
+        "linkedin": "https://www.linkedin.com/in/ashwin-arun-09b938245/"
+    },
+    {
+        "id": 119,
+        "name": "Krishang Shukla",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/krishang-shukla-2779a8223/"
+    },
+    {
+        "id": 120,
+        "name": "Divyansh Saxena",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/divyansh-saxena-/"
+    },
+    {
+        "id": 121,
+        "name": "Ansh Goyal",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/anshgoyal31/"
+    },
+    {
+        "id": 122,
+        "name": "Shivanjali Arora",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/shivanjali-arora-0b0a37227/"
+    },
+    {
+        "id": 123,
+        "name": "Vani Jain",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/vani-jain-15929522b/"
+    },
+    {
+        "id": 124,
+        "name": "Om Narayan",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/omnarayan19/"
+    },
+    {
+        "id": 125,
+        "name": "Prachi Shah",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/prachi-shah-624a64277/"
+    },
+    {
+        "id": 126,
+        "name": "Pavas Garg",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/pavas-garg-606535223/"
+    },
+    {
+        "id": 127,
+        "name": "Meet Patel",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/meet-patel-623538260/"
+    },
+    {
+        "id": 128,
+        "name": "Kolasani Amit Vishnu",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/amit-kolasani/"
+    },
+    {
+        "id": 129,
+        "name": "Ayush Nautiyal",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2021"
+    },
+    {
+        "id": 130,
+        "name": "Harshit Juneja",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/harshitjuneja73/"
+    },
+    {
+        "id": 131,
+        "name": "Samhitha Vaddempudi",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/samhitha-vaddempudi/"
+    },
+    {
+        "id": 132,
+        "name": "Kumarasamy Chelliah",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/kumarasamy-chelliah-3b9344245/"
+    },
+    {
+        "id": 133,
+        "name": "Kushagra Gupta",
+        "lat": "18.958",
+        "lng": "72.832",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/kushagra-gupta-kg0801/"
+    },
+    {
+        "id": 134,
+        "name": "A V Aashutosh",
+        "lat": "33.75",
+        "lng": "-84.388",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/aashutosh-av/"
+    },
+    {
+        "id": 135,
+        "name": "Harsh Rachalwar",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/harsh-rachalwar/"
+    },
+    {
+        "id": 136,
+        "name": "Raj Agarwal",
+        "lat": "18.958",
+        "lng": "72.832",
+        "picture": "/images/male.png",
+        "batch": "2018",
+        "linkedin": "https://www.linkedin.com/in/raj0510/"
+    },
+    {
+        "id": 137,
+        "name": "Aryan Gupta",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2021"
+    },
+    {
+        "id": 138,
+        "name": "Hardik Mittal",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/hardikmittal14/"
+    },
+    {
+        "id": 139,
+        "name": "Kaustubh Mahatme",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/kaustubh-mahatme-b09157229/"
+    },
+    {
+        "id": 140,
+        "name": "Maitreya Manohar",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/maitreya-manohar-b83a85179/"
+    },
+    {
+        "id": 141,
+        "name": "Poojan Mehta",
+        "lat": "12.962",
+        "lng": "77.577",
+        "picture": "/images/male.png",
+        "batch": "2021",
+        "linkedin": "https://www.linkedin.com/in/poojan-mehta-098415241/"
+    },
+    {
+        "id": 142,
+        "name": "Karan Sethia",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/karan-sethia-568489247/"
+    },
+    {
+        "id": 143,
+        "name": "Shreya Mehta",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/shreyakmehta/"
+    },
+    {
+        "id": 144,
+        "name": "Khush Bhuta",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/khush-bhuta-98392b72/"
+    },
+    {
+        "id": 145,
+        "name": "Granth Bagadia",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/granth-bagadia/"
+    },
+    {
+        "id": 146,
+        "name": "Simran Singh",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/simran-singh-2b8b93288/"
+    },
+    {
+        "id": 147,
+        "name": "Piyush Raj",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/piyushraj35/"
+    },
+    {
+        "id": 148,
+        "name": "Pranshu Maheshwari",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/pranshumaheshwari15/"
+    },
+    {
+        "id": 149,
+        "name": "Surbhit Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/surbhitj/"
+    },
+    {
+        "id": 150,
+        "name": "Ishu Gupta",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/ishu-gupta-936810272/"
+    },
+    {
+        "id": 151,
+        "name": "Rishab Nagota",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/rishab-nagota-129111154/"
+    },
+    {
+        "id": 152,
+        "name": "Mudit Somani",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/mudit-somani2004/"
+    },
+    {
+        "id": 153,
+        "name": "Karthik Prakash",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/karthik-prakash-a6a401261/"
+    },
+    {
+        "id": 154,
+        "name": "Moksh Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/moksh-jain-864a621a0/"
+    },
+    {
+        "id": 155,
+        "name": "Shashank Nelanti",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2022",
+        "linkedin": "https://www.linkedin.com/in/shashank-nelanti-085181249/"
+    },
+    {
+        "id": 156,
+        "name": "Advait Gokhale",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/advg/"
+    },
+    {
+        "id": 157,
+        "name": "Pratish Bansal",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/pratish-bansal/"
+    },
+    {
+        "id": 158,
+        "name": "Raunak Sarawgi",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/raunak-sarawgi/"
+    },
+    {
+        "id": 159,
+        "name": "Manas Tripathi",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/tripathi-manas/"
+    },
+    {
+        "id": 160,
+        "name": "Vedant Barve",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/vedant-barve-16gem0405/"
+    },
+    {
+        "id": 161,
+        "name": "Ayaan Siddiqui",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/ayaan-siddiqui-079306270/"
+    },
+    {
+        "id": 162,
+        "name": "Gaurvi Khurana",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/gaurvi-khurana-b57295254/"
+    },
+    {
+        "id": 163,
+        "name": "Tushya Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/jtushya/"
+    },
+    {
+        "id": 164,
+        "name": "Neha Bhagwat",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/neha-bhagwat-bab6132a1/"
+    },
+    {
+        "id": 165,
+        "name": "Kanika Chandak",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/kanika-chandak-366835236/"
+    },
+    {
+        "id": 166,
+        "name": "Adithyadev R",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/adithyadev-r-8b3298220/"
+    },
+    {
+        "id": 167,
+        "name": "Manoj Singh Narula",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023"
+    },
+    {
+        "id": 168,
+        "name": "Pratyush Nair",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/pratyush-nair-783566278/"
+    },
+    {
+        "id": 169,
+        "name": "Tathagat Rath",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/tathagat-rath-a867952a9/"
+    },
+    {
+        "id": 170,
+        "name": "Chirantan S",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/chirantan-s-b919572a9/"
+    },
+    {
+        "id": 171,
+        "name": "A. Srihitha Sowgandhi",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/srihitha-sowgandhi-600b1b293/"
+    },
+    {
+        "id": 172,
+        "name": "Aryaman Srivastava",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/aryaman-srivastava-86119a284/"
+    },
+    {
+        "id": 173,
+        "name": "Gunika Gupta",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/gunika-gupta-2a1913230/"
+    },
+    {
+        "id": 174,
+        "name": "Atharv Singhal",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/gunika-gupta-2a1913230/"
+    },
+    {
+        "id": 175,
+        "name": "Rujuta Deshmukh",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2023",
+        "linkedin": "https://www.linkedin.com/in/rujuta-deshmukh1005/"
+    },
+    {
+        "id": 176,
+        "name": "Abhinav Muley",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/abhinav-muley-b43318317/"
+    },
+    {
+        "id": 177,
+        "name": "Ananya Joshi",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024"
+    },
+    {
+        "id": 178,
+        "name": "Ananya Srivastava",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/ananya-srivastava-2537aa329/"
+    },
+    {
+        "id": 179,
+        "name": "Aaryan Mehta",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/aaryan-mehta-b77561220/"
+    },
+    {
+        "id": 180,
+        "name": "Ashish Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/ashish-jain-9a6ba0318/"
+    },
+    {
+        "id": 181,
+        "name": "Sai Havish",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/sai-havish-4b95642b9/"
+    },
+    {
+        "id": 182,
+        "name": "Manasa Srigiriraju",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/manasa-srigiriraju-b83414329/"
+    },
+    {
+        "id": 183,
+        "name": "Rishit Agarwal",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/rishit-agarwal-41732a328/"
+    },
+    {
+        "id": 184,
+        "name": "Sahitya Sharma",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/sahitya-sharma-2b0731351/"
+    },
+    {
+        "id": 185,
+        "name": "Vasavi Sugyamwar",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024"
+    },
+    {
+        "id": 186,
+        "name": "Vedant Nichal",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/vedant-nichal/"
+    },
+    {
+        "id": 187,
+        "name": "Anjali Saboo",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/anjali-saboo-461846329/"
+    },
+    {
+        "id": 188,
+        "name": "Khushi Bharadwaj",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/khushi-bhardwaj-b5b5722a3/"
+    },
+    {
+        "id": 189,
+        "name": "Anirudh M",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/anirudh-m-675383122/"
+    },
+    {
+        "id": 190,
+        "name": "Bhavya Shah",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/bhavya-shah-baa73a345/"
+    },
+    {
+        "id": 191,
+        "name": "Tobit K Joshy",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024"
+    },
+    {
+        "id": 192,
+        "name": "Vihaan Prabhu",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/vihaan-prabhu-b86aa4304/"
+    },
+    {
+        "id": 193,
+        "name": "Aryan Agarwal",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/aryan-agarwal-84a7a3327/"
+    },
+    {
+        "id": 194,
+        "name": "Prathamesh Patil",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/prathamesh-patil-728b40302/"
+    },
+    {
+        "id": 195,
+        "name": "Vihaan Kashyap",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/vihaan-kashyap-312456326/"
+    },
+    {
+        "id": 196,
+        "name": "Ananya Mishra",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/ananya-mishra-94177032a/"
+    },
+    {
+        "id": 197,
+        "name": "Vijay Srivathsan B",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/vijay-srivathsan-b-b31665344/"
+    },
+    {
+        "id": 198,
+        "name": "Yug Rajesh Shah",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/yug-rajesh-shah-8a9a73326/"
+    },
+    {
+        "id": 199,
+        "name": "Aditya Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/aditya-jain-55b371320/"
+    },
+    {
+        "id": 200,
+        "name": "Aarya Yogesh Deshpande",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2024",
+        "linkedin": "https://www.linkedin.com/in/aarya-deshpande-3a4344328/"
+    },
+    {
+        "id": 201,
+        "name": "Dipti Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/dipti-jain-24647034a/"
+    },
+    {
+        "id": 202,
+        "name": "Hitakshi Gupta",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/hitakshi-gupta-a47512377/"
+    },
+    {
+        "id": 203,
+        "name": "Aditya Kumar",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/aditya-kumar24/"
+    },
+    {
+        "id": 204,
+        "name": "Sarthak Saxena",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/sarthak-saxena-359152388/"
+    },
+    {
+        "id": 205,
+        "name": "Eishaan Singh",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/eishaan-siingh-006b74284/"
+    },
+    {
+        "id": 206,
+        "name": "Raghuram Vedantam",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/raghuramvedantam-7r/"
+    },
+    {
+        "id": 207,
+        "name": "Shaurya Sharma",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025"
+    },
+    {
+        "id": 208,
+        "name": "Rish Jain",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/rish-jain-057404375/"
+    },
+    {
+        "id": 209,
+        "name": "Sai Sanvika Mulamreddy",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025"
+    },
+    {
+        "id": 210,
+        "name": "Gowri R Yegavakota",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025"
+    },
+    {
+        "id": 211,
+        "name": "Raj Mittal",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/raj-mittal-a69190210/"
+    },
+    {
+        "id": 212,
+        "name": "Prasad Bhandari",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/prasad-bhandari-0211692b1/"
+    },
+    {
+        "id": 213,
+        "name": "Heet Mehta",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/heet-mehta-a6533637a/"
+    },
+    {
+        "id": 214,
+        "name": "Anvith N",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/anvith-n-309a073a8/"
+    },
+    {
+        "id": 215,
+        "name": "Krish Goel",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/krish-goel-37741620b/"
+    },
+    {
+        "id": 216,
+        "name": "Oshal Baranwal",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/oshal-baranwal-080445380/",
+        "github": "https://www.github.com/ChampX5"
+    },
+    {
+        "id": 217,
+        "name": "Snigdha Mukherjee",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/snigdha-mukherjee-b4a734377/"
+    },
+    {
+        "id": 218,
+        "name": "Alankrit Mathur",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/alankrit-mathur-5a4311381/"
+    },
+    {
+        "id": 219,
+        "name": "Shivam Rathi",
+        "lat": "17.406",
+        "lng": "78.477",
+        "picture": "/images/male.png",
+        "batch": "2025",
+        "linkedin": "https://www.linkedin.com/in/shivam-rathi-9871473a1/"
+    }
+]

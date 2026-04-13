@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h2 {
+    @apply mb-4 mt-2 text-3xl font-bold leading-tight tracking-tighter text-zinc-700 dark:text-zinc-300;
+  }
+
+  h3 {
+    @apply mb-4 mt-2 text-xl font-semibold leading-snug tracking-tight text-zinc-700 dark:text-zinc-300;
+  }
+
+  p {
+    @apply pb-4 leading-relaxed tracking-normal text-zinc-600 last-of-type:pb-0 dark:text-zinc-400;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+}
+
+.animate-slide-in {
+  animation: slideIn 300ms ease-out forwards;
+}
+
+.animate-slide-out {
+  animation: slideOut 300ms ease-out forwards;
+}
+
+.leaflet-popup-content {
+  width: auto !important;
+  margin: 0 !important;
+}
+
+.leaflet-popup-content-wrapper {
+  padding: 0 !important;
+  border-radius: 0rem !important;
+  background: none !important;
+}
