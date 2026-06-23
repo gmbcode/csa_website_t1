@@ -7,6 +7,7 @@ import Header from '../components/Header';
 import Footer from '../components/Footer';
 import { SessionProvider } from 'next-auth/react';
 import Background from '../components/Background';
+import { Analytics } from '@vercel/analytics/next';
 
 const sans = Generator({
   src: '../fonts/Generator-Variable.ttf',
@@ -36,6 +37,7 @@ export default async function RootLayout({
           <Background />
           <Footer />
         </SessionProvider>
+        <Analytics />
       </body>
     </html>
   );
