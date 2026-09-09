@@ -24,14 +24,9 @@ export default function Footer(): JSX.Element {
                 <h4 className="mt-0 text-gray-900 dark:text-cyan-400 font-bold tracking-widest uppercase text-base mb-4">
                   Tech Lead
                 </h4>
-                <p className="text-sm text-gray-700 dark:text-zinc-300">Ayaan Siddiqui</p>
+                <p className="text-sm text-gray-700 dark:text-zinc-300">Krish Goel</p>
               </div>
-              <div>
-                <h4 className="mt-0 text-gray-900 dark:text-cyan-400 font-bold tracking-widest uppercase text-base mb-4">
-                  Tech Advisor
-                </h4>
-                <p className="text-sm text-gray-700 dark:text-zinc-300">Bhavya Shah</p>
-              </div>
+              
             </div>
 
             {/* Team Row */}
@@ -41,8 +36,7 @@ export default function Footer(): JSX.Element {
               </h4>
               <div className="grid grid-cols-2 gap-x-8 md:gap-x-16 gap-y-2">
                 <p className="text-sm text-gray-700 dark:text-zinc-300">Anvith N</p>
-                <p className="text-sm text-gray-700 dark:text-zinc-300">Oshal Bharanwal</p>
-                <p className="text-sm text-gray-700 dark:text-zinc-300">Krish Goel</p>
+                <p className="text-sm text-gray-700 dark:text-zinc-300">Oshal Baranwal</p>
                 <p className="text-sm text-gray-700 dark:text-zinc-300">Heet Mehta</p>
               </div>
             </div>
