@@ -1,5 +1,5 @@
 'use client';
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, type JSX } from 'react';
 import ReactDOM from 'react-dom';
 import { useSession, signOut } from 'next-auth/react';
 import SiteLogo from './logos/SiteLogo';
