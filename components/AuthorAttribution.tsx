@@ -5,7 +5,7 @@ export default function AuthorAttribution({
   post,
 }: {
   post: Post;
-}): JSX.Element {
+}) {
   return (
     <div className="flex space-x-1">
       <span>by</span>

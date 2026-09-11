@@ -2,6 +2,8 @@ import Link from 'next/link';
 import OBMLogo from './OBMLogo';
 import { GlobalData } from '../../lib/types';
 
+import type { JSX } from "react";
+
 export default function SiteLogo({
   siteData,
 }: {
